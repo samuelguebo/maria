@@ -15,30 +15,17 @@ E.g., it puts together the home page when no home.php file exists.
 */
 get_header(); 
 
-// require slider
-get_template_part ('slider');
+
       
 // Make sure Kirki is activated
 if ( class_exists( 'Kirki' ) ):
 
-    // Theme_mod settings to check.
-    $bloc_repeater_settings = Iam_Kirki::get_option( 'bloc_repeater');
-    if(is_array($bloc_repeater_settings)):
-        foreach( $bloc_repeater_settings as $bloc_setting ) {
-            $layout = $bloc_setting['bloc_layout'];
-            switch($layout){
-                case 'layout-1':
-                    require('template-parts/bloc-1.php');
-                    break;
-                case 'layout-2':
-                    require('template-parts/bloc-2.php');
-                    break;
-                case 'layout-3':
-                    require('template-parts/bloc-3.php');
-                    break;
-            }
-        } 
-    endif;
+    // require slider
+    get_template_part ('slider');
+	
+	// grey area
+	get_template_part('template-parts/section-grey');
+
 else:
 ?>
 <div class="post-list clearfix">

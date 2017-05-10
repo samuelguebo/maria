@@ -18,91 +18,167 @@ Iam Theme Customizer
  */
 function iam_customize_register( $wp_customize ) {
 	
-    
-    /*
-     * Theme colors using Customizer Custom Controls, 
-     * @link https://github.com/bueltge/Wordpress-Theme-Customizer-Custom-Controls
-     *
-     */
-    require_once dirname(__FILE__) . '/class-category_dropdown_custom_control.php';
-    require_once dirname(__FILE__) . '/class-palette_custom_control.php';
-    
-    
-    // kirki configs
-    Iam_Kirki::add_config( 'iam', array(
-        'capability'    => 'edit_theme_options',
-        'option_type'   => 'theme_mod',
-    ) );
-    
-    // Create a repeater section for slider settings
-    Iam_Kirki::add_section('slider_section', array(
+	
+	/*
+	 * Theme colors using Customizer Custom Controls, 
+	 * @link https://github.com/bueltge/Wordpress-Theme-Customizer-Custom-Controls
+	 *
+	 */
+	require_once dirname(__FILE__) . '/class-category_dropdown_custom_control.php';
+	require_once dirname(__FILE__) . '/class-palette_custom_control.php';
+	
+	
+	// kirki configs
+	Iam_Kirki::add_config( 'iam', array(
+		'capability'    => 'edit_theme_options',
+		'option_type'   => 'theme_mod',
+	) );
+	
+	// Create a repeater section for slider settings
+	Iam_Kirki::add_section('slider_section', array(
 		'title' => __('Sliders', 'iam'),
 		'priority' => 10,
 	));
 
-    Iam_Kirki::add_field( 'iam', array(
-            'type'          => 'repeater',
-            'settings'      => 'slider_repeater',
-            'label'         => __( 'Create a slide', 'iam' ),
-            'description'   => __( 'Set up the slide, define title, description, page, etc', 'iam' ),
-            'section'       => 'slider_section',
-            'default'       => array(),
-            'priority'      => 10,
-            'row_label'     => array(
-                'type'      => 'field',
-                'value'     => 'row',
-                'field'     => 'slide_description',
-            ),
-            'fields' => array(
-                // field: slide title
-                'slide_title' => array(
-                    'type'              => 'text',
-                    //'label'       => esc_attr__( 'Display text for section', 'iam' ),
-                    'description'       => esc_attr__( 'Small upper text', 'iam' ),
-                    'default'           => 'Institut Africain des medias',
-                    'sanitize_callback' => 'sanitize_text_field'
-                ),
-                // field: slide description
-                'slide_description' => array(
-                    'type'              => 'text',
-                    //'label'       => esc_attr__( 'Display text for section', 'iam' ),
-                    'description'       => esc_attr__( 'Big lower text', 'iam' ),
-                    'default'           => 'Enquêter, informer, former',
-                    'sanitize_callback'	=> 'sanitize_text_field'
-                ),
-                // field: page
-                'slide_page' => array(
-                        'type'        => 'dropdown-pages',
-                        //'label'       => esc_attr__( 'Display text for section', 'iam' ),
-                        'description' => esc_attr__( 'Page of the slide', 'iam' ),
-                        'default'     => 0,
-                        'sanitize_callback' => 'absint'
-                )
-            )
-        )
-    );
-        
-    
-   
-    
-    $wp_customize->remove_control('header_textcolor'); // remove existing Headline color setting
-    $wp_customize->add_setting(
+	Iam_Kirki::add_field( 'iam', array(
+			'type'          => 'repeater',
+			'settings'      => 'slider_repeater',
+			'label'         => __( 'Create a slide', 'iam' ),
+			'description'   => __( 'Set up the slide, define title, description, page, etc', 'iam' ),
+			'section'       => 'slider_section',
+			'default'       => array(),
+			'priority'      => 10,
+			'row_label'     => array(
+				'type'      => 'field',
+				'value'     => 'row',
+				'field'     => 'slide_description',
+			),
+			'fields' => array(
+				// field: slide title
+				'slide_title' => array(
+					'type'              => 'text',
+					//'label'       => esc_attr__( 'Display text for section', 'iam' ),
+					'description'       => esc_attr__( 'Small upper text', 'iam' ),
+					'default'           => 'Institut Africain des medias',
+					'sanitize_callback' => 'sanitize_text_field'
+				),
+				// field: slide description
+				'slide_description' => array(
+					'type'              => 'text',
+					//'label'       => esc_attr__( 'Display text for section', 'iam' ),
+					'description'       => esc_attr__( 'Big lower text', 'iam' ),
+					'default'           => 'Enquêter, informer, former',
+					'sanitize_callback'	=> 'sanitize_text_field'
+				),
+				// field: page
+				'slide_page' => array(
+						'type'        => 'dropdown-pages',
+						//'label'       => esc_attr__( 'Display text for section', 'iam' ),
+						'description' => esc_attr__( 'Page of the slide', 'iam' ),
+						'default'     => 0,
+						'sanitize_callback' => 'absint'
+				)
+			)
+		)
+	);
+		
+	// Create a new section for Expertises
+	Iam_Kirki::add_section('expertise_section', array(
+		'title' => __('Expertises', 'iam'),
+		'priority' => 10,
+	));
+
+	// Create field for expertise sections: title 
+	Iam_Kirki::add_field( 'iam', array(
+			'type'          => 'text',
+			'settings'      => 'expertise_section_title',
+			'label'         => __( 'Head text for expertise section', 'iam' ),
+			//'description'   => __( 'Add Head text for expertise section', 'iam' ),
+			'section'       => 'expertise_section',
+			'priority'      => 10,
+			'sanitize_callback' => 'sanitize_text_field'
+			)
+	);
+	// Create field for expertise sections: description
+	Iam_Kirki::add_field( 'iam', array(
+			'type'          => 'textarea',
+			'settings'      => 'expertise_section_description',
+			'label'         => __( 'Head description for expertise section', 'iam' ),
+			//'description'   => __( 'Add Head description for expertise section', 'iam' ),
+			'section'       => 'expertise_section',
+			'priority'      => 10,
+			'sanitize_callback' => 'sanitize_text_field'
+			)
+	);
+	// Create a repeater for expertises
+	Iam_Kirki::add_field( 'iam', array(
+			'type'          => 'repeater',
+			'settings'      => 'expertise_repeater',
+			'label'         => __( 'Create a expertise', 'iam' ),
+			'description'   => __( 'Set up the slide, define title, description, page, etc', 'iam' ),
+			'section'       => 'expertise_section',
+			'default'       => array(),
+			'priority'      => 10,
+			'row_label'     => array(
+				'type'      => 'field',
+				'value'     => 'row',
+				'field'     => 'expertise_title',
+			),
+			'fields' => array(
+				// field: expertise_icon
+				'expertise_icon'	=> array(
+					'type'              => 'text',
+					//'label'       => esc_attr__( 'Display text for section', 'iam' ),
+					'description'       => esc_attr__( 'Expertise icon class', 'iam' ),
+					'default'           => 'youtube',
+					'sanitize_callback' => 'sanitize_text_field'
+				),
+				'expertise_title'	=> array(
+					'type'              => 'text',
+					//'label'       => esc_attr__( 'Display text for section', 'iam' ),
+					'description'       => esc_attr__( 'Small upper text', 'iam' ),
+					'default'           => 'Institut Africain des medias',
+					'sanitize_callback' => 'sanitize_text_field'
+				),
+				// field: expertise_description
+				'expertise_description' => array(
+					'type'              => 'textarea',
+					//'label'       => esc_attr__( 'Display text for section', 'iam' ),
+					'description'       => esc_attr__( 'Big lower text', 'iam' ),
+					'default'           => 'Enquêter, informer, former',
+					'sanitize_callback'	=> 'sanitize_text_field'
+				),
+				// field: page
+				'expertise_page'	=> array(
+						'type'        => 'dropdown-pages',
+						//'label'       => esc_attr__( 'Display text for section', 'iam' ),
+						'description' => esc_attr__( 'Page of the expertise', 'iam' ),
+						'default'     => 0,
+						'sanitize_callback' => 'absint'
+				)
+			)
+		)
+	);
+	
+	// Add controls to existing Header Textcolor section
+	$wp_customize->remove_control('header_textcolor'); // remove existing Headline color setting
+	$wp_customize->add_setting(
 		'iam_theme_color', array(
 			'default' => '',
-            'sanitize_callback'	=> 'iam_sanitize_colors'
+			'sanitize_callback'	=> 'iam_sanitize_colors'
 
 		)
 	);
-    
-    $wp_customize->add_control(
-            new Palette_Custom_Control(
-                $wp_customize, 'iam_theme_color', array(
-                    'label' => __( 'Theme color', 'iam' ),
-                    'section' => 'colors',
-                    'settings' => 'iam_theme_color',
-                )
-            )
-        );    
+	
+	$wp_customize->add_control(
+		new Palette_Custom_Control(
+			$wp_customize, 'iam_theme_color', array(
+				'label' => __( 'Theme color', 'iam' ),
+				'section' => 'colors',
+				'settings' => 'iam_theme_color',
+			)
+		)
+	);    
    
 }
 

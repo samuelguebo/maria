@@ -82,7 +82,7 @@ function iam_customize_register( $wp_customize ) {
 		)
 	);
 		
-	// Create a new section for Expertises
+	// Create a new section for Expertises/ Grey
 	Iam_Kirki::add_section('expertise_section', array(
 		'title' => __('Expertises', 'iam'),
 		'priority' => 10,
@@ -94,6 +94,7 @@ function iam_customize_register( $wp_customize ) {
 			'settings'      => 'expertise_section_title',
 			'label'         => __( 'Head text for expertise section', 'iam' ),
 			//'description'   => __( 'Add Head text for expertise section', 'iam' ),
+			'default'       => __( 'Our expertise', 'iam' ),
 			'section'       => 'expertise_section',
 			'priority'      => 10,
 			'sanitize_callback' => 'sanitize_text_field'
@@ -105,6 +106,7 @@ function iam_customize_register( $wp_customize ) {
 			'settings'      => 'expertise_section_description',
 			'label'         => __( 'Head description for expertise section', 'iam' ),
 			//'description'   => __( 'Add Head description for expertise section', 'iam' ),
+			'default'         => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'iam' ),
 			'section'       => 'expertise_section',
 			'priority'      => 10,
 			'sanitize_callback' => 'sanitize_text_field'
@@ -136,7 +138,7 @@ function iam_customize_register( $wp_customize ) {
 				'expertise_title'	=> array(
 					'type'              => 'text',
 					//'label'       => esc_attr__( 'Display text for section', 'iam' ),
-					'description'       => esc_attr__( 'Small upper text', 'iam' ),
+					'description'       => esc_attr__( 'Upper text', 'iam' ),
 					'default'           => 'Institut Africain des medias',
 					'sanitize_callback' => 'sanitize_text_field'
 				),
@@ -144,7 +146,7 @@ function iam_customize_register( $wp_customize ) {
 				'expertise_description' => array(
 					'type'              => 'textarea',
 					//'label'       => esc_attr__( 'Display text for section', 'iam' ),
-					'description'       => esc_attr__( 'Big lower text', 'iam' ),
+					'description'       => esc_attr__( 'Lower text', 'iam' ),
 					'default'           => 'Enquêter, informer, former',
 					'sanitize_callback'	=> 'sanitize_text_field'
 				),
@@ -159,7 +161,87 @@ function iam_customize_register( $wp_customize ) {
 			)
 		)
 	);
-	
+
+	// Create a new section for Solutions/ White section
+	Iam_Kirki::add_section('solution_section', array(
+		'title' => __('Solutions', 'iam'),
+		'priority' => 10,
+	));
+
+	// Create field for solution sections: title 
+	Iam_Kirki::add_field( 'iam', array(
+			'type'          => 'text',
+			'settings'      => 'solution_section_title',
+			'label'         => __( 'Head text for solution section', 'iam' ),
+			//'description'   => __( 'Add Head text for solution section', 'iam' ),
+			'section'       => 'solution_section',
+			'default'       => __( 'Our solutions', 'iam' ),
+			'priority'      => 10,
+			'sanitize_callback' => 'sanitize_text_field'
+			)
+	);
+	// Create field for solution sections: description
+	Iam_Kirki::add_field( 'iam', array(
+			'type'          => 'textarea',
+			'settings'      => 'solution_section_description',
+			'label'         => __( 'Head description for solution section', 'iam' ),
+			'default'         => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'iam' ),
+			//'description'   => __( 'Add Head description for solution section', 'iam' ),
+			'section'       => 'solution_section',
+			'priority'      => 10,
+			'sanitize_callback' => 'sanitize_text_field'
+			)
+	);
+	// Create a repeater for solutions
+	Iam_Kirki::add_field( 'iam', array(
+			'type'          => 'repeater',
+			'settings'      => 'solution_repeater',
+			'label'         => __( 'Create a solution', 'iam' ),
+			'description'   => __( 'Add solution items such as title, description, page, etc', 'iam' ),
+			'section'       => 'solution_section',
+			'default'       => array(),
+			'priority'      => 10,
+			'row_label'     => array(
+				'type'      => 'field',
+				'value'     => 'row',
+				'field'     => 'solution_title',
+			),
+			'fields' => array(
+				// field: solution_icon
+				'solution_icon'	=> array(
+					'type'              => 'text',
+					//'label'       => esc_attr__( 'Display text for section', 'iam' ),
+					'description'       => esc_attr__( 'Solution icon class', 'iam' ),
+					'default'           => 'youtube',
+					'sanitize_callback' => 'sanitize_text_field'
+				),
+				'solution_title'	=> array(
+					'type'              => 'text',
+					//'label'       => esc_attr__( 'Display text for section', 'iam' ),
+					'description'       => esc_attr__( 'Upper text', 'iam' ),
+					'default'           => 'Solution',
+					'sanitize_callback' => 'sanitize_text_field'
+				),
+				// field: solution_description
+				'solution_description' => array(
+					'type'              => 'textarea',
+					//'label'       => esc_attr__( 'Display text for section', 'iam' ),
+					'description'       => esc_attr__( 'Lower text', 'iam' ),
+					'default'           => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'iam' ),
+					'sanitize_callback'	=> 'sanitize_text_field'
+				),
+				// field: page
+				'solution_page'	=> array(
+						'type'        => 'dropdown-pages',
+						//'label'       => esc_attr__( 'Display text for section', 'iam' ),
+						'description' => esc_attr__( 'Page of the solution', 'iam' ),
+						'default'     => 0,
+						'sanitize_callback' => 'absint'
+				)
+			)
+		)
+	);
+
 	// Add controls to existing Header Textcolor section
 	$wp_customize->remove_control('header_textcolor'); // remove existing Headline color setting
 	$wp_customize->add_setting(

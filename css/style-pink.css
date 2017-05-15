@@ -11,7 +11,8 @@ Table of Content
  7.0 - Navigation (Toggle), breakpoint for responsive menu
  8.0 - Slider
  9.0 - Content Hompepage
- 9.1 - Content (Single Post)
+ 9.1 - Content (Grey section)
+ 9.2 - Content (White section)
 10.0 - Content (Posts and Custom post types)
 11.0 - Content (Category and archive rows)
 12.0 - Content (Archives and search rows)
@@ -962,7 +963,7 @@ article .post-item-date {
 
 /*
 ================================================================================================
-9.1 - Content (Homepage)
+9.1 - Content (grey section)
 ================================================================================================
 */
 section.main-row.grey-section {
@@ -989,7 +990,7 @@ section.main-row.grey-section .expertise {
 
 section.main-row.grey-section .expertise .fa {
   font-size: 1.15em;
-  color: #FF8000;
+  color: #FF007F;
   padding: 37px 15px;
   min-width: 115px;
   min-height: 115px;
@@ -1006,6 +1007,57 @@ section.main-row.grey-section .expertise-title {
 
 section.main-row.grey-section p.expertise-description {
   color: #FFF;
+  font-size: 0.8em;
+  line-height: 1.3;
+  display: inline-block;
+  font-weight: 300;
+  font-family: 'Arial', 'serif'; }
+
+ /*
+================================================================================================
+9.2 - Content (white section)
+================================================================================================
+*/
+section.main-row.white-section {
+  background: #FFF;
+  padding: 10px 20px; }
+
+section.main-row.white-section .white-section-intro {
+  padding: 10px 20px; }
+
+section.white-section .section-solution-title {
+  text-transform: uppercase;
+  color: #FF007F;
+  font-weight: bold; }
+
+section.white-section .section-solution-title .highlight {
+  color: #020d16; }
+
+section.white-section .section-solution-description {
+  color: #020d16;
+  font-size: 1em; }
+
+section.main-row.white-section .solution {
+  text-align: center; }
+
+section.main-row.white-section .solution .fa {
+  font-size: 1.15em;
+  color: #FFF;
+  padding: 37px 15px;
+  min-width: 115px;
+  min-height: 115px;
+  background: #FF007F;
+  border-radius: 80px; }
+
+section.main-row.white-section .solution:hover > a .fa {
+  background: #3C3C3B; }
+
+section.main-row.white-section .solution-title {
+  color: #FF007F;
+  font-weight: bold; }
+
+section.main-row.white-section p.solution-description {
+  color: #020d16;
   font-size: 0.8em;
   line-height: 1.3;
   display: inline-block;
@@ -1362,8 +1414,7 @@ footer#footer {
 
 footer .copyright {
   clear: both;
-  font-size: 0.9em;
-  margin-bottom: 10px;
+  font-size: 0.8em;
   padding: 5px 20px; }
 
 footer#footer .copyright a {

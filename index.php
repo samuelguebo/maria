@@ -23,8 +23,11 @@ if ( class_exists( 'Kirki' ) ):
     // require slider
     get_template_part ('slider');
 	
-	// grey area
+	// grey section
 	get_template_part('template-parts/section-grey');
+
+	// white section
+	get_template_part('template-parts/section-white');
 
 else:
 ?>

@@ -16,6 +16,6 @@ if ( ! is_active_sidebar( 'sidebar-main' ) ) {
 ?>
 
 <!-- #secondary -->
-<aside id="sidebar" class="large-4 columns no-padding-left">
+<aside id="sidebar" class="large-4 columns">
     <?php dynamic_sidebar( 'sidebar-main' ); ?>
 </aside>

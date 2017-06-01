@@ -1,11 +1,10 @@
 <?php
 /*
 ================================================================================================
-The template for displaying the menu. it Contains the social menu items
+The template for displaying the social menu items
 ================================================================================================
 @package        Iam
-@link https://developer.wordpress.org/reference/functions/wp_nav_menu/
-@link https://codex.wordpress.org/Class_Reference/Walker
+@link 			https://aristath.github.io/kirki/docs/controls/repeater.html
 @copyright      Copyright (C) 2017. Samuel Guebo
 @license        GNU General Public License v2 or later (http://www.gnu.org/licenses/gpl-2.0.html)
 @author         Samuel Guebo (http://samuelguebo.co/)
@@ -13,21 +12,15 @@ The template for displaying the menu. it Contains the social menu items
 */
 ?>
 
-<?php if ( has_nav_menu( 'social' ) ) {
-
-	wp_nav_menu(
-		array(
-			'theme_location'  => 'social',
-			'container'       => 'div',
-			'container_id'    => 'menu-social',
-			'container_class' => 'menu',
-			'menu_id'         => 'menu-social-items',
-			'menu_class'      => 'menu-items',
-			'depth'           => 1,
-			'link_before'     => '<span class="screen-reader-text">',
-			'link_after'      => '</span>',
-			'fallback_cb'     => '',
-		)
-	);
-
-} ?>
+<?php $socials = Iam_Kirki::get_option( 'social_repeater' );
+if (is_array($socials)): //make sure the icons list is not empty ?> 
+	<div class="socials right">
+		<ul>
+			<?php foreach ($socials as $social) :?>
+				<li class="reveal">
+					<a href="<?php echo $social['social_url']; ?>" alt="<?php echo $social['social_title']; ?>"></a>
+				</li>
+			<?php endforeach; ?>
+		</ul>
+	</div>
+<?php endif; ?>

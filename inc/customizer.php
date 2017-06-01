@@ -241,6 +241,45 @@ function iam_customize_register( $wp_customize ) {
 			)
 		)
 	);
+	
+	// Create a repeater section for social networks
+	Iam_Kirki::add_section('social_section', array(
+		'title' => __('Social medias', 'iam'),
+		'priority' => 10,
+	));
+	// Create a repeater for socials
+	Iam_Kirki::add_field( 'iam', array(
+			'type'          => 'repeater',
+			'settings'      => 'social_repeater',
+			'label'         => __( 'Add a social media', 'iam' ),
+			'section'       => 'social_section',
+			'default'       => array(),
+			'priority'      => 10,
+			'row_label'     => array(
+				'type'      => 'field',
+				'value'     => 'row',
+				'field'     => 'social_title',
+			),
+			'fields' => array(
+				// field: social_title
+				'social_title'	=> array(
+					'type'              => 'text',
+					//'label'       => esc_attr__( 'Display text for section', 'iam' ),
+					'description'       => esc_attr__( 'Title', 'iam' ),
+					'default'           => 'Social',
+					'sanitize_callback' => 'sanitize_text_field'
+				),
+				
+				// field: social_url
+				'social_url'	=> array(
+						'type'        => 'text',
+						'description' => esc_attr__( 'Url of the social profile or page', 'iam' ),
+						'default'     => '#',
+						'sanitize_callback' => 'sanitize_text_field'
+				)
+			)
+		)
+	);
 
 	// Add controls to existing Header Textcolor section
 	$wp_customize->remove_control('header_textcolor'); // remove existing Headline color setting

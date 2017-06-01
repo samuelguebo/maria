@@ -353,7 +353,7 @@ header .nav-wrapper, header .socials {
 header .socials {
   padding: 0; }
 
-.socials li a::before {
+.socials li a {
   content: '\f408';
   display: inline-block;
   padding: 4px;
@@ -365,46 +365,46 @@ header .socials {
 .socials ul li .screen-reader-text {
   display: none; }
 
-.socials li a[href*="wordpress.com"]::before {
+.socials li a[href*="wordpress.com"]::after {
   content: '\f205'; }
 
-.socials li a[href*="facebook.com"]::before {
+.socials li a[href*="facebook.com"]::after {
   content: '\f09a'; }
 
-.socials li a[href*="twitter.com"]::before {
+.socials li a[href*="twitter.com"]::after {
   content: '\f099'; }
 
-.socials li a[href*="dribbble.com"]::before {
+.socials li a[href*="dribbble.com"]::after {
   content: '\f17d'; }
 
-.socials li a[href*="plus.google.com"]::before {
+.socials li a[href*="plus.google.com"]::after {
   content: '\f0d5'; }
 
-.socials li a[href*="pinterest.com"]::before {
+.socials li a[href*="pinterest.com"]::after {
   content: '\f231'; }
 
-.socials li a[href*="github.com"]::before {
+.socials li a[href*="github.com"]::after {
   content: '\f09b'; }
 
-.socials li a[href*="tumblr.com"]::before {
+.socials li a[href*="tumblr.com"]::after {
   content: '\f174'; }
 
-.socials li a[href*="youtube.com"]::before {
+.socials li a[href*="youtube.com"]::after {
   content: '\f16a'; }
 
-.socials li a[href*="flickr.com"]::before {
+.socials li a[href*="flickr.com"]::after {
   content: '\f16e'; }
 
-.socials li a[href*="vimeo.com"]::before {
+.socials li a[href*="vimeo.com"]::after {
   content: '\f27d'; }
 
-.socials li a[href*="instagram.com"]::before {
+.socials li a[href*="instagram.com"]::after {
   content: '\f16d'; }
 
-.socials li a[href*="codepen.io"]::before {
+.socials li a[href*="codepen.io"]::after {
   content: '\f1cb'; }
 
-.socials li a[href*="linkedin.com"]::before {
+.socials li a[href*="linkedin.com"]::after {
   content: '\f0e1'; }
 
 /*
@@ -1415,8 +1415,7 @@ footer#footer {
 
 footer .copyright {
   clear: both;
-  font-size: 0.8em;
-  padding: 5px 20px; }
+  font-size: 0.8em; }
 
 footer#footer .copyright a {
   color: #020d16; }

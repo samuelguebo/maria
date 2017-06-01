@@ -51,9 +51,9 @@ and everything up until <div id="content">
                     <div class="nav-wrapper large-8 medium-4 small-4 columns">
                         <?php get_template_part('menu'); ?>
                     </div><!--/nav-wrapper-->   
-                    <div class="large-2 medium-7 columns right search-wrapper">
-                        <?php get_search_form(); ?>
-                    </div><!--/search-form-->   
+                    <div class="large-2 medium-2 columns right">
+                        <?php get_template_part('menu-social'); ?>
+                    </div><!--/social icons-->   
                 </div>
             </header>
         </section>

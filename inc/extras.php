@@ -518,6 +518,16 @@ if(!function_exists('iam_custom_breadcrumbs')) {
 		return $categories;
 	}
 	/*
+	 * A variant of get_template_part that includes the thumbnail and section class
+	 *
+	 */
+	function iam_get_template_part($file, $container_class, $thumbnail_size){
+		// make sure the required data are in place
+		if(""!==$file){
+			include(locate_template($file));
+		}
+	}
+	/*
 	 * Split strings into several words and highlight the first one
 	 *
 	 */

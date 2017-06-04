@@ -20,9 +20,10 @@ Template part for displaying a slide item in the Slider loop
             <div class="panel">
                 <h4 class="post-item-description"><?php echo $post['slide_title'];?></h4>
                 <h2 class="post-item-title"><?php echo $post['slide_description'];?></h2>
-				<a href="<?php echo get_the_permalink($post['slide_page']);?>" class="button small radius">
+				<h3><a href="<?php echo get_the_permalink($post['slide_page']);?>" class="button radius">
 					<?php _e('Read more','iam')?>
 				</a>
+                <h3>
             </div>
         </div>
     <div class="clearfix"></div>

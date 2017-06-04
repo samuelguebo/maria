@@ -22,7 +22,7 @@ $expertises = Iam_Kirki::get_option( 'expertise_repeater');
 			<?php if(is_array($expertises)): //make sure array is not empty ?>
 				<section class="columns main-column">
 					<?php foreach ($expertises as $expertise): // loop through array?>
-							<div class="small-4 medium-3 large-3 columns expertise">
+							<div class="small-6 medium-3 large-3 columns expertise">
 								<a href="<?php the_permalink($expertise['expertise_page']);?>" title="<?php echo $expertise['expertise_title'];?>">
 									<h2 class="expertise-icon">
 										<i class="fa fa-<?php echo $expertise['expertise_icon'] ?>"></i>

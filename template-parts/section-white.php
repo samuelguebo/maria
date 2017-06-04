@@ -22,7 +22,7 @@ $solutions = Iam_Kirki::get_option( 'solution_repeater');
 			<?php if(is_array($solutions)): //make sure array is not empty ?>
 				<section class="columns main-column">
 					<?php foreach ($solutions as $solution): // loop through array?>
-							<div class="small-4 medium-3 large-3 columns solution">
+							<div class="small-6 medium-3 large-3 columns solution">
 								<a href="<?php the_permalink($solution['solution_page']);?>" title="<?php echo $solution['solution_title'];?>">
 									<h2 class="solution-icon">
 										<i class="fa fa-<?php echo $solution['solution_icon'] ?>"></i>

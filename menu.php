@@ -11,7 +11,7 @@ The template for displaying the menu. It contains the menu items
 ================================================================================================
 */
 ?>
-    <nav class="top-bar" data-topbar >
+    <nav class="top-bar " data-topbar >
         <ul class="title-area">
             <li class="name">
                  </li>

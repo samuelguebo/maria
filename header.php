@@ -35,23 +35,23 @@ and everything up until <div id="content">
             <header class="background-white main-row">
                 <div class="row clearfix">
                     <?php if(has_custom_logo()):?>
-                    <div class="large-2 medium-8 small-8 columns logo">
+                    <div class="large-2 medium-2 small-6 columns logo">
                         <a href="<?php echo site_url(); ?>">  
                             <?php the_custom_logo();?>
                         </a>
                     </div>
                     <?php else:?>
-                    <div class="large-2 medium-8 small-8 columns columns">
+                    <div class="large-2 medium-10 small-6 columns columns">
                         <h2 class="site-title">
                             <a href="<?php echo site_url(); ?>"><?php bloginfo('title'); ?></a>
                         </h2>
                     </div>
                     <?php endif;?>
 
-                    <div class="nav-wrapper large-8 medium-4 small-4 columns">
+                    <div class="nav-wrapper large-8 medium-10 small-4 columns">
                         <?php get_template_part('menu'); ?>
                     </div><!--/nav-wrapper-->   
-                    <div class="large-2 medium-2 columns right">
+                    <div class="large-2 columns socials">
                         <?php get_template_part('menu-social'); ?>
                     </div><!--/social icons-->   
                 </div>

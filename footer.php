@@ -21,7 +21,7 @@ after and containing the bottom widget area
 							<p class="copyright"><?php _e('Copyright ','iam')?> <?php echo get_the_date('Y'); ?> <?php echo bloginfo('name'); ?>
 							</p><!-- copyright-->
 						</div>
-						<div class="medium-6 large-2 columns">
+						<div class="medium-6 large-2 columns socials">
 							<?php get_template_part('menu-social'); ?>
 						</div>
 

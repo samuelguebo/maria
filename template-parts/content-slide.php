@@ -14,15 +14,15 @@ Template part for displaying a slide item in the Slider loop
 
 ?>
 <section class="post-item">
-	
-    <?php echo get_the_post_thumbnail( $post['slide_page'], 'slider-cover', array('class'=>'responsive delay'));?>
+        <img src="<?php echo iam_get_thumb_by_id($post['slide_image'],'slider-cover');?>" alt="<?php echo $post['slide_title'];?>" class="responsive delay"/>
         <div class="slider-caption post-item-caption">
             <div class="panel">
                 <h4 class="post-item-description"><?php echo $post['slide_title'];?></h4>
                 <h2 class="post-item-title"><?php echo $post['slide_description'];?></h2>
-				<h3><a href="<?php echo get_the_permalink($post['slide_page']);?>" class="button radius">
-					<?php _e('Read more','iam')?>
-				</a>
+				<h3>
+                    <a href="<?php echo get_the_permalink($post['slide_page']);?>" class="button radius">
+    					<?php echo $post['slide_button_text'];?>
+    				</a>
                 <h3>
             </div>
         </div>

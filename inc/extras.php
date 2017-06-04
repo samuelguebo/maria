@@ -545,4 +545,13 @@ if(!function_exists('iam_custom_breadcrumbs')) {
 
 	}
 
+	function iam_get_thumb_by_id ($image_id, $size){
+		$image_thumb = wp_get_attachment_image_src($image_id, $size);
+
+ 		// display the image
+		if (is_array($image_thumb)) {
+			return $image_thumb[0];
+		}
+	}
+
 	

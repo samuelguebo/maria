@@ -77,6 +77,20 @@ function iam_customize_register( $wp_customize ) {
 						'description' => esc_attr__( 'Page of the slide', 'iam' ),
 						'default'     => 0,
 						'sanitize_callback' => 'absint'
+				),
+				// field: button text
+				'slide_button_text' => array(
+						'type'        => 'text',
+						//'label'       => esc_attr__( 'Display text for section', 'iam' ),
+						'description' => esc_attr__( 'Text for the buton', 'iam' ),
+						'default'     => esc_attr__( 'Read more', 'iam' ),
+						'sanitize_callback' => 'sanitize_text_field'
+				),
+				// field: button text
+				'slide_image' => array(
+						'type'        => 'image',
+						//'label'       => esc_attr__( 'Display text for section', 'iam' ),
+						'description' => esc_attr__( 'Image of the slide', 'iam' ),
 				)
 			)
 		)

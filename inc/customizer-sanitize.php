@@ -1,10 +1,10 @@
 <?php
 /*
 ================================================================================================
-Iam Customizer functions for sanitizing inputs
+Maria Customizer functions for sanitizing inputs
 ================================================================================================
 @link           @link https://developer.wordpress.org/reference/functions/sanitize_text_field
-@package        Iam
+@package        Maria
 @copyright      Copyright (C) 2017. Samuel Guebo
 @license        GNU General Public License v2 or later (http://www.gnu.org/licenses/gpl-2.0.html)
 @author         Samuel Guebo (https://samuelguebo.co/)

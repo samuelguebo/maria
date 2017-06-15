@@ -3,7 +3,7 @@
 ================================================================================================
 The template for displaying the menu. It contains the menu items
 ================================================================================================
-@package        Iam
+@package        Maria
 @link           https://codex.wordpress.org/The_Loop
 @copyright      Copyright (C) 2017. Samuel Guebo
 @license        GNU General Public License v2 or later (http://www.gnu.org/licenses/gpl-2.0.html)

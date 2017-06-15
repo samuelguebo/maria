@@ -3,16 +3,16 @@
 ================================================================================================
 Template part for displaying they grey section
 ================================================================================================
-@package        Iam
+@package        Maria
 @link           https://codex.wordpress.org/The_Loop
 @copyright      Copyright (C) 2017. Samuel Guebo
 @license        GNU General Public License v2 or later (http://www.gnu.org/licenses/gpl-2.0.html)
 @author         Samuel Guebo (http://samuelguebo.co/)
 ================================================================================================
 */
-$expertise_section_title = Iam_Kirki::get_option( 'expertise_section_title');
-$expertise_section_description = Iam_Kirki::get_option( 'expertise_section_description');
-$expertises = Iam_Kirki::get_option( 'expertise_repeater');
+$expertise_section_title = Maria_Kirki::get_option( 'expertise_section_title');
+$expertise_section_description = Maria_Kirki::get_option( 'expertise_section_description');
+$expertises = Maria_Kirki::get_option( 'expertise_repeater');
 ?>
 <section class="row main-row clearfix grey-section">
 			<section class="columns main-column grey-section-intro">

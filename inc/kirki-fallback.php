@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * ensuring that all CSS & fonts still work.
  * It does not handle the customizer options, simply the frontend CSS.
  */
-class Iam_Kirki {
+class Maria_Kirki {
 
 	/**
 	 * @static
@@ -397,4 +397,4 @@ class Iam_Kirki {
 		}
 	}
 }
-new Iam_Kirki();
+new Maria_Kirki();

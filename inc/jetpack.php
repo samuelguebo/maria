@@ -3,7 +3,7 @@
 ================================================================================================
 Jetpack Compatibility File
 ================================================================================================
-@package        Iam
+@package        Maria
 @link           https://jetpack.com/
 @link           https://jetpack.com/support/infinite-scroll/
 @link           https://jetpack.com/support/responsive-videos/

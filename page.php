@@ -4,7 +4,7 @@
 The template for displaying all pages.  This is the template that displays all pages by default.
 and that other 'pages' on your WordPress site may use a different template.
 ================================================================================================
-@package        Iam
+@package        Maria
 @link           https://codex.wordpress.org/Template_Hierarchy
 @copyright      Copyright (C) 2017. Samuel Guebo
 @license        GNU General Public License v2 or later (http://www.gnu.org/licenses/gpl-2.0.html)

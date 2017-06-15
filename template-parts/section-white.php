@@ -3,16 +3,16 @@
 ================================================================================================
 Template part for displaying the white section
 ================================================================================================
-@package        Iam
+@package        Maria
 @link           https://codex.wordpress.org/The_Loop
 @copyright      Copyright (C) 2017. Samuel Guebo
 @license        GNU General Public License v2 or later (http://www.gnu.org/licenses/gpl-2.0.html)
 @author         Samuel Guebo (http://samuelguebo.co/)
 ================================================================================================
 */
-$solution_section_title = Iam_Kirki::get_option( 'solution_section_title');
-$solution_section_description = Iam_Kirki::get_option( 'solution_section_description');
-$solutions = Iam_Kirki::get_option( 'solution_repeater');
+$solution_section_title = Maria_Kirki::get_option( 'solution_section_title');
+$solution_section_description = Maria_Kirki::get_option( 'solution_section_description');
+$solutions = Maria_Kirki::get_option( 'solution_repeater');
 ?>
 <section class="row main-row clearfix white-section">
 			<section class="columns main-column white-section-intro">

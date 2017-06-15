@@ -1,9 +1,9 @@
 <?php
 /*
 ================================================================================================
-Iam functions and definitions
+Maria functions and definitions
 ================================================================================================
-@package        Iam
+@package        Maria
 @link           https://developer.wordpress.org/themes/basics/theme-functions/
 @copyright      Copyright (C) 2017. Samuel Guebo
 @license        GNU General Public License v2 or later (http://www.gnu.org/licenses/gpl-2.0.html)
@@ -23,7 +23,7 @@ function iam_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on Iam, use a find and replace
+	 * If you're building a theme based on Maria, use a find and replace
 	 * to change 'iam' to the name of your theme in all the template files.
 	 */
 	load_theme_textdomain( 'iam', get_template_directory() . '/languages' );

@@ -1,9 +1,9 @@
 <?php
 /*
 ================================================================================================
-Iam Theme Customizer
+Maria Theme Customizer
 ================================================================================================
-@package        Iam
+@package        Maria
 @link           https://codex.wordpress.org/Theme_Customization_API
 @copyright      Copyright (C) 2017. Samuel Guebo
 @license        GNU General Public License v2 or later (http://www.gnu.org/licenses/gpl-2.0.html)
@@ -29,18 +29,18 @@ function iam_customize_register( $wp_customize ) {
 	
 	
 	// kirki configs
-	Iam_Kirki::add_config( 'iam', array(
+	Maria_Kirki::add_config( 'iam', array(
 		'capability'    => 'edit_theme_options',
 		'option_type'   => 'theme_mod',
 	) );
 	
 	// Create a repeater section for slider settings
-	Iam_Kirki::add_section('slider_section', array(
+	Maria_Kirki::add_section('slider_section', array(
 		'title' => __('Sliders', 'iam'),
 		'priority' => 10,
 	));
 
-	Iam_Kirki::add_field( 'iam', array(
+	Maria_Kirki::add_field( 'iam', array(
 			'type'          => 'repeater',
 			'settings'      => 'slider_repeater',
 			'label'         => __( 'Create a slide', 'iam' ),
@@ -97,13 +97,13 @@ function iam_customize_register( $wp_customize ) {
 	);
 		
 	// Create a new section for Expertises/ Grey
-	Iam_Kirki::add_section('expertise_section', array(
+	Maria_Kirki::add_section('expertise_section', array(
 		'title' => __('Expertises', 'iam'),
 		'priority' => 10,
 	));
 
 	// Create field for expertise sections: title 
-	Iam_Kirki::add_field( 'iam', array(
+	Maria_Kirki::add_field( 'iam', array(
 			'type'          => 'text',
 			'settings'      => 'expertise_section_title',
 			'label'         => __( 'Head text for expertise section', 'iam' ),
@@ -115,7 +115,7 @@ function iam_customize_register( $wp_customize ) {
 			)
 	);
 	// Create field for expertise sections: description
-	Iam_Kirki::add_field( 'iam', array(
+	Maria_Kirki::add_field( 'iam', array(
 			'type'          => 'textarea',
 			'settings'      => 'expertise_section_description',
 			'label'         => __( 'Head description for expertise section', 'iam' ),
@@ -127,7 +127,7 @@ function iam_customize_register( $wp_customize ) {
 			)
 	);
 	// Create a repeater for expertises
-	Iam_Kirki::add_field( 'iam', array(
+	Maria_Kirki::add_field( 'iam', array(
 			'type'          => 'repeater',
 			'settings'      => 'expertise_repeater',
 			'label'         => __( 'Create a expertise', 'iam' ),
@@ -177,13 +177,13 @@ function iam_customize_register( $wp_customize ) {
 	);
 
 	// Create a new section for Solutions/ White section
-	Iam_Kirki::add_section('solution_section', array(
+	Maria_Kirki::add_section('solution_section', array(
 		'title' => __('Solutions', 'iam'),
 		'priority' => 10,
 	));
 
 	// Create field for solution sections: title 
-	Iam_Kirki::add_field( 'iam', array(
+	Maria_Kirki::add_field( 'iam', array(
 			'type'          => 'text',
 			'settings'      => 'solution_section_title',
 			'label'         => __( 'Head text for solution section', 'iam' ),
@@ -195,7 +195,7 @@ function iam_customize_register( $wp_customize ) {
 			)
 	);
 	// Create field for solution sections: description
-	Iam_Kirki::add_field( 'iam', array(
+	Maria_Kirki::add_field( 'iam', array(
 			'type'          => 'textarea',
 			'settings'      => 'solution_section_description',
 			'label'         => __( 'Head description for solution section', 'iam' ),
@@ -207,7 +207,7 @@ function iam_customize_register( $wp_customize ) {
 			)
 	);
 	// Create a repeater for solutions
-	Iam_Kirki::add_field( 'iam', array(
+	Maria_Kirki::add_field( 'iam', array(
 			'type'          => 'repeater',
 			'settings'      => 'solution_repeater',
 			'label'         => __( 'Create a solution', 'iam' ),
@@ -257,12 +257,12 @@ function iam_customize_register( $wp_customize ) {
 	);
 	
 	// Create a repeater section for social networks
-	Iam_Kirki::add_section('social_section', array(
+	Maria_Kirki::add_section('social_section', array(
 		'title' => __('Social medias', 'iam'),
 		'priority' => 10,
 	));
 	// Create a repeater for socials
-	Iam_Kirki::add_field( 'iam', array(
+	Maria_Kirki::add_field( 'iam', array(
 			'type'          => 'repeater',
 			'settings'      => 'social_repeater',
 			'label'         => __( 'Add a social media', 'iam' ),

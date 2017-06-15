@@ -4,7 +4,7 @@
 The template for displaying the footer. It contains the closing of the body all content 
 after and containing the bottom widget area
 ================================================================================================
-@package        Iam
+@package        Maria
 @link           https://developer.wordpress.org/themes/basics/template-files/#template-partials
 @copyright      Copyright (C) 2017. Samuel Guebo
 @license        GNU General Public License v2 or later (http://www.gnu.org/licenses/gpl-2.0.html)

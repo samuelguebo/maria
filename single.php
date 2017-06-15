@@ -3,7 +3,7 @@
 ================================================================================================
 The template for displaying all single posts
 ================================================================================================
-@package        Iam
+@package        Maria
 @link           https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
 @copyright      Copyright (C) 2017. Samuel Guebo
 @license        GNU General Public License v2 or later (http://www.gnu.org/licenses/gpl-2.0.html)

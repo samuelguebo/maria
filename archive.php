@@ -5,7 +5,7 @@ The archive template file
 ================================================================================================
 
 @link           @link https://codex.wordpress.org/Template_Hierarchy
-@package        Iam
+@package        Maria
 @copyright      Copyright (C) 2017. Samuel Guebo
 @license        GNU General Public License v2 or later (http://www.gnu.org/licenses/gpl-2.0.html)
 @author         Samuel Guebo (https://samuelguebo.co/)

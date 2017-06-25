@@ -16,7 +16,7 @@ Maria Theme Customizer
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function iam_customize_register( $wp_customize ) {
+function maria_customize_register( $wp_customize ) {
 	
 	
 	/*
@@ -298,32 +298,32 @@ function iam_customize_register( $wp_customize ) {
 	// Add controls to existing Header Textcolor section
 	$wp_customize->remove_control('header_textcolor'); // remove existing Headline color setting
 	$wp_customize->add_setting(
-		'iam_theme_color', array(
+		'maria_theme_color', array(
 			'default' => '',
-			'sanitize_callback'	=> 'iam_sanitize_colors'
+			'sanitize_callback'	=> 'maria_sanitize_colors'
 
 		)
 	);
 	
 	$wp_customize->add_control(
 		new Palette_Custom_Control(
-			$wp_customize, 'iam_theme_color', array(
+			$wp_customize, 'maria_theme_color', array(
 				'label' => __( 'Theme color', 'iam' ),
 				'section' => 'colors',
-				'settings' => 'iam_theme_color',
+				'settings' => 'maria_theme_color',
 			)
 		)
 	);    
    
 }
 
-add_action( 'customize_register', 'iam_customize_register' );
+add_action( 'customize_register', 'maria_customize_register' );
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function iam_customize_preview_js() {
-	wp_enqueue_script( 'iam_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20170714', true );
+function maria_customize_preview_js() {
+	wp_enqueue_script( 'maria_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20170714', true );
 }
 
 /* Validate user input */

@@ -23,7 +23,7 @@ get_header(); ?>
             </section>
             <section id="breadcrumbs" >
                 <div class="breadcrumbs">
-                    <?php if (function_exists('iam_custom_breadcrumbs')) iam_custom_breadcrumbs(); ?>
+                    <?php if (function_exists('maria_custom_breadcrumbs')) maria_custom_breadcrumbs(); ?>
                 </div>
             </section>
             <section class="category-row row">                
@@ -37,9 +37,9 @@ get_header(); ?>
                                 while ( have_posts() ) : the_post();
 
                                     if(has_post_thumbnail()){
-                                        iam_get_template_part('template-parts/content-article.php', 'large-6 medium-6 small-12', 'post-thumb');
+                                        maria_get_template_part('template-parts/content-article.php', 'large-6 medium-6 small-12', 'post-thumb');
                                     }else {
-                                        iam_get_template_part('template-parts/content-article-without-thumb.php', 'large-6 medium-6 small-12', 'post-thumb');
+                                        maria_get_template_part('template-parts/content-article-without-thumb.php', 'large-6 medium-6 small-12', 'post-thumb');
                                     }
 
                                 endwhile;

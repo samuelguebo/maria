@@ -42,7 +42,7 @@ if ( post_password_required() ) {
         <?php
                 $args = array(
                 'short_ping' => true,
-                'callback' => 'iam_custom_comments',
+                'callback' => 'maria_custom_comments',
                     );
             wp_list_comments( $args);
         ?>

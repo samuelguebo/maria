@@ -11,7 +11,7 @@ Maria functions and definitions
 ================================================================================================
 */
 
-if ( ! function_exists( 'iam_setup' ) ) :
+if ( ! function_exists( 'maria_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -19,7 +19,7 @@ if ( ! function_exists( 'iam_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function iam_setup() {
+function maria_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
@@ -72,7 +72,7 @@ function iam_setup() {
 	add_theme_support( 'customize-selective-refresh-widgets' );
 }
 endif;
-add_action( 'after_setup_theme', 'iam_setup' );
+add_action( 'after_setup_theme', 'maria_setup' );
 
 /**
  * Recommend the Kirki plugin
@@ -89,7 +89,7 @@ require get_template_directory() . '/inc/kirki-fallback.php';
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function iam_widgets_init() {
+function maria_widgets_init() {
     register_sidebar( array(
 		'name'          => esc_html__( 'Home sidebar', 'iam' ),
 		'id'            => 'sidebar-home',
@@ -131,13 +131,13 @@ function iam_widgets_init() {
 		'after_title'   => '</h5>',
 	) );
 }
-add_action( 'widgets_init', 'iam_widgets_init' );
+add_action( 'widgets_init', 'maria_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
 
-function iam_scripts() {
+function maria_scripts() {
     
     // Google fonts
     wp_enqueue_style( 'iam-google-fonts', 'http://fonts.googleapis.com/css?family=Roboto:500|', false ); 
@@ -151,8 +151,8 @@ function iam_scripts() {
 	wp_enqueue_style( 'slick-slider', get_template_directory_uri().'/css/slick.css');
     
     $style = "style";
-    if(""!=get_theme_mod('iam_theme_color')){
-        $color = get_theme_mod('iam_theme_color');
+    if(""!=get_theme_mod('maria_theme_color')){
+        $color = get_theme_mod('maria_theme_color');
         $style = 'style-'.$color;
     } 
 	wp_enqueue_style( 'iam-style', get_template_directory_uri().'/css/'.$style.'.css' );
@@ -169,16 +169,16 @@ function iam_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-function iam_admin_js($hook) {
+function maria_admin_js($hook) {
     /*
     if ( 'customize.php' != $hook ) {
         return;
     }
     */
-    wp_enqueue_script( 'iam_admin_js', get_template_directory_uri() . '/js/admin.js' );
+    wp_enqueue_script( 'maria_admin_js', get_template_directory_uri() . '/js/admin.js' );
 
 }
-add_action( 'wp_enqueue_scripts', 'iam_scripts' );
+add_action( 'wp_enqueue_scripts', 'maria_scripts' );
 
 /**
  * Implement the Custom Header feature.

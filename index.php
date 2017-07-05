@@ -48,9 +48,9 @@ else:
             while ( have_posts() ) : the_post();
 
                 if(has_post_thumbnail()){
-                    iam_get_template_part('template-parts/content-article.php', 'large-4 medium-6 small-12', 'post-thumb');
+                    maria_get_template_part('template-parts/content-article.php', 'large-4 medium-6 small-12', 'post-thumb');
                 }else {
-                    iam_get_template_part('template-parts/content-article-without-thumb.php', 'large-4 medium-6 small-12', 'post-thumb');
+                    maria_get_template_part('template-parts/content-article-without-thumb.php', 'large-4 medium-6 small-12', 'post-thumb');
                 }
 
             endwhile;

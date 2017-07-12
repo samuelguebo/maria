@@ -27,7 +27,7 @@ get_header(); ?>
     <section class="row single-row">
         <section id="breadcrumbs" class="clearfix">
             <div class="breadcrumbs">
-                <?php if (function_exists('iam_custom_breadcrumbs')) iam_custom_breadcrumbs(); ?>
+                <?php if (function_exists('maria_custom_breadcrumbs')) maria_custom_breadcrumbs(); ?>
             </div>
         </section>
         <section class="large-8 columns main-column">

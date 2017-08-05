@@ -69,7 +69,7 @@ class Palette_Custom_Control extends WP_Customize_Control
                 </style>
 
                 <label>
-                      <?php echo 'currently color is: '.get_theme_mod('iam_theme_color'); ?>
+                      <?php echo 'currently color is: '.get_theme_mod('maria_theme_color'); ?>
                   <h1 class="customize-layout-control">
                       <?php echo esc_html( $this->label ); ?>
                     </h1>

@@ -14,7 +14,7 @@ Sample implementation of the Custom Header feature.
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses iam_header_back()
+ * @uses maria_header_back()
  */
 
 $args = array(

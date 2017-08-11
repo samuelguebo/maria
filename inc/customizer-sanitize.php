@@ -12,14 +12,14 @@ Maria Customizer functions for sanitizing inputs
 */
 /* Textarea */
 
-function iam_sanitize_textarea($input) {
+function maria_sanitize_textarea($input) {
 	global $allowedposttags;
 	$output = wp_kses( $input, $allowedposttags);
 	return $output;
 }
 /* Checkbox */
 
-function iam_sanitize_checkbox( $input ) {
+function maria_sanitize_checkbox( $input ) {
 	if ( $input ) {
 		$output = '1';
 	} else {
@@ -29,7 +29,7 @@ function iam_sanitize_checkbox( $input ) {
 }
 /* Radio, select, option */
 
-function iam_sanitize_colors( $input, $setting ) {
+function maria_sanitize_colors( $input, $setting ) {
 	$color = $setting->default;
 	// Ensure input is a slug.
 	$input = sanitize_key( $input );
@@ -43,7 +43,7 @@ function iam_sanitize_colors( $input, $setting ) {
 }
 
 /* Multicheck */
-function iam_sanitize_multicheck( $input, $option ) {
+function maria_sanitize_multicheck( $input, $option ) {
 	$output = '';
 	if ( is_array( $input ) ) {
 		foreach( $option['options'] as $key => $value ) {
@@ -60,7 +60,7 @@ function iam_sanitize_multicheck( $input, $option ) {
 
 /* Uploader */
 
-function iam_sanitize_upload( $input ) {
+function maria_sanitize_upload( $input ) {
 	$output = '';
 	$filetype = wp_check_filetype($input);
 	if ( $filetype["ext"] ) {
@@ -71,7 +71,7 @@ function iam_sanitize_upload( $input ) {
 
 /* Editor */
 
-function iam_sanitize_editor($input) {
+function maria_sanitize_editor($input) {
 	if ( current_user_can( 'unfiltered_html' ) ) {
 		$output = $input;
 	}
@@ -84,7 +84,7 @@ function iam_sanitize_editor($input) {
 
 /* Allowed Tags */
 
-function iam_sanitize_allowedtags($input) {
+function maria_sanitize_allowedtags($input) {
 	global $allowedtags;
 	$output = wpautop(wp_kses( $input, $allowedtags));
 	return $output;
@@ -92,7 +92,7 @@ function iam_sanitize_allowedtags($input) {
 
 /* Allowed Post Tags */
 
-function iam_sanitize_allowedposttags($input) {
+function maria_sanitize_allowedposttags($input) {
 	global $allowedposttags;
 	$output = wpautop(wp_kses( $input, $allowedposttags));
 	return $output;
@@ -101,7 +101,7 @@ function iam_sanitize_allowedposttags($input) {
 
 /* Check that the key value sent is valid */
 
-function iam_sanitize_enum( $input, $option ) {
+function maria_sanitize_enum( $input, $option ) {
 	$output = '';
 	if ( array_key_exists( $input, $option['options'] ) ) {
 		$output = $input;
@@ -111,7 +111,7 @@ function iam_sanitize_enum( $input, $option ) {
 
 /* Typography */
 
-function iam_sanitize_typography( $input, $option ) {
+function maria_sanitize_typography( $input, $option ) {
 
 	$output = wp_parse_args( $input, array(
 		'size'  => '',
@@ -131,6 +131,6 @@ function iam_sanitize_typography( $input, $option ) {
 
 	$output['size']  = apply_filters( 'of_font_size', $output['size'] );
 	$output['style'] = apply_filters( 'of_font_style', $output['style'] );
-	$output['color'] = apply_filters( 'iam_sanitize_color', $output['color'] );
+	$output['color'] = apply_filters( 'maria_sanitize_color', $output['color'] );
 	return $output;
 }

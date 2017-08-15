@@ -171,7 +171,7 @@ msgid "Past and future events"
 msgstr "Eventos pasados y futuros"
 
 # wpml-name: f431e17ea0081a3c9e51fc240221ee21
-#: function iam_register_nav_menus() { register_nav_menu( 'social', __(
+#: function maria_register_nav_menus() { register_nav_menu( 'social', __(
 #: 'Social', 'iam' ) );
 msgid "Social"
 msgstr "Social"
@@ -232,14 +232,14 @@ msgstr "Buscar …"
 
 # wpml-name: 1aafb073a1a78e52e044177f67da6615
 #: <p class="call-to-action"> <a href="<?php
-#: the_permalink(iam_get_events_page());?>" class="small button
+#: the_permalink(maria_get_events_page());?>" class="small button
 #: radius"><?php _e('All events','iam')?></a>
 msgid "All events"
 msgstr "Todos los eventos"
 
 # wpml-name: 589c486dfe514e75072c9330a4f514f6
 #: </div> <p class="call-to-action clearfix"> <a href="<?php
-#: the_permalink(iam_get_programmes_page());?>" class="small button
+#: the_permalink(maria_get_programmes_page());?>" class="small button
 #: post-item-buttom radius"><?php _e('All programmes','iam')?></a>
 msgid "All programmes"
 msgstr "Todos los proyectos"
@@ -308,13 +308,13 @@ msgstr ""
 
 # wpml-name: 87f9f735a1d36793ceaecd4e47124b63
 #: Create sections for Events settings
-#: $wp_customize->add_section('iam_events_section', array( 'title' =>
+#: $wp_customize->add_section('maria_events_section', array( 'title' =>
 #: __('Events', 'iam'),
 msgid "Events"
 msgstr "Eventos"
 
 # wpml-name: 45e035baf33a8e403766a606457f8b10
-#: new Palette_Custom_Control( $wp_customize, 'iam_theme_color', array(
+#: new Palette_Custom_Control( $wp_customize, 'maria_theme_color', array(
 #: 'label' => __( 'Theme color', 'iam' ),
 msgid "Theme color"
 msgstr "Color del tema"
@@ -330,7 +330,7 @@ msgid "Add widgets here."
 msgstr "Añadir widgets aquí."
 
 # wpml-name: 219ff7705d67d0c798779951dcf82e95
-#: function iam_widgets_init() { register_sidebar( array( 'name' =>
+#: function maria_widgets_init() { register_sidebar( array( 'name' =>
 #: esc_html__( 'Sidebar', 'iam' ),
 msgid "Sidebar"
 msgstr "Barra Lateral"

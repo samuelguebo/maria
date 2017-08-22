@@ -30,7 +30,7 @@ Template part for displaying articles in loop
                 <span class="post-item-date"><?php echo get_the_date('d/m/Y')?> / <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></span><br><!--date/-->
             <?php endif;?>
             <h3 class="post-item-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
-            <p><?php echo iam_new_excerpt_length(100);?></p> 
+            <p><?php echo maria_new_excerpt_length(100);?></p> 
         </div>
     </div>
 </article>

@@ -14,7 +14,7 @@ Template part for displaying a slide item in the Slider loop
 
 ?>
 <section class="post-item">
-        <img src="<?php echo iam_get_thumb_by_id($post['slide_image'],'slider-cover');?>" alt="<?php echo $post['slide_title'];?>" class="responsive delay"/>
+        <img src="<?php echo maria_get_thumb_by_id($post['slide_image'],'slider-cover');?>" alt="<?php echo $post['slide_title'];?>" class="responsive delay"/>
         <div class="slider-caption post-item-caption">
             <div class="panel">
                 <h4 class="post-item-description"><?php echo $post['slide_title'];?></h4>

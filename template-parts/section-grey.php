@@ -16,7 +16,7 @@ $expertises = Maria_Kirki::get_option( 'expertise_repeater');
 ?>
 <section class="row main-row clearfix grey-section">
 			<section class="columns main-column grey-section-intro">
-				<h5 class="section-expertise-title"><?php iam_highlight_first_word($expertise_section_title); ?></h5>
+				<h5 class="section-expertise-title"><?php maria_highlight_first_word($expertise_section_title); ?></h5>
 				<p class="section-expertise-description"><?php echo $expertise_section_description; ?></p>
 			</section><!--section description/-->
 			<?php if(is_array($expertises)): //make sure array is not empty ?>

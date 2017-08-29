@@ -16,7 +16,7 @@ $solutions = Maria_Kirki::get_option( 'solution_repeater');
 ?>
 <section class="row main-row clearfix white-section">
 			<section class="columns main-column white-section-intro">
-				<h5 class="section-solution-title"><?php iam_highlight_first_word($solution_section_title); ?></h5>
+				<h5 class="section-solution-title"><?php maria_highlight_first_word($solution_section_title); ?></h5>
 				<p class="section-solution-description"><?php echo $solution_section_description; ?></p>
 			</section><!--section description/-->
 			<?php if(is_array($solutions)): //make sure array is not empty ?>

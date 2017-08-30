@@ -1,0 +1,46 @@
+$primary-color: #1b9bff;
+$secondary-color: $primary-color;
+$third-color: #004f7e;
+$menu-link-color: #6f6f6e;
+$dark-color: #020d16;
+$light-color: #FFF;
+$link-color: $primary-color;
+
+@import 'base';
+
+.slider-wrapper .slider-caption .panel .post-item-title a{
+    color:$primary-color;
+}
+
+.nav-wrapper nav.top-bar li.current-menu-item a:hover,
+.nav-wrapper nav.top-bar li.current-menu-ancestor a:hover,
+.nav-wrapper nav.top-bar li.current-menu-parent a:hover
+{
+    color: $light-color;
+}
+.slider-wrapper .slider-caption .label.category{ 
+    background-color:$primary-color;
+    color: $light-color;
+}
+
+aside .widget-title {
+    background: $primary-color;
+}
+.main-column .call-to-action .button.small {
+    background:$primary-color;
+}
+.main-column .call-to-action .button.small:hover {
+    background:$primary-color;
+}
+.button:hover {
+    background:$dark-color;
+}
+
+
+.slider-wrapper .slider-caption .panel .post-item-title a{
+    color: $light-color;
+}
+
+.slider-wrapper .slider-caption .panel .post-item-title a:hover {
+    color: $primary-color;
+}

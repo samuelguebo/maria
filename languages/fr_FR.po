@@ -15,16 +15,16 @@ msgstr ""
 
 # wpml-name: 25d8df6e580905091a0d5ef5b9e05bf0
 #: <div class="reply"><?php comment_reply_link( array_merge( $args, array(
-#: 'reply_text' => __( 'Reply', 'iam' ),
+#: 'reply_text' => __( 'Reply', 'maria' ),
 msgid "Reply"
 msgstr "Répondre"
 
 # wpml-name: f8b899362e65018d4a03d9c280ec1aa8
 #: '<p class="must-log-in">' . sprintf( __( 'You must be <a href="%s">logged
-#: in</a> to post a comment.', 'iam' ), wp_login_url( apply_filters(
+#: in</a> to post a comment.', 'maria' ), wp_login_url( apply_filters(
 #: 'the_permalink', get_permalink( ) '</p>', 'comment_notes_before' =>
 #: class="comment-notes">' 'Your email address will not published. Fields
-#: marked <span class="required">*</span> are required.' , 'iam') '</p>'
+#: marked <span class="required">*</span> are required.' , 'maria') '</p>'
 msgid ""
 "Your email address will not be published. Fields marked <span class="
 "\"required\">*</span> are required."
@@ -35,20 +35,20 @@ msgstr ""
 # wpml-name: 82c7d3fe1c980c2e8fc58f5df017c90f
 #: '<p class="logged-in-as">' . sprintf( __( 'Logged in as <a
 #: href="%1$s">%2$s</a>. href="%3$s" title="Log out of this account">Log
-#: out?</a>', 'iam'), admin_url( 'profile.php' ), $user_identity,
+#: out?</a>', 'maria'), admin_url( 'profile.php' ), $user_identity,
 #: wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) '</p>',
 #: 'must_log_in' => class="must-log-in">' 'You must be href="%s">logged in</a>
-#: to post a comment.', 'iam' wp_login_url(
+#: to post a comment.', 'maria' wp_login_url(
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr ""
 "Vous devez être <a href=\"%s\">connecté(e) </a> pour publier un commentaire."
 
 # wpml-name: 0ad059285c0880e9ea0f0cb43102d871
 #: 'comment_field' => '<p class="comment-form-comment"><label for="comment">'
-#: . __( 'Comment', 'iam' ) '</label><br /><textarea id="comment"
+#: . __( 'Comment', 'maria' ) '</label><br /><textarea id="comment"
 #: name="comment" aria-required="true"></textarea></p>', 'logged_in_as'
 #: class="logged-in-as">' sprintf( 'Logged in as <a href="%1$s">%2$s</a>.
-#: href="%3$s" title="Log out of this account">Log out?</a>', 'iam'),
+#: href="%3$s" title="Log out of this account">Log out?</a>', 'maria'),
 #: admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters(
 #: 'the_permalink', get_permalink( '</p>',
 msgid ""
@@ -59,7 +59,7 @@ msgstr ""
 "\"Se déconnecter\">Se déconnecter?</a>"
 
 # wpml-name: 0be8406951cdfda82f00f79328cf4efc
-#: 'label_submit'=>__( 'Send', 'iam' ), redefine your own textarea (the
+#: 'label_submit'=>__( 'Send', 'maria' ), redefine your own textarea (the
 #: comment body) 'comment_field' => '<p class="comment-form-comment"><label
 #: for="comment">' . __( 'Comment', ) '</label><br /><textarea id="comment"
 #: name="comment" aria-required="true"></textarea></p>',
@@ -68,138 +68,138 @@ msgstr "Commentaire"
 
 # wpml-name: 94966d90747b97d1f0f206c98a8b1ac3
 #: 'comment_notes_after' => '', change the title of send button
-#: 'label_submit'=>__( 'Send', 'iam' ),
+#: 'label_submit'=>__( 'Send', 'maria' ),
 msgid "Send"
 msgstr "Envoyer"
 
 # wpml-name: 4d475654cf26db0264212bc50e9cf6d2
 #: '" size="30" /></p>', ), 'title_reply'=>'<h5 id="reply-title"
-#: class="comment-reply-title">'.__( 'Leave a comment', 'iam' ).'</h5>',
+#: class="comment-reply-title">'.__( 'Leave a comment', 'maria' ).'</h5>',
 msgid "Leave a comment"
 msgstr "Laisser un commentaire"
 
 # wpml-name: 15bbb9d0bbf25e8d2978de1168c749dc
 #: '" size="30"' . $aria_req ' /></p>', 'url' => '<p
-#: class="comment-form-url"><label for="url">' __( 'Website', 'iam' )
+#: class="comment-form-url"><label for="url">' __( 'Website', 'maria' )
 #: '</label>'
 msgid "Website"
 msgstr "Website"
 
 # wpml-name: ce8ae9da5b7cd6c3df2929543a9af92d
 #: 'email' => '<p class="comment-form-email"><label for="email">' . __(
-#: 'Email', 'iam' ) '</label> '
+#: 'Email', 'maria' ) '</label> '
 msgid "Email"
 msgstr "E-mail"
 
 # wpml-name: 49ee3087348e8d44e1feda1917443987
 #: 'website' =>'', 'author' => '<p class="comment-form-author"><label
-#: for="author">' .__( 'Name', 'iam' ) . '</label> '
+#: for="author">' .__( 'Name', 'maria' ) . '</label> '
 msgid "Name"
 msgstr "Nom"
 
 # wpml-name: b1c94ca2fbc3e78fc30069c8d0f01680
-#: 'menu_name' => __( 'Events', 'iam' ), 'parent_item_colon' 'Parent',
+#: 'menu_name' => __( 'Events', 'maria' ), 'parent_item_colon' 'Parent',
 #: 'all_items' 'All',
 msgid "All"
 msgstr "Tout"
 
 # wpml-name: 13348442cc6a27032d2b4aa28b75a5d3
-#: 'edit_item' => __( 'Edit', 'iam' ), 'update_item' 'Update',
+#: 'edit_item' => __( 'Edit', 'maria' ), 'update_item' 'Update',
 #: 'search_items' 'Search',
 msgid "Search"
 msgstr "Recherche"
 
 # wpml-name: 06933067aafd48425d67bcb01bba5cb6
-#: 'add_new' => __( 'Add', 'iam' ), 'edit_item' 'Edit', 'update_item'
+#: 'add_new' => __( 'Add', 'maria' ), 'edit_item' 'Edit', 'update_item'
 #: 'Update',
 msgid "Update"
 msgstr "Mettre à jour"
 
 # wpml-name: 7dce122004969d56ae2e0245cb754d35
-#: 'add_new_item' => __( 'Add New', 'iam' ), 'add_new' 'Add', 'edit_item'
+#: 'add_new_item' => __( 'Add New', 'maria' ), 'add_new' 'Add', 'edit_item'
 #: 'Edit',
 msgid "Edit"
 msgstr "Modifier"
 
 # wpml-name: ec211f7c20af43e742bf2570c3cb84f9
-#: 'view_item' => __( 'View', 'iam' ), 'add_new_item' 'Add New',
+#: 'view_item' => __( 'View', 'maria' ), 'add_new_item' 'Add New',
 #: 'add_new' 'Add',
 msgid "Add"
 msgstr "Ajouter"
 
 # wpml-name: de9ced9bf5e9829de4a93ad8c9d7a170
-#: 'all_items' => __( 'All', 'iam' ), 'view_item' 'View', 'add_new_item'
+#: 'all_items' => __( 'All', 'maria' ), 'view_item' 'View', 'add_new_item'
 #: 'Add New',
 msgid "Add New"
 msgstr "Créer"
 
 # wpml-name: 4351cfebe4b61d8aa5efa1d020710005
-#: 'parent_item_colon' => __( 'Parent', 'iam' ), 'all_items' 'All',
+#: 'parent_item_colon' => __( 'Parent', 'maria' ), 'all_items' 'All',
 #: 'view_item' 'View',
 msgid "View"
 msgstr "Afficher"
 
 # wpml-name: 30269022e9d8f51beaabb52e5d0de2b7
-#: 'singular_name' => _x( 'Event', 'iam' ), 'menu_name' __( 'Events',
+#: 'singular_name' => _x( 'Event', 'maria' ), 'menu_name' __( 'Events',
 #: 'parent_item_colon' 'Parent',
 msgid "Parent"
 msgstr "Parent"
 
 # wpml-name: 8913b656c6e9f6b62349a6b95c255c23
 #: Set UI labels for Custom Post Type $labels = array( 'name' => _x(
-#: 'Programme', 'iam'),
+#: 'Programme', 'maria'),
 msgctxt "Programme"
 msgid "Programme"
 msgstr "Programme"
 
 # wpml-name: a4ecfc70574394990cf17bd83df499f7
 #: Set UI labels for Custom Post Type $labels = array( 'name' => _x( 'Event',
-#: 'iam'),
+#: 'maria'),
 msgctxt "Event"
 msgid "Event"
 msgstr "Evènement"
 
 # wpml-name: d9a856dc623cfc8a5dd9e9fefa755bc4
-#: $args = array( 'label' => __( 'Programmes', 'iam' ), 'description'
+#: $args = array( 'label' => __( 'Programmes', 'maria' ), 'description'
 #: 'List of programmes',
 msgid "List of programmes"
 msgstr "Liste of programmes"
 
 # wpml-name: 2687d5a9da1ebbf24414547072c388ea
-#: $args = array( 'label' => __( 'Events', 'iam' ), 'description' 'Past
+#: $args = array( 'label' => __( 'Events', 'maria' ), 'description' 'Past
 #: and future events',
 msgid "Past and future events"
 msgstr "Evènements passés et futurs"
 
 # wpml-name: f431e17ea0081a3c9e51fc240221ee21
 #: function maria_register_nav_menus() { register_nav_menu( 'social', __(
-#: 'Social', 'iam' ) );
+#: 'Social', 'maria' ) );
 msgid "Social"
 msgstr "Social"
 
 # wpml-name: be53a0541a6d36f6ecb879fa2c584b08
 #: foreach( $columns as $key => $title ) { if ( == 'title' // Put the
 #: Thumbnail column before Title $new['featured_thumb'] = __(
-#: 'Image','iam');
+#: 'Image','maria');
 msgid "Image"
 msgstr "Image"
 
 # wpml-name: de9fbb31a77fd14bb6228f52d6e1907c
 #: <div class="medium-4 large-3 columns"> <?php echo get_avatar(
 #: get_the_author_meta('ID'), 120 ); ?> </div> class="medium-8 large-9
-#: <h3><?php _e('About the author','iam'); ?></h3>
+#: <h3><?php _e('About the author','maria'); ?></h3>
 msgid "About the author"
 msgstr "A propos de l'auteur"
 
 # wpml-name: d57ac45256849d9b13e2422d91580fb9
 #: <?php $tags = get_the_tags(get_the_ID()); if ( ): ?> <span><?php
-#: _e('tags','iam');?></span>
+#: _e('tags','maria');?></span>
 msgid "tags"
 msgstr "mots-clés"
 
 # wpml-name: b0b5ccb4a195a07fd3eed14affb8695f
 #: <?php $categories = get_the_category(); if ( ): ?> <span><?php
-#: _e('categories','iam');?></span>
+#: _e('categories','maria');?></span>
 msgid "categories"
 msgstr "catégories"
 
@@ -207,14 +207,14 @@ msgstr "catégories"
 #: <h6 class="post-item-title"><a href="<?php the_permalink();?>"><?php
 #: the_title();?></a></h6> <p><?php the_excerpt();?></p> <a
 #: the_permalink();?>" class="small button post-item-buttom"><?php _e('Read
-#: more','iam')?></a>
+#: more','maria')?></a>
 msgid "Read more"
 msgstr "Lire la suite"
 
 # wpml-name: 4783397292b42b601dee3397f9ca05f9
 #: <div class="post-item-caption"> class="post-list columns"> <h4><?php
 #: esc_html_e( 'It looks like nothing was found at this location. Maybe try
-#: one of the links below or a search?', 'iam' ); ?></h4>
+#: one of the links below or a search?', 'maria' ); ?></h4>
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
@@ -225,7 +225,7 @@ msgstr ""
 # wpml-name: 29042a31d997c996f52c1d2fd4ad813d
 #: <div class="row collapse"> class="small-10 columns"> <input type="search"
 #: class="search-field" placeholder="<?php echo esc_attr_x( 'Search &hellip;',
-#: 'placeholder', 'iam' ); ?>" value="<?php get_search_query(); name="s"
+#: 'placeholder', 'maria' ); ?>" value="<?php get_search_query(); name="s"
 #: />
 msgctxt "placeholder"
 msgid "Search &hellip;"
@@ -234,87 +234,87 @@ msgstr "Chercher …"
 # wpml-name: 1aafb073a1a78e52e044177f67da6615
 #: <p class="call-to-action"> <a href="<?php
 #: the_permalink(maria_get_events_page());?>" class="small button
-#: radius"><?php _e('All events','iam')?></a>
+#: radius"><?php _e('All events','maria')?></a>
 msgid "All events"
 msgstr "Tous les évènements"
 
 # wpml-name: 589c486dfe514e75072c9330a4f514f6
 #: </div> <p class="call-to-action clearfix"> <a href="<?php
 #: the_permalink(maria_get_programmes_page());?>" class="small button
-#: post-item-buttom radius"><?php _e('All programmes','iam')?></a>
+#: post-item-buttom radius"><?php _e('All programmes','maria')?></a>
 msgid "All programmes"
 msgstr "Tous les programmes"
 
 # wpml-name: 912f42b76bbd83121cd8298800d56b44
-#: 'search_items' => __( 'Search', 'iam' ), 'not_found' 'Not Found',
+#: 'search_items' => __( 'Search', 'maria' ), 'not_found' 'Not Found',
 #: 'not_found_in_trash' found in Trash',
 msgid "Not found in Trash"
 msgstr "Introuvable dans la corbeille"
 
 # wpml-name: 9d1ead73e678fa2f51a70a933b0bf017
-#: 'update_item' => __( 'Update', 'iam' ), 'search_items' 'Search',
+#: 'update_item' => __( 'Update', 'maria' ), 'search_items' 'Search',
 #: 'not_found' 'Not Found',
 msgid "Not Found"
 msgstr "Introuvable"
 
 # wpml-name: bfd56f3cafc12f6317ae3351ad712eff
-#: } elseif ( is_404() ) { echo $before .__('Error 404','iam') . $after;
+#: } elseif ( is_404() ) { echo $before .__('Error 404','maria') . $after;
 msgid "Error 404"
 msgstr "Erreur 404"
 
 # wpml-name: 111c1a6419c01b8dcb3ee6ea8f3a291b
 #: global $author; $userdata = get_userdata($author); echo $before .
-#: __('Articles posted by ','iam') $userdata->display_name $after;
+#: __('Articles posted by ','maria') $userdata->display_name $after;
 msgid "Articles posted by "
 msgstr "Articles publiés par"
 
 # wpml-name: 8cf04a9734132302f96da8e113e80ce5
 #: $showOnHome = 0; // 1 - show breadcrumbs on the homepage, 0 don't
-#: $delimiter '/'; delimiter between crumbs $home __('Home','iam'); text
+#: $delimiter '/'; delimiter between crumbs $home __('Home','maria'); text
 #: for 'Home' link
 msgid "Home"
 msgstr "Accueil"
 
 # wpml-name: 50bba4e90c993be783bd4994d69c7db5
 #: 'programmes_label', array( 'label' => __('Label for the Programmes section
-#: on homepage', 'iam'),
+#: on homepage', 'maria'),
 msgid "Label for the Programmes section on homepage"
 msgstr "Titre pour la section Programmes de la page d'accueil"
 
 # wpml-name: 7f51c468908c31ed6c7c10472c401945
 #: 'programmes_page', array( 'label' => __('Set what page must be used for
-#: listing the programmes.', 'iam'),
+#: listing the programmes.', 'maria'),
 msgid "Set what page must be used for listing the programmes."
 msgstr "Choisissez la page qui affichera la liste des évènements."
 
 # wpml-name: b9ad95edffd6e8e9549337e28fba4435
 #: Programmes label $wp_customize->add_setting('programmes_label', array(
-#: 'default' => __('Programmes', 'iam'),
+#: 'default' => __('Programmes', 'maria'),
 msgid "Programmes"
 msgstr "Programmes"
 
 # wpml-name: 98ded0c0ffd55de9af47c3a1f099915b
 #: 'events_label', array( 'label' => __('Label for the Events section on
-#: homepage', 'iam'),
+#: homepage', 'maria'),
 msgid "Label for the Events section on homepage"
 msgstr "Titre pour la section Evènements de la page d'accueil"
 
 # wpml-name: d5b179dad055267ac6eea7e783619c16
 #: 'events_page', array( 'label' => __('Set what page must be used for listing
-#: the events.', 'iam'),
+#: the events.', 'maria'),
 msgid "Set what page must be used for listing the events."
 msgstr "Choisissez la page qui affichera la liste des évènements."
 
 # wpml-name: 87f9f735a1d36793ceaecd4e47124b63
 #: Create sections for Events settings
 #: $wp_customize->add_section('maria_events_section', array( 'title' =>
-#: __('Events', 'iam'),
+#: __('Events', 'maria'),
 msgid "Events"
 msgstr "Evènements"
 
 # wpml-name: 45e035baf33a8e403766a606457f8b10
 #: new Palette_Custom_Control( $wp_customize, 'maria_theme_color', array(
-#: 'label' => __( 'Theme color', 'iam' ),
+#: 'label' => __( 'Theme color', 'maria' ),
 msgid "Theme color"
 msgstr "Couleur du thème"
 
@@ -323,29 +323,29 @@ msgid "Footer"
 msgstr "Footer"
 
 # wpml-name: 5234c7d4d29fadd5614763897c8332c5
-#: 'name' => esc_html__( 'Sidebar', 'iam' ), 'id' 'sidebar-1',
+#: 'name' => esc_html__( 'Sidebar', 'maria' ), 'id' 'sidebar-1',
 #: 'description' 'Add widgets here.',
 msgid "Add widgets here."
 msgstr "Ajouter les widgets ici."
 
 # wpml-name: 219ff7705d67d0c798779951dcf82e95
 #: function maria_widgets_init() { register_sidebar( array( 'name' =>
-#: esc_html__( 'Sidebar', 'iam' ),
+#: esc_html__( 'Sidebar', 'maria' ),
 msgid "Sidebar"
 msgstr "Bare latérale"
 
 # wpml-name: 074de7e7c226d5c60f8af14c20725352
 #: This theme uses wp_nav_menu() in one location. register_nav_menus( array(
-#: 'primary' => esc_html__( 'Primary', 'iam' ),
+#: 'primary' => esc_html__( 'Primary', 'maria' ),
 msgid "Primary"
 msgstr "Principal"
 
 # wpml-name: d6c4a6ac6a732b8db88d1cfe32b5b44e
 #: <div class="row"> class="medium-6 large-6 columns"> <p
-#: class="copyright"><?php _e('Developed by ','iam')?>Samuel Guebo.<br><a
-#: href="<?php echo esc_url( __( 'https://wordpress.org/', 'iam' ) );
+#: class="copyright"><?php _e('Developed by ','maria')?>Samuel Guebo.<br><a
+#: href="<?php echo esc_url( __( 'https://wordpress.org/', 'maria' ) );
 #: ?>"><?php printf( esc_html__( 'Proudly powered %s', ), 'WordPress' ?></a>
-#: <?php _e('and available on','iam')?> <a
+#: <?php _e('and available on','maria')?> <a
 #: href="https://github.com/samuelguebo/iam"><i class="fa fa-github"></i>
 #: Github</a>
 msgid "and available on"
@@ -353,10 +353,10 @@ msgstr "et disponible sur "
 
 # wpml-name: e2b8f1326fea2c94cdc3bccda878a9d6
 #: <div class="row"> class="medium-6 large-6 columns"> <p
-#: class="copyright"><?php _e('Developed by ','iam')?>Samuel Guebo.<br><a
-#: href="<?php echo esc_url( __( 'https://wordpress.org/', 'iam' ) );
+#: class="copyright"><?php _e('Developed by ','maria')?>Samuel Guebo.<br><a
+#: href="<?php echo esc_url( __( 'https://wordpress.org/', 'maria' ) );
 #: ?>"><?php printf( esc_html__( 'Proudly powered %s', ), 'WordPress' ?></a>
-#: <?php _e('and available on','iam')?> <a
+#: <?php _e('and available on','maria')?> <a
 #: href="https://github.com/samuelguebo/iam"><i class="fa fa-github"></i>
 #: Github</a>
 msgid "Developed by "
@@ -364,10 +364,10 @@ msgstr "Développé par "
 
 # wpml-name: a657bb99c4349a9510fe2a5585e30a15
 #: <div class="row"> class="medium-6 large-6 columns"> <p
-#: class="copyright"><?php _e('Developed by ','iam')?>Samuel Guebo.<br><a
-#: href="<?php echo esc_url( __( 'https://wordpress.org/', 'iam' ) );
+#: class="copyright"><?php _e('Developed by ','maria')?>Samuel Guebo.<br><a
+#: href="<?php echo esc_url( __( 'https://wordpress.org/', 'maria' ) );
 #: ?>"><?php printf( esc_html__( 'Proudly powered %s', ), 'WordPress' ?></a>
-#: <?php _e('and available on','iam')?> <a
+#: <?php _e('and available on','maria')?> <a
 #: href="https://github.com/samuelguebo/iam"><i class="fa fa-github"></i>
 #: Github</a>
 msgid "Proudly powered by %s"
@@ -375,10 +375,10 @@ msgstr "Fièrement propulsé par %s"
 
 # wpml-name: 71a7765c3d553e44aaa308159b5a2ba6
 #: <div class="row"> class="medium-6 large-6 columns"> <p
-#: class="copyright"><?php _e('Developed by ','iam')?>Samuel Guebo.<br><a
-#: href="<?php echo esc_url( __( 'https://wordpress.org/', 'iam' ) );
+#: class="copyright"><?php _e('Developed by ','maria')?>Samuel Guebo.<br><a
+#: href="<?php echo esc_url( __( 'https://wordpress.org/', 'maria' ) );
 #: ?>"><?php printf( esc_html__( 'Proudly powered %s', ), 'WordPress' ?></a>
-#: <?php _e('and available on','iam')?> <a
+#: <?php _e('and available on','maria')?> <a
 #: href="https://github.com/samuelguebo/iam"><i class="fa fa-github"></i>
 #: Github</a>
 msgid "https://wordpress.org/"
@@ -397,7 +397,7 @@ msgstr "Un commentaire sur “%2$s”"
 # wpml-name: 496c558a09bbbcfc869aa80b2f037261
 #: if ( ! comments_open() && get_comments_number() post_type_supports(
 #: get_post_type(), 'comments' ) : ?> <p class="no-comments"><?php esc_html_e(
-#: 'Comments are closed.', 'iam' ); ?></p>
+#: 'Comments are closed.', 'maria' ); ?></p>
 msgid "Comments are closed."
 msgstr "Les commentaires sont fermés."
 
@@ -406,31 +406,31 @@ msgstr "Les commentaires sont fermés."
 #: // Are there comments to navigate through? ?> <nav id="comment-nav-below"
 #: class="navigation comment-navigation" role="navigation"> <h4
 #: class="screen-reader-text"><?php esc_html_e( 'Comment navigation',
-#: 'iam' ); ?></h4>
+#: 'maria' ); ?></h4>
 msgid "Comment navigation"
 msgstr "Navigation"
 
 # wpml-name: 36eb7633eb95e849cb42a170ea48e2dc
 #: <div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older
-#: Comments', 'iam' ) ); ?></div> class="nav-next"><?php
+#: Comments', 'maria' ) ); ?></div> class="nav-next"><?php
 #: next_comments_link( 'Newer
 msgid "Newer Comments"
 msgstr "Commentaires récents"
 
 # wpml-name: 18ee891b4e245d0cea15e36769318ccd
 #: <div class="nav-links"> class="nav-previous"><?php previous_comments_link(
-#: esc_html__( 'Older Comments', 'iam' ) ); ?></div>
+#: esc_html__( 'Older Comments', 'maria' ) ); ?></div>
 msgid "Older Comments"
 msgstr "Anciens commentaires"
 
 # wpml-name: d0fbfc097c4fdbc0bc02e10243bd60fe
-#: 'mid_size' => 2, 'prev_text' __( '&laquo;', 'iam' ), 'next_text'
+#: 'mid_size' => 2, 'prev_text' __( '&laquo;', 'maria' ), 'next_text'
 #: '&raquo;',
 msgid "&raquo;"
 msgstr "»"
 
 # wpml-name: a3332b79b0716cb7e3e4ec79a8b01048
 #: <?php the_posts_pagination( array( 'mid_size' => 2, 'prev_text' __(
-#: '&laquo;', 'iam' ),
+#: '&laquo;', 'maria' ),
 msgid "&laquo;"
 msgstr "«"

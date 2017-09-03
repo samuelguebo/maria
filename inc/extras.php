@@ -226,7 +226,7 @@ if(!function_exists('maria_custom_breadcrumbs')) {
  
   $showOnHome = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show
   $delimiter = '/'; // delimiter between crumbs
-  $home = __('Home','iam'); // text for the 'Home' link
+  $home = __('Home','maria'); // text for the 'Home' link
   $showCurrent = 1; // 1 - show current post/page title in breadcrumbs, 0 - don't show
   $before = '<span class="active">'; // tag before the current crumb
   $after = '</span>'; // tag after the current crumb
@@ -315,10 +315,10 @@ if(!function_exists('maria_custom_breadcrumbs')) {
 	} elseif ( is_author() ) {
 	   global $author;
 	  $userdata = get_userdata($author);
-	  echo $before . __('Articles posted by ','iam') . $userdata->display_name . $after;
+	  echo $before . __('Articles posted by ','maria') . $userdata->display_name . $after;
  
 	} elseif ( is_404() ) {
-	  echo $before .__('Error 404','iam')  . $after;
+	  echo $before .__('Error 404','maria')  . $after;
 	}
  
   }
@@ -421,7 +421,7 @@ if(!function_exists('maria_custom_breadcrumbs')) {
 
 		foreach( $columns as $key => $title ) {
 			if ( $key == 'title' ) // Put the Thumbnail column before the Title column
-				$new['featured_thumb'] = __( 'Image','iam');
+				$new['featured_thumb'] = __( 'Image','maria');
 			$new[$key] = $title;
 		}
 		return $new;
@@ -490,7 +490,7 @@ if(!function_exists('maria_custom_breadcrumbs')) {
 					</span>
 					<div class="reply"><?php 
 					comment_reply_link( array_merge( $args, array( 
-					'reply_text' => __( 'Reply', 'iam' ),
+					'reply_text' => __( 'Reply', 'maria' ),
 					'depth' => $depth,
 					'max_depth' => $args['max_depth'] 
 					) ) ); ?>

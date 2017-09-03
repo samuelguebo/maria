@@ -24,9 +24,9 @@ function maria_setup() {
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 * If you're building a theme based on Maria, use a find and replace
-	 * to change 'iam' to the name of your theme in all the template files.
+	 * to change 'maria' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'iam', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'maria', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -51,7 +51,7 @@ function maria_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'iam' ),
+		'primary' => esc_html__( 'Primary', 'maria' ),
 	) );
 
 	/*
@@ -91,9 +91,9 @@ require get_template_directory() . '/inc/kirki-fallback.php';
  */
 function maria_widgets_init() {
     register_sidebar( array(
-		'name'          => esc_html__( 'Home sidebar', 'iam' ),
+		'name'          => esc_html__( 'Home sidebar', 'maria' ),
 		'id'            => 'sidebar-home',
-		'description'   => esc_html__( 'Add widgets here.', 'iam' ),
+		'description'   => esc_html__( 'Add widgets here.', 'maria' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s widget">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h5 class="widget-title">',
@@ -101,9 +101,9 @@ function maria_widgets_init() {
 	) );
     
     register_sidebar( array(
-		'name'          => esc_html__( 'Single sidebar', 'iam' ),
+		'name'          => esc_html__( 'Single sidebar', 'maria' ),
 		'id'            => 'sidebar-main',
-		'description'   => esc_html__( 'Add widgets here.', 'iam' ),
+		'description'   => esc_html__( 'Add widgets here.', 'maria' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s widget">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h5 class="widget-title">',
@@ -112,9 +112,9 @@ function maria_widgets_init() {
     
     
     register_sidebar( array(
-		'name'          => esc_html__( 'Banner top', 'iam' ),
+		'name'          => esc_html__( 'Banner top', 'maria' ),
 		'id'            => 'banner-top',
-		'description'   => esc_html__( 'Add the top banner ici.', 'iam' ),
+		'description'   => esc_html__( 'Add the top banner ici.', 'maria' ),
 		'before_widget' => '',
 		'after_widget'  => '',
 		'before_title'  => '<h5 class="widget-title">',
@@ -122,9 +122,9 @@ function maria_widgets_init() {
 	) );
     
     register_sidebar( array(
-		'name'          => esc_html__( 'Footer', 'iam' ),
+		'name'          => esc_html__( 'Footer', 'maria' ),
 		'id'            => 'footer-1',
-		'description'   => esc_html__( 'Add widgets here.', 'iam' ),
+		'description'   => esc_html__( 'Add widgets here.', 'maria' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s large-4 small-up-4 columns widget left">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h5 class="widget-title">',

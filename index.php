@@ -64,8 +64,8 @@ else:
 <div class="pagination-wrapper columns large-4 large-centered" >
     <?php the_posts_pagination( array(
         'mid_size' => 2,
-        'prev_text' => __( '&laquo;', 'iam' ),
-        'next_text' => __( '&raquo;', 'iam' ),
+        'prev_text' => __( '&laquo;', 'maria' ),
+        'next_text' => __( '&raquo;', 'maria' ),
         'screen_reader_text' => ' '
     ) ); ?>
 </div>

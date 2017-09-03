@@ -19,9 +19,9 @@ Template part for displaying articles in loop
             <span class="post-item-date wrap"><?php echo get_the_date('d/m/Y')?></span>
             <h6 class="post-item-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h6>
             <p><?php the_excerpt();?></p> 
-            <a href="<?php the_permalink();?>" class="small button post-item-buttom"><?php _e('Read more','iam')?></a> 
+            <a href="<?php the_permalink();?>" class="small button post-item-buttom"><?php _e('Read more','maria')?></a> 
             <?php if ( get_edit_post_link() ) : ?>
-                <a href="<?php echo get_edit_post_link();?>" class="small button alert"><i class="fa fa-edit"></i> <?php _e('Edit','iam')?></a> 
+                <a href="<?php echo get_edit_post_link();?>" class="small button alert"><i class="fa fa-edit"></i> <?php _e('Edit','maria')?></a> 
                     
             <?php endif; ?>
         </div>

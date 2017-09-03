@@ -16,7 +16,7 @@ Template part for displaying 404 error message
     <br>
     <div class="post-item-caption">
         <div class="post-list columns">
-            <h4><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'iam' ); ?></h4>
+            <h4><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'maria' ); ?></h4>
 
         </div>
 

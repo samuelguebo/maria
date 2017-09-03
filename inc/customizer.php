@@ -29,22 +29,22 @@ function maria_customize_register( $wp_customize ) {
 	
 	
 	// kirki configs
-	Maria_Kirki::add_config( 'iam', array(
+	Maria_Kirki::add_config( 'maria', array(
 		'capability'    => 'edit_theme_options',
 		'option_type'   => 'theme_mod',
 	) );
 	
 	// Create a repeater section for slider settings
 	Maria_Kirki::add_section('slider_section', array(
-		'title' => __('Sliders', 'iam'),
+		'title' => __('Sliders', 'maria'),
 		'priority' => 10,
 	));
 
-	Maria_Kirki::add_field( 'iam', array(
+	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'repeater',
 			'settings'      => 'slider_repeater',
-			'label'         => __( 'Create a slide', 'iam' ),
-			'description'   => __( 'Set up the slide, define title, description, page, etc', 'iam' ),
+			'label'         => __( 'Create a slide', 'maria' ),
+			'description'   => __( 'Set up the slide, define title, description, page, etc', 'maria' ),
 			'section'       => 'slider_section',
 			'default'       => array(),
 			'priority'      => 10,
@@ -57,40 +57,40 @@ function maria_customize_register( $wp_customize ) {
 				// field: slide title
 				'slide_title' => array(
 					'type'              => 'text',
-					//'label'       => esc_attr__( 'Display text for section', 'iam' ),
-					'description'       => esc_attr__( 'Small upper text', 'iam' ),
+					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+					'description'       => esc_attr__( 'Small upper text', 'maria' ),
 					'default'           => 'Institut Africain des medias',
 					'sanitize_callback' => 'sanitize_text_field'
 				),
 				// field: slide description
 				'slide_description' => array(
 					'type'              => 'text',
-					//'label'       => esc_attr__( 'Display text for section', 'iam' ),
-					'description'       => esc_attr__( 'Big lower text', 'iam' ),
+					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+					'description'       => esc_attr__( 'Big lower text', 'maria' ),
 					'default'           => 'Enquêter, informer, former',
 					'sanitize_callback'	=> 'sanitize_text_field'
 				),
 				// field: page
 				'slide_page' => array(
 						'type'        => 'dropdown-pages',
-						//'label'       => esc_attr__( 'Display text for section', 'iam' ),
-						'description' => esc_attr__( 'Page of the slide', 'iam' ),
+						//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+						'description' => esc_attr__( 'Page of the slide', 'maria' ),
 						'default'     => 0,
 						'sanitize_callback' => 'absint'
 				),
 				// field: button text
 				'slide_button_text' => array(
 						'type'        => 'text',
-						//'label'       => esc_attr__( 'Display text for section', 'iam' ),
-						'description' => esc_attr__( 'Text for the buton', 'iam' ),
-						'default'     => esc_attr__( 'Read more', 'iam' ),
+						//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+						'description' => esc_attr__( 'Text for the buton', 'maria' ),
+						'default'     => esc_attr__( 'Read more', 'maria' ),
 						'sanitize_callback' => 'sanitize_text_field'
 				),
 				// field: button text
 				'slide_image' => array(
 						'type'        => 'image',
-						//'label'       => esc_attr__( 'Display text for section', 'iam' ),
-						'description' => esc_attr__( 'Image of the slide', 'iam' ),
+						//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+						'description' => esc_attr__( 'Image of the slide', 'maria' ),
 				)
 			)
 		)
@@ -98,40 +98,40 @@ function maria_customize_register( $wp_customize ) {
 		
 	// Create a new section for Expertises/ Grey
 	Maria_Kirki::add_section('expertise_section', array(
-		'title' => __('Expertises', 'iam'),
+		'title' => __('Expertises', 'maria'),
 		'priority' => 10,
 	));
 
 	// Create field for expertise sections: title 
-	Maria_Kirki::add_field( 'iam', array(
+	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'text',
 			'settings'      => 'expertise_section_title',
-			'label'         => __( 'Head text for expertise section', 'iam' ),
-			//'description'   => __( 'Add Head text for expertise section', 'iam' ),
-			'default'       => __( 'Our expertise', 'iam' ),
+			'label'         => __( 'Head text for expertise section', 'maria' ),
+			//'description'   => __( 'Add Head text for expertise section', 'maria' ),
+			'default'       => __( 'Our expertise', 'maria' ),
 			'section'       => 'expertise_section',
 			'priority'      => 10,
 			'sanitize_callback' => 'sanitize_text_field'
 			)
 	);
 	// Create field for expertise sections: description
-	Maria_Kirki::add_field( 'iam', array(
+	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'textarea',
 			'settings'      => 'expertise_section_description',
-			'label'         => __( 'Head description for expertise section', 'iam' ),
-			//'description'   => __( 'Add Head description for expertise section', 'iam' ),
-			'default'         => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'iam' ),
+			'label'         => __( 'Head description for expertise section', 'maria' ),
+			//'description'   => __( 'Add Head description for expertise section', 'maria' ),
+			'default'         => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'maria' ),
 			'section'       => 'expertise_section',
 			'priority'      => 10,
 			'sanitize_callback' => 'sanitize_text_field'
 			)
 	);
 	// Create a repeater for expertises
-	Maria_Kirki::add_field( 'iam', array(
+	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'repeater',
 			'settings'      => 'expertise_repeater',
-			'label'         => __( 'Create a expertise', 'iam' ),
-			'description'   => __( 'Set up the slide, define title, description, page, etc', 'iam' ),
+			'label'         => __( 'Create a expertise', 'maria' ),
+			'description'   => __( 'Set up the slide, define title, description, page, etc', 'maria' ),
 			'section'       => 'expertise_section',
 			'default'       => array(),
 			'priority'      => 10,
@@ -144,31 +144,31 @@ function maria_customize_register( $wp_customize ) {
 				// field: expertise_icon
 				'expertise_icon'	=> array(
 					'type'              => 'text',
-					//'label'       => esc_attr__( 'Display text for section', 'iam' ),
-					'description'       => esc_attr__( 'Expertise icon class', 'iam' ),
+					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+					'description'       => esc_attr__( 'Expertise icon class', 'maria' ),
 					'default'           => 'youtube',
 					'sanitize_callback' => 'sanitize_text_field'
 				),
 				'expertise_title'	=> array(
 					'type'              => 'text',
-					//'label'       => esc_attr__( 'Display text for section', 'iam' ),
-					'description'       => esc_attr__( 'Upper text', 'iam' ),
+					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+					'description'       => esc_attr__( 'Upper text', 'maria' ),
 					'default'           => 'Institut Africain des medias',
 					'sanitize_callback' => 'sanitize_text_field'
 				),
 				// field: expertise_description
 				'expertise_description' => array(
 					'type'              => 'textarea',
-					//'label'       => esc_attr__( 'Display text for section', 'iam' ),
-					'description'       => esc_attr__( 'Lower text', 'iam' ),
+					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+					'description'       => esc_attr__( 'Lower text', 'maria' ),
 					'default'           => 'Enquêter, informer, former',
 					'sanitize_callback'	=> 'sanitize_text_field'
 				),
 				// field: page
 				'expertise_page'	=> array(
 						'type'        => 'dropdown-pages',
-						//'label'       => esc_attr__( 'Display text for section', 'iam' ),
-						'description' => esc_attr__( 'Page of the expertise', 'iam' ),
+						//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+						'description' => esc_attr__( 'Page of the expertise', 'maria' ),
 						'default'     => 0,
 						'sanitize_callback' => 'absint'
 				)
@@ -178,40 +178,40 @@ function maria_customize_register( $wp_customize ) {
 
 	// Create a new section for Solutions/ White section
 	Maria_Kirki::add_section('solution_section', array(
-		'title' => __('Solutions', 'iam'),
+		'title' => __('Solutions', 'maria'),
 		'priority' => 10,
 	));
 
 	// Create field for solution sections: title 
-	Maria_Kirki::add_field( 'iam', array(
+	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'text',
 			'settings'      => 'solution_section_title',
-			'label'         => __( 'Head text for solution section', 'iam' ),
-			//'description'   => __( 'Add Head text for solution section', 'iam' ),
+			'label'         => __( 'Head text for solution section', 'maria' ),
+			//'description'   => __( 'Add Head text for solution section', 'maria' ),
 			'section'       => 'solution_section',
-			'default'       => __( 'Our solutions', 'iam' ),
+			'default'       => __( 'Our solutions', 'maria' ),
 			'priority'      => 10,
 			'sanitize_callback' => 'sanitize_text_field'
 			)
 	);
 	// Create field for solution sections: description
-	Maria_Kirki::add_field( 'iam', array(
+	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'textarea',
 			'settings'      => 'solution_section_description',
-			'label'         => __( 'Head description for solution section', 'iam' ),
-			'default'         => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'iam' ),
-			//'description'   => __( 'Add Head description for solution section', 'iam' ),
+			'label'         => __( 'Head description for solution section', 'maria' ),
+			'default'         => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'maria' ),
+			//'description'   => __( 'Add Head description for solution section', 'maria' ),
 			'section'       => 'solution_section',
 			'priority'      => 10,
 			'sanitize_callback' => 'sanitize_text_field'
 			)
 	);
 	// Create a repeater for solutions
-	Maria_Kirki::add_field( 'iam', array(
+	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'repeater',
 			'settings'      => 'solution_repeater',
-			'label'         => __( 'Create a solution', 'iam' ),
-			'description'   => __( 'Add solution items such as title, description, page, etc', 'iam' ),
+			'label'         => __( 'Create a solution', 'maria' ),
+			'description'   => __( 'Add solution items such as title, description, page, etc', 'maria' ),
 			'section'       => 'solution_section',
 			'default'       => array(),
 			'priority'      => 10,
@@ -224,31 +224,31 @@ function maria_customize_register( $wp_customize ) {
 				// field: solution_icon
 				'solution_icon'	=> array(
 					'type'              => 'text',
-					//'label'       => esc_attr__( 'Display text for section', 'iam' ),
-					'description'       => esc_attr__( 'Solution icon class', 'iam' ),
+					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+					'description'       => esc_attr__( 'Solution icon class', 'maria' ),
 					'default'           => 'youtube',
 					'sanitize_callback' => 'sanitize_text_field'
 				),
 				'solution_title'	=> array(
 					'type'              => 'text',
-					//'label'       => esc_attr__( 'Display text for section', 'iam' ),
-					'description'       => esc_attr__( 'Upper text', 'iam' ),
+					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+					'description'       => esc_attr__( 'Upper text', 'maria' ),
 					'default'           => 'Solution',
 					'sanitize_callback' => 'sanitize_text_field'
 				),
 				// field: solution_description
 				'solution_description' => array(
 					'type'              => 'textarea',
-					//'label'       => esc_attr__( 'Display text for section', 'iam' ),
-					'description'       => esc_attr__( 'Lower text', 'iam' ),
-					'default'           => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'iam' ),
+					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+					'description'       => esc_attr__( 'Lower text', 'maria' ),
+					'default'           => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'maria' ),
 					'sanitize_callback'	=> 'sanitize_text_field'
 				),
 				// field: page
 				'solution_page'	=> array(
 						'type'        => 'dropdown-pages',
-						//'label'       => esc_attr__( 'Display text for section', 'iam' ),
-						'description' => esc_attr__( 'Page of the solution', 'iam' ),
+						//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+						'description' => esc_attr__( 'Page of the solution', 'maria' ),
 						'default'     => 0,
 						'sanitize_callback' => 'absint'
 				)
@@ -258,14 +258,14 @@ function maria_customize_register( $wp_customize ) {
 	
 	// Create a repeater section for social networks
 	Maria_Kirki::add_section('social_section', array(
-		'title' => __('Social medias', 'iam'),
+		'title' => __('Social medias', 'maria'),
 		'priority' => 10,
 	));
 	// Create a repeater for socials
-	Maria_Kirki::add_field( 'iam', array(
+	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'repeater',
 			'settings'      => 'social_repeater',
-			'label'         => __( 'Add a social media', 'iam' ),
+			'label'         => __( 'Add a social media', 'maria' ),
 			'section'       => 'social_section',
 			'default'       => array(),
 			'priority'      => 10,
@@ -278,8 +278,8 @@ function maria_customize_register( $wp_customize ) {
 				// field: social_title
 				'social_title'	=> array(
 					'type'              => 'text',
-					//'label'       => esc_attr__( 'Display text for section', 'iam' ),
-					'description'       => esc_attr__( 'Title', 'iam' ),
+					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+					'description'       => esc_attr__( 'Title', 'maria' ),
 					'default'           => 'Social',
 					'sanitize_callback' => 'sanitize_text_field'
 				),
@@ -287,7 +287,7 @@ function maria_customize_register( $wp_customize ) {
 				// field: social_url
 				'social_url'	=> array(
 						'type'        => 'text',
-						'description' => esc_attr__( 'Url of the social profile or page', 'iam' ),
+						'description' => esc_attr__( 'Url of the social profile or page', 'maria' ),
 						'default'     => '#',
 						'sanitize_callback' => 'sanitize_text_field'
 				)
@@ -308,7 +308,7 @@ function maria_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		new Palette_Custom_Control(
 			$wp_customize, 'maria_theme_color', array(
-				'label' => __( 'Theme color', 'iam' ),
+				'label' => __( 'Theme color', 'maria' ),
 				'section' => 'colors',
 				'settings' => 'maria_theme_color',
 			)

@@ -18,7 +18,7 @@ after and containing the bottom widget area
 				</div><!-- .footer-bar -->
 				<div class="main-row row">
 						<div class="medium-6 large-10 columns">
-							<p class="copyright"><?php _e('Copyright ','iam')?> <?php echo get_the_date('Y'); ?> <?php echo bloginfo('name'); ?>
+							<p class="copyright"><?php _e('Copyright ','maria')?> <?php echo get_the_date('Y'); ?> <?php echo bloginfo('name'); ?>
 							</p><!-- copyright-->
 						</div>
 						<div class="medium-6 large-2 columns socials">

@@ -43,8 +43,8 @@ function maria_customize_register( $wp_customize ) {
 	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'repeater',
 			'settings'      => 'slider_repeater',
-			'label'         => __( 'Create a slide', 'maria' ),
-			'description'   => __( 'Set up the slide, define title, description, page, etc', 'maria' ),
+			'label'         => esc_attr__( 'Create a slide', 'maria' ),
+			'description'   => esc_attr__( 'Set up the slide, define title, description, page, etc', 'maria' ),
 			'section'       => 'slider_section',
 			'default'       => array(),
 			'priority'      => 10,
@@ -59,7 +59,7 @@ function maria_customize_register( $wp_customize ) {
 					'type'              => 'text',
 					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
 					'description'       => esc_attr__( 'Small upper text', 'maria' ),
-					'default'           => 'Institut Africain des medias',
+					'default'           => esc_attr__( 'For those who do real business', 'maria' ),
 					'sanitize_callback' => 'sanitize_text_field'
 				),
 				// field: slide description
@@ -67,7 +67,7 @@ function maria_customize_register( $wp_customize ) {
 					'type'              => 'text',
 					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
 					'description'       => esc_attr__( 'Big lower text', 'maria' ),
-					'default'           => 'Enquêter, informer, former',
+					'default'           => esc_attr__( 'Simple, intuitive, creative', 'maria' ),
 					'sanitize_callback'	=> 'sanitize_text_field'
 				),
 				// field: page

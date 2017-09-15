@@ -1,5 +1,5 @@
 $primary-color: #0b90c5;
-$secondary-color: $primary-color;
+$secondary-color: darken($primary-color, 5%);
 $third-color: #004f7e;
 $menu-link-color: #6f6f6e;
 $dark-color: #020d16;

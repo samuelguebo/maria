@@ -170,7 +170,7 @@ header .search-form .button, header .search-form button {
   margin: 0; }
 
 header .search-form button:hover, header .search-form button:focus, header .search-form .button:hover, header .search-form .button:focus {
-  color: #0b90c5;
+  color: #0a7ead;
   background-color: transparent; }
 
 header .search-form .small-2 {
@@ -427,16 +427,16 @@ header .socials {
 .nav-wrapper nav.top-bar li.current-menu-item a:hover,
 .nav-wrapper nav.top-bar li.current-menu-ancestor a:hover,
 .nav-wrapper nav.top-bar li.current-menu-parent a:hover {
-  color: #0b90c5; }
+  color: #0a7ead; }
 
 .top-bar-section .current-menu-item.has-dropdown > a::after, .top-bar-section .current-menu-ancestor.has-dropdown > a::after, .top-bar-section .current-menu-parent.has-dropdown > a::after {
-  color: #0b90c5;
+  color: #0a7ead;
   content: '\f078';
   line-height: 1px;
   font-size: 0.7em; }
 
 .top-bar-section .current-menu-item.has-dropdown > a:hover::after, .top-bar-section .current-menu-ancestor.has-dropdown > a:hover::after, .top-bar-section .current-menu-parent.has-dropdown > a:hover::after {
-  color: #0b90c5; }
+  color: #0a7ead; }
 
 /*
 ================================================================================================
@@ -723,7 +723,7 @@ meta.foundation-mq-topbar {
 
 .slider-wrapper a.button {
   background: #FFF;
-  color: #0b90c5;
+  color: #0a7ead;
   margin-top: 20px;
   border-radius: 5px;
   /* font-size:0.95em; */
@@ -749,13 +749,13 @@ meta.foundation-mq-topbar {
 .slider-wrapper .post-item {
   background: #0b90c5;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(-90deg, #0b90c5, #0b90c5);
+  background: -webkit-linear-gradient(-90deg, #0a7ead, #0b90c5);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, #0b90c5, #0b90c5);
+  background: -o-linear-gradient(-90deg, #0a7ead, #0b90c5);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, #0b90c5, #0b90c5);
+  background: -moz-linear-gradient(-90deg, #0a7ead, #0b90c5);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-90deg, #0b90c5, #0b90c5);
+  background: linear-gradient(-90deg, #0a7ead, #0b90c5);
   /* Standard syntax */
   position: relative; }
 
@@ -985,7 +985,7 @@ section.main-row.grey-section .grey-section-intro {
 
 section.grey-section .section-expertise-title {
   text-transform: uppercase;
-  color: #0b90c5;
+  color: #0a7ead;
   font-weight: bold; }
 
 section.grey-section .section-expertise-title .highlight {
@@ -1012,7 +1012,7 @@ section.main-row.grey-section .expertise:hover > a .fa {
   color: #FFF; }
 
 section.main-row.grey-section .expertise-title {
-  color: #0b90c5;
+  color: #0a7ead;
   font-weight: bold; }
 
 section.main-row.grey-section p.expertise-description {
@@ -1099,7 +1099,7 @@ article.post-item .post-item-title {
   font-weight: 300; }
 
 article.post-item .post-item-title a {
-  color: #0b90c5; }
+  color: #0a7ead; }
 
 article.post-item .post-item-title a:hover {
   color: #0b90c5; }
@@ -1291,7 +1291,7 @@ article.columns + article.columns:last-child {
   font-size: 1rem; }
 
 .event-widget .description a:hover {
-  color: #0b90c5; }
+  color: #0a7ead; }
 
 /*
 ================================================================================================
@@ -1317,7 +1317,7 @@ aside .widget-title {
   text-transform: uppercase;
   display: block;
   margin-bottom: 15px;
-  background: #0b90c5; }
+  background: #0a7ead; }
 
 aside .widget_search .widget-title {
   padding: 0px;
@@ -1519,7 +1519,7 @@ button.small, .button.small {
   font-size: 0.8125rem; }
 
 button:hover, button:focus, .button:hover, .button:focus {
-  background-color: #0b90c5; }
+  background-color: #0a7ead; }
 
 article .panel .button {
   border-radius: 5px;
@@ -1565,7 +1565,7 @@ article .panel .button {
   font-size: 0.7rem; }
 
 .main-column .call-to-action .button.small {
-  background: #0b90c5;
+  background: #0a7ead;
   margin-left: 20px;
   margin-top: 10px; }
 

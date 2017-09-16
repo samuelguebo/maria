@@ -24,6 +24,12 @@ Template part for displaying a slide item in the Slider loop
     					<?php echo $post['slide_button_text'];?>
     				</a>
                 <h3>
+                    
+        <div class="large-7 small-8 large-centered summary columns">
+            <a href="<?php echo get_permalink( get_page_by_path( 'etudes' ) );?>" class="small button round navy"><?php _e('Etudes réalisées','alliancelab')?></a>
+            <a href="<?php echo get_permalink( get_page_by_path( 'commander' ) );?>" class="small button round green right"><?php _e('Commander une étude','alliancelab')?></a>
+
+        </div>
             </div>
         </div>
     <div class="clearfix"></div>

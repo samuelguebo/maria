@@ -59,7 +59,7 @@ function maria_customize_register( $wp_customize ) {
 					'type'              => 'text',
 					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
 					'description'       => esc_attr__( 'Small upper text', 'maria' ),
-					'default'           => esc_attr__( 'For those who do real business', 'maria' ),
+					'default'           => esc_attr__( 'For people who do real business', 'maria' ),
 					'sanitize_callback' => 'sanitize_text_field'
 				),
 				// field: slide description

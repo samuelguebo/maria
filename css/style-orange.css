@@ -57,16 +57,16 @@ a:hover, a:focus {
   margin-bottom: 0.625rem;
   font-family: "Montserrat", "Georgia", sans-serif;
   color: #FF8000;
-  font-weight: normal;
   text-transform: uppercase; }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("../fonts/Montserrat-Light.otf");
-  font-weight: 300; }
+  src: url("../fonts/Montserrat-Thin.otf");
+  font-weight: 200; }
 @font-face {
   font-family: 'Montserrat';
-  src: url("../fonts/Montserrat-Regular.ttf"); }
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: normal; }
 @font-face {
   font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Bold.ttf");
@@ -721,6 +721,9 @@ meta.foundation-mq-topbar {
 .slider-wrapper .panel h6 {
   color: #FFF; }
 
+.slider-wrapper .panel .post-item-description {
+  font-weight: 200; }
+
 .slider-wrapper a.button {
   background: #FFF;
   color: #f75013;
@@ -765,7 +768,7 @@ meta.foundation-mq-topbar {
   display: block;
   width: 100%;
   border: 0;
-  opacity: .25;
+  opacity: .3;
   max-height: 400px;
   overflow: hidden; }
 

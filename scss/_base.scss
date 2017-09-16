@@ -76,22 +76,23 @@ h6 {
 	margin-bottom: 0.625rem;
 	font-family: $primary-font;
 	color: $link-color;
-	font-weight: normal;
 	text-transform: uppercase
 }
+
 @font-face {
 	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat-Light.otf");
-	font-weight:300;
+	src: url("../fonts/Montserrat-Thin.otf");
+	font-weight: 200;
 }
 @font-face {
 	font-family: 'Montserrat';
 	src: url("../fonts/Montserrat-Regular.ttf");
+    font-weight: normal;
 }
 @font-face {
 	font-family: 'Montserrat';
 	src: url("../fonts/Montserrat-Bold.ttf");
-	font-weight:bold;
+	font-weight: bold;
 }
 
 /*
@@ -757,6 +758,10 @@ meta.foundation-mq-topbar {
 	}
 }
 
+.slider-wrapper .panel .post-item-description {
+    font-weight: 200;
+}
+
 .slider-wrapper a.button{
 		background:#FFF;
 		color:$secondary-color;
@@ -803,7 +808,7 @@ meta.foundation-mq-topbar {
 	display: block;
 	width: 100%;
 	border: 0;
-	opacity: .25;
+	opacity: .3;
 	max-height: 400px;
 	overflow: hidden;    
 }

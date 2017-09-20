@@ -70,7 +70,7 @@ function maria_customize_register( $wp_customize ) {
 					'default'           => esc_attr__( 'Simple, intuitive, creative', 'maria' ),
 					'sanitize_callback'	=> 'sanitize_text_field'
 				),
-				// field: page
+				// field: page 1
 				'slide_page_1' => array(
 						'type'        => 'dropdown-pages',
 						//'label'       => esc_attr__( 'Display text for section', 'maria' ),
@@ -78,11 +78,27 @@ function maria_customize_register( $wp_customize ) {
 						'default'     => 0,
 						'sanitize_callback' => 'absint'
 				),
-				// field: button text
+				// field: button text 1
 				'slide_button_text_1' => array(
 						'type'        => 'text',
 						//'label'       => esc_attr__( 'Display text for section', 'maria' ),
 						'description' => esc_attr__( 'Text for the buton', 'maria' ),
+						'default'     => esc_attr__( 'Read more', 'maria' ),
+						'sanitize_callback' => 'sanitize_text_field'
+				),
+                // field: page 2
+				'slide_page_2' => array(
+						'type'        => 'dropdown-pages',
+						//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+						'description' => esc_attr__( 'Page for button 2', 'maria' ),
+						'default'     => 0,
+						'sanitize_callback' => 'absint'
+				),
+				// field: button text 2
+				'slide_button_text_2' => array(
+						'type'        => 'text',
+						//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+						'description' => esc_attr__( 'Text for button 2', 'maria' ),
 						'default'     => esc_attr__( 'Read more', 'maria' ),
 						'sanitize_callback' => 'sanitize_text_field'
 				),

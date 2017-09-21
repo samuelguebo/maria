@@ -74,7 +74,7 @@ function maria_customize_register( $wp_customize ) {
 				'slide_page_1' => array(
 						'type'        => 'dropdown-pages',
 						//'label'       => esc_attr__( 'Display text for section', 'maria' ),
-						'description' => esc_attr__( 'Page of the slide', 'maria' ),
+						'description' => esc_attr__( 'Page for button 1', 'maria' ),
 						'default'     => 0,
 						'sanitize_callback' => 'absint'
 				),
@@ -82,7 +82,7 @@ function maria_customize_register( $wp_customize ) {
 				'slide_button_text_1' => array(
 						'type'        => 'text',
 						//'label'       => esc_attr__( 'Display text for section', 'maria' ),
-						'description' => esc_attr__( 'Text for the buton', 'maria' ),
+						'description' => esc_attr__( 'Text for button 1', 'maria' ),
 						'default'     => esc_attr__( 'Read more', 'maria' ),
 						'sanitize_callback' => 'sanitize_text_field'
 				),

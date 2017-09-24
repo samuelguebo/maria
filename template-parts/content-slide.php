@@ -24,11 +24,11 @@ Template part for displaying a slide item in the Slider loop
                 <h3>
                     
         <div class="large-7 small-8 large-centered summary columns">
-            <a href="<?php echo get_the_permalink(get_field('slide_page_1', get_ID()));?>" class="button radius left">
+            <a href="<?php echo get_the_permalink($post['slide_page_1']);?>" class="button radius left">
     					<?php echo $post['slide_button_text_1'];?>
     				</a>
-            <a href="<?php echo get_the_permalink($post['slide_page_1']);?>" class="button radius right">
-    					<?php echo $post['slide_button_text_1'];?>
+            <a href="<?php echo get_the_permalink($post['slide_page_2']);?>" class="button radius right">
+    					<?php echo $post['slide_button_text_2'];?>
     				</a>
 
         </div>

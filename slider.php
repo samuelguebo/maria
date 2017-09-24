@@ -19,7 +19,6 @@ The slider containing the carousel animation
 		<section id="slider" class="row slider-wrapper">
 			<?php
 			foreach ( $sliders  as $post )  : setup_postdata( $post );
-                print_r($post);
 				get_template_part('template-parts/content','slide');
 			endforeach; ?>
 		</section>

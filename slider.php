@@ -18,11 +18,11 @@ The slider containing the carousel animation
 		<!-- Slides: Images and Captions -->
 		<section id="slider" class="row slider-wrapper">
 			<?php
-			foreach ( $sliders  as $post )  : setup_postdata( $post );
+			foreach ( $sliders  as $slider ):
 				get_template_part('template-parts/content','slide');
 			endforeach; ?>
 		</section>
-	<?php endif; wp_reset_postdata(); $sliders = null;?>
+	<?php endif; $sliders = null;?>
 
 	<!-- Javascript setting for the slider -->
 	<script>

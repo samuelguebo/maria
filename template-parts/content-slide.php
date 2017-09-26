@@ -14,22 +14,14 @@ Template part for displaying a slide item in the Slider loop
 
 ?>
 <section class="post-item">
-        <img src="<?php echo maria_get_thumb_by_id($slide['slide_image'],'slider-cover');?>" alt="<?php echo $slider['slide_title'];?>" class="responsive delay"/>
+        <img src="<?php echo maria_get_thumb_by_id($post['slide_image'],'slider-cover');?>" alt="<?php echo $post['slide_title'];?>" class="responsive delay"/>
         <div class="slider-caption post-item-caption">
             <div class="panel">
-                <h4 class="post-item-description"><?php echo $slide['slide_title'];?></h4>
-                <h2 class="post-item-title"><?php echo $slide['slide_description'];?></h2>
-				<h3>
-                    
-                <h3>
+                <h4 class="post-item-description"><?php echo $post['slide_title'];?></h4>
+                <h2 class="post-item-title"><?php echo $post['slide_description'];?></h2>
                     
         <div class="large-7 small-8 large-centered summary columns">
-            <a href="<?php echo get_the_permalink($slider['slide_page_1']);?>" class="button radius left">
-    					<?php echo $slide['slide_button_text_1'];?>
-    				</a>
-            <a href="<?php echo get_the_permalink($post['slide_page_2']);?>" class="button radius right">
-    					<?php echo $slide['slide_button_text_2'];?>
-    				</a>
+            
 
         </div>
             </div>

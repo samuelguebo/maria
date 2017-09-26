@@ -18,11 +18,12 @@ The slider containing the carousel animation
 		<!-- Slides: Images and Captions -->
 		<section id="slider" class="row slider-wrapper">
 			<?php
-			foreach ( $sliders  as $slider ):
+            //print_r($sliders);
+			foreach ( $sliders  as $post )  : setup_postdata( $post );
 				get_template_part('template-parts/content','slide');
 			endforeach; ?>
 		</section>
-	<?php endif; $sliders = null;?>
+	<?php endif; wp_reset_postdata(); $sliders = null;?>
 
 	<!-- Javascript setting for the slider -->
 	<script>
@@ -33,9 +34,9 @@ The slider containing the carousel animation
 				slidesToScroll: 1,
 				autoplay: true,
 				autoplaySpeed: 4000,
-				swipe:true,
-				pauseOnHover:true,
-				swipeToSlide:true,
+				swipe: true,
+				pauseOnHover: true,
+				swipeToSlide: true,
 				arrows: true,
 				fade: true            
 			});

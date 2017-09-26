@@ -16,17 +16,8 @@ Maria Theme Customizer
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function maria_customize_register( $wp_customize ) {
-	
-	
-	/*
-	 * Theme colors using Customizer Custom Controls, 
-	 * @link https://github.com/bueltge/Wordpress-Theme-Customizer-Custom-Controls
-	 *
-	 */
-	require_once dirname(__FILE__) . '/class-category_dropdown_custom_control.php';
-	require_once dirname(__FILE__) . '/class-palette_custom_control.php';
-	
+
+function maria_kirki_customize_register () {
 	
 	// kirki configs
 	Maria_Kirki::add_config( 'maria', array(
@@ -310,7 +301,19 @@ function maria_customize_register( $wp_customize ) {
 			)
 		)
 	);
-
+}
+function maria_customize_register( $wp_customize ) {
+	
+	
+	/*
+	 * Theme colors using Customizer Custom Controls, 
+	 * @link https://github.com/bueltge/Wordpress-Theme-Customizer-Custom-Controls
+	 *
+	 */
+	require_once dirname(__FILE__) . '/class-category_dropdown_custom_control.php';
+	require_once dirname(__FILE__) . '/class-palette_custom_control.php';
+	
+	
 	// Add controls to existing Header Textcolor section
 	$wp_customize->remove_control('header_textcolor'); // remove existing Headline color setting
 	$wp_customize->add_setting(
@@ -332,7 +335,7 @@ function maria_customize_register( $wp_customize ) {
 	);    
    
 }
-
+add_action( 'init', 'maria_kirki_customize_register' );
 add_action( 'customize_register', 'maria_customize_register' );
 
 /**

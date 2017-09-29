@@ -18,7 +18,7 @@ The slider containing the carousel animation
 		<!-- Slides: Images and Captions -->
 		<section id="slider" class="row slider-wrapper">
 			<?php
-            //print_r($sliders);
+            print_r($sliders);
 			foreach ( $sliders  as $post )  : setup_postdata( $post );
 				get_template_part('template-parts/content','slide');
 			endforeach; ?>

@@ -22,7 +22,7 @@ Template part for displaying a slide item in the Slider loop
                     
         <div class="large-7 small-8 large-centered summary columns">
             <a href="<?php echo get_permalink( $post['slide_page_1'] );?>" class="small button round navy"><?php echo esc_attr($post['slide_button_text_1']);?></a>
-            <a href="<?php echo get_permalink( get_page_by_path( 'commander' ) );?>" class="small button round green right"><?php _e('Commander une étude','alliancelab')?></a>
+            <a href="<?php echo get_permalink( $post['slide_page_2'] );?>" class="small button round navy"><?php echo esc_attr($post['slide_button_text_2']);?></a>
 
         </div>
             </div>

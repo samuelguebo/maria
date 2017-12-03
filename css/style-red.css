@@ -746,6 +746,13 @@ meta.foundation-mq-topbar {
   background: #FFF;
   color: #020d16; }
 
+.slider-wrapper a.button {
+  border-radius: 30px; }
+
+.slider-wrapper a.left.button {
+  background: #FFF;
+  color: #ff2323; }
+
 .slider-wrapper a.button, .slider-wrapper .post-item-description {
   font-weight: 300; }
 

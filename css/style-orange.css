@@ -749,9 +749,10 @@ meta.foundation-mq-topbar {
 .slider-wrapper a.button {
   border-radius: 30px; }
 
-.slider-wrapper a.left.button {
-  background: #FFF;
-  color: #FF8000; }
+.slider-wrapper a.two.button {
+  border: #FFF;
+  background: transparent;
+  color: #FFF; }
 
 .slider-wrapper a.button, .slider-wrapper .post-item-description {
   font-weight: 300; }

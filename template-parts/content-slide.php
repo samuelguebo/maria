@@ -21,8 +21,8 @@ Template part for displaying a slide item in the Slider loop
                 <h2 class="post-item-title"><?php echo $post['slide_description'];?></h2>
                     
         <div class="large-7 small-8 large-centered summary columns">
-            <a href="<?php echo get_permalink( $post['slide_page_1'] );?>" class="small button round navy"><?php echo esc_attr($post['slide_button_text_1']);?></a>
-            <a href="<?php echo get_permalink( $post['slide_page_2'] );?>" class="small button round navy"><?php echo esc_attr($post['slide_button_text_2']);?></a>
+            <a href="<?php echo get_permalink( $post['slide_page_1'] );?>" class="small button round navy one"><?php echo esc_attr($post['slide_button_text_1']);?></a>
+            <a href="<?php echo get_permalink( $post['slide_page_2'] );?>" class="small button round navy two"><?php echo esc_attr($post['slide_button_text_2']);?></a>
 
         </div>
             </div>

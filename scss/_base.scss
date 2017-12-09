@@ -787,16 +787,17 @@ meta.foundation-mq-topbar {
 	}
 }
 .slider-wrapper a.button:hover{
-		background:#FFF;
-		color:$dark-color;
+    background:#FFF;
+    color:$dark-color;
 }
 .slider-wrapper a.button{
-        border-radius: 30px;
+    border-radius: 30px;
+    font-weight: 200;
 }
 .slider-wrapper a.two.button{
-        border: $light-color;
-        background: transparent;
-        color: $light-color;
+    border: solid 1px $light-color;
+    background: transparent;
+    color: $light-color;
 }
 .slider-wrapper a.button, .slider-wrapper .post-item-description {
 	font-weight:300;

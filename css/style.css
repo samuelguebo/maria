@@ -749,7 +749,7 @@ meta.foundation-mq-topbar {
 
 .slider-wrapper a.button {
   border-radius: 30px;
-  font-weight: 200; }
+  font-family: "Montserrat", "Georgia", sans-serif; }
 
 .slider-wrapper a.two.button {
   border: solid 1px #FFF;

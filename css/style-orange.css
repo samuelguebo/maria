@@ -755,7 +755,12 @@ meta.foundation-mq-topbar {
   background: transparent;
   color: #FFF; }
 
-.slider-wrapper a.button, .slider-wrapper .post-item-description {
+.slider-wrapper a.two.button:hover {
+  border: none;
+  background: #331a00;
+  color: #FFF; }
+
+.slider-wrapper .post-item-description {
   font-weight: 300; }
 
 .slider-wrapper .post-item {

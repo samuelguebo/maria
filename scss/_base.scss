@@ -799,7 +799,13 @@ meta.foundation-mq-topbar {
     background: transparent;
     color: $light-color;
 }
-.slider-wrapper a.button, .slider-wrapper .post-item-description {
+
+.slider-wrapper a.two.button:hover{
+    border: none;
+    background: darken($primary-color, 40%);
+    color: $light-color;
+}
+.slider-wrapper .post-item-description {
 	font-weight:300;
 }
 .slider-wrapper .post-item {

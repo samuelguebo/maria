@@ -553,5 +553,3 @@ if(!function_exists('maria_custom_breadcrumbs')) {
 			return $image_thumb[0];
 		}
 	}
-
-	

@@ -17,7 +17,7 @@ get_header(); ?>
              style="background-image:url(<?php echo esc_url(get_header_image());?>); background-position:center center;">
                 <div class="overlay">
                     <h3 class="center title">
-                        <?php the_archive_title();?>
+                        <?php echo the_archive_title();?>
                     </h3>
                 </div>
             </section>

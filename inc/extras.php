@@ -553,3 +553,18 @@ if(!function_exists('maria_custom_breadcrumbs')) {
 			return $image_thumb[0];
 		}
 	}
+    /**
+     * Remove "Category:", "Tag:", "Author:" from the archive title 
+     * solution borrowed from Hestia: http://docs.themeisle.com/article/793-how-to-remove-category-tag-author-from-the-archive-title-in-hestia
+     */
+    add_filter( 'get_the_archive_title', function ($title) {
+        if ( is_category() ) {
+            $title = single_cat_title( '', false );
+        } elseif ( is_tag() ) {
+        $title = single_tag_title( '', false );
+        } elseif ( is_author() ) {
+        $title = get_the_author() ;
+        }
+
+        return $title;
+    }, 10, 1 );

@@ -811,10 +811,19 @@ meta.foundation-mq-topbar {
 .slider-wrapper .slider-caption .panel .post-item-title a:hover {
   color: #FF8000; }
 
+button.slick-next.slick-arrow {
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
+  width: 50px;
+  height: 100px;
+  right: 0; }
+
 .slick-prev, .slick-next {
   background: transparent;
   border: 1px solid #FFF;
-  border-radius: 30px;
   background: transparent; }
 
 .slick-prev::before, .slick-next::before {

@@ -815,16 +815,22 @@ button.slick-next.slick-arrow {
   border-top-left-radius: 60px;
   border-bottom-left-radius: 60px;
   border-right: none;
-  border-bottom: none;
-  border-top: none;
-  width: 50px;
-  height: 100px;
   right: 0; }
+
+button.slick-prev.slick-arrow {
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
+  border-left: none;
+  left: 0; }
 
 .slick-prev, .slick-next {
   background: transparent;
   border: 1px solid #FFF;
-  background: transparent; }
+  background: transparent;
+  border-bottom: none;
+  border-top: none;
+  width: 40px;
+  height: 80px; }
 
 .slick-prev::before, .slick-next::before {
   color: #FFF; }

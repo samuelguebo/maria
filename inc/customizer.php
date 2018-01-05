@@ -103,7 +103,13 @@ function maria_kirki_customize_register () {
 		)
 	);
 		
-	// Section for Expertises/ Grey
+	/**
+     * Section for Services
+     * Taking advantage of Kirki's repeater 
+     * feature, and static fields: section title
+     * and description
+     */
+    
 	Maria_Kirki::add_section('expertise_section', array(
 		'title' => __('Expertises', 'maria'),
 		'priority' => 10,

@@ -861,6 +861,7 @@ button.slick-next.slick-arrow {
     border-bottom-left-radius: 60px;
     border-right: none;
     right: 0;
+    padding-left: 5px;
 }
 
 button.slick-prev.slick-arrow {
@@ -868,16 +869,16 @@ button.slick-prev.slick-arrow {
     border-bottom-right-radius: 60px;
     border-left: none;
     left: 0;
+    padding-right: 5px;
 }
 .slick-prev, .slick-next {
-	background: transparent;
 	border: 1px solid #FFF;
-	background: transparent;
+	background: darken($primary-color, 15);
     border-bottom: none;
     border-top: none;
     width: 40px;
     height: 80px;
-    padding: 18px;
+    
 }
 
 .slick-prev::before, .slick-next::before {

@@ -816,23 +816,23 @@ button.slick-next.slick-arrow {
   border-top-left-radius: 60px;
   border-bottom-left-radius: 60px;
   border-right: none;
-  right: 0; }
+  right: 0;
+  padding-left: 5px; }
 
 button.slick-prev.slick-arrow {
   border-top-right-radius: 60px;
   border-bottom-right-radius: 60px;
   border-left: none;
-  left: 0; }
+  left: 0;
+  padding-right: 5px; }
 
 .slick-prev, .slick-next {
-  background: transparent;
   border: 1px solid #FFF;
-  background: transparent;
+  background: #b37e00;
   border-bottom: none;
   border-top: none;
   width: 40px;
-  height: 80px;
-  padding: 18px; }
+  height: 80px; }
 
 .slick-prev::before, .slick-next::before {
   color: #FFF; }

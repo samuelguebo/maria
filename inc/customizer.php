@@ -25,7 +25,7 @@ function maria_kirki_customize_register () {
 		'option_type'   => 'theme_mod',
 	) );
 	
-	// Create a repeater section for slider settings
+	// Repeater section for slider settings
 	Maria_Kirki::add_section('slider_section', array(
 		'title' => __('Sliders', 'maria'),
 		'priority' => 10,
@@ -103,13 +103,13 @@ function maria_kirki_customize_register () {
 		)
 	);
 		
-	// Create a new section for Expertises/ Grey
+	// Section for Expertises/ Grey
 	Maria_Kirki::add_section('expertise_section', array(
 		'title' => __('Expertises', 'maria'),
 		'priority' => 10,
 	));
 
-	// Create field for expertise sections: title 
+	// Field for expertise sections: title 
 	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'text',
 			'settings'      => 'expertise_section_title',
@@ -121,7 +121,7 @@ function maria_kirki_customize_register () {
 			'sanitize_callback' => 'sanitize_text_field'
 			)
 	);
-	// Create field for expertise sections: description
+	// Field for expertise sections: description
 	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'textarea',
 			'settings'      => 'expertise_section_description',
@@ -133,7 +133,8 @@ function maria_kirki_customize_register () {
 			'sanitize_callback' => 'sanitize_text_field'
 			)
 	);
-	// Create a repeater for expertises
+    
+	// Repeater for expertises
 	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'repeater',
 			'settings'      => 'expertise_repeater',

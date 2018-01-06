@@ -110,68 +110,68 @@ function maria_kirki_customize_register () {
      * and description
      */
     
-	Maria_Kirki::add_section('expertise_section', array(
-		'title' => __('Expertises', 'maria'),
+	Maria_Kirki::add_section('services_section', array(
+		'title' => __('Services', 'maria'),
 		'priority' => 10,
 	));
 
-	// Field for expertise sections: title 
+	// Field for services sections: title 
 	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'text',
-			'settings'      => 'expertise_section_title',
-			'label'         => __( 'Head text for expertise section', 'maria' ),
-			//'description'   => __( 'Add Head text for expertise section', 'maria' ),
-			'default'       => __( 'Our expertise', 'maria' ),
-			'section'       => 'expertise_section',
+			'settings'      => 'services_section_title',
+			'label'         => __( 'Head text for services section', 'maria' ),
+			//'description'   => __( 'Add Head text for services section', 'maria' ),
+			'default'       => __( 'Our services', 'maria' ),
+			'section'       => 'services_section',
 			'priority'      => 10,
 			'sanitize_callback' => 'sanitize_text_field'
 			)
 	);
-	// Field for expertise sections: description
+	// Field for services sections: description
 	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'textarea',
-			'settings'      => 'expertise_section_description',
-			'label'         => __( 'Head description for expertise section', 'maria' ),
-			//'description'   => __( 'Add Head description for expertise section', 'maria' ),
+			'settings'      => 'services_section_description',
+			'label'         => __( 'Head description for services section', 'maria' ),
+			//'description'   => __( 'Add Head description for services section', 'maria' ),
 			'default'         => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'maria' ),
-			'section'       => 'expertise_section',
+			'section'       => 'services_section',
 			'priority'      => 10,
 			'sanitize_callback' => 'sanitize_text_field'
 			)
 	);
     
-	// Repeater for expertises
+	// Repeater for services
 	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'repeater',
-			'settings'      => 'expertise_repeater',
-			'label'         => __( 'Create a expertise', 'maria' ),
+			'settings'      => 'services_repeater',
+			'label'         => __( 'Create a services', 'maria' ),
 			'description'   => __( 'Set up the slide, define title, description, page, etc', 'maria' ),
-			'section'       => 'expertise_section',
+			'section'       => 'services_section',
 			'default'       => array(),
 			'priority'      => 10,
 			'row_label'     => array(
 				'type'      => 'field',
 				'value'     => 'row',
-				'field'     => 'expertise_title',
+				'field'     => 'services_title',
 			),
 			'fields' => array(
-				// field: expertise_icon
-				'expertise_icon'	=> array(
+				// field: services_icon
+				'services_icon'	=> array(
 					'type'              => 'text',
 					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
-					'description'       => esc_attr__( 'Expertise icon class', 'maria' ),
+					'description'       => esc_attr__( 'services icon class', 'maria' ),
 					'default'           => 'youtube',
 					'sanitize_callback' => 'sanitize_text_field'
 				),
-				'expertise_title'	=> array(
+				'services_title'	=> array(
 					'type'              => 'text',
 					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
 					'description'       => esc_attr__( 'Upper text', 'maria' ),
 					'default'           => 'Institut Africain des medias',
 					'sanitize_callback' => 'sanitize_text_field'
 				),
-				// field: expertise_description
-				'expertise_description' => array(
+				// field: services_description
+				'services_description' => array(
 					'type'              => 'textarea',
 					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
 					'description'       => esc_attr__( 'Lower text', 'maria' ),
@@ -179,10 +179,10 @@ function maria_kirki_customize_register () {
 					'sanitize_callback'	=> 'sanitize_text_field'
 				),
 				// field: page
-				'expertise_page'	=> array(
+				'services_page'	=> array(
 						'type'        => 'dropdown-pages',
 						//'label'       => esc_attr__( 'Display text for section', 'maria' ),
-						'description' => esc_attr__( 'Page of the expertise', 'maria' ),
+						'description' => esc_attr__( 'Page of the services', 'maria' ),
 						'default'     => 0,
 						'sanitize_callback' => 'absint'
 				)
@@ -190,85 +190,7 @@ function maria_kirki_customize_register () {
 		)
 	);
 
-	// Create a new section for Solutions/ White section
-	Maria_Kirki::add_section('solution_section', array(
-		'title' => __('Solutions', 'maria'),
-		'priority' => 10,
-	));
-
-	// Create field for solution sections: title 
-	Maria_Kirki::add_field( 'maria', array(
-			'type'          => 'text',
-			'settings'      => 'solution_section_title',
-			'label'         => __( 'Head text for solution section', 'maria' ),
-			//'description'   => __( 'Add Head text for solution section', 'maria' ),
-			'section'       => 'solution_section',
-			'default'       => __( 'Our solutions', 'maria' ),
-			'priority'      => 10,
-			'sanitize_callback' => 'sanitize_text_field'
-			)
-	);
-	// Create field for solution sections: description
-	Maria_Kirki::add_field( 'maria', array(
-			'type'          => 'textarea',
-			'settings'      => 'solution_section_description',
-			'label'         => __( 'Head description for solution section', 'maria' ),
-			'default'         => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'maria' ),
-			//'description'   => __( 'Add Head description for solution section', 'maria' ),
-			'section'       => 'solution_section',
-			'priority'      => 10,
-			'sanitize_callback' => 'sanitize_text_field'
-			)
-	);
-	// Create a repeater for solutions
-	Maria_Kirki::add_field( 'maria', array(
-			'type'          => 'repeater',
-			'settings'      => 'solution_repeater',
-			'label'         => __( 'Create a solution', 'maria' ),
-			'description'   => __( 'Add solution items such as title, description, page, etc', 'maria' ),
-			'section'       => 'solution_section',
-			'default'       => array(),
-			'priority'      => 10,
-			'row_label'     => array(
-				'type'      => 'field',
-				'value'     => 'row',
-				'field'     => 'solution_title',
-			),
-			'fields' => array(
-				// field: solution_icon
-				'solution_icon'	=> array(
-					'type'              => 'text',
-					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
-					'description'       => esc_attr__( 'Solution icon class', 'maria' ),
-					'default'           => 'youtube',
-					'sanitize_callback' => 'sanitize_text_field'
-				),
-				'solution_title'	=> array(
-					'type'              => 'text',
-					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
-					'description'       => esc_attr__( 'Upper text', 'maria' ),
-					'default'           => 'Solution',
-					'sanitize_callback' => 'sanitize_text_field'
-				),
-				// field: solution_description
-				'solution_description' => array(
-					'type'              => 'textarea',
-					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
-					'description'       => esc_attr__( 'Lower text', 'maria' ),
-					'default'           => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'maria' ),
-					'sanitize_callback'	=> 'sanitize_text_field'
-				),
-				// field: page
-				'solution_page'	=> array(
-						'type'        => 'dropdown-pages',
-						//'label'       => esc_attr__( 'Display text for section', 'maria' ),
-						'description' => esc_attr__( 'Page of the solution', 'maria' ),
-						'default'     => 0,
-						'sanitize_callback' => 'absint'
-				)
-			)
-		)
-	);
+	
 	
 	// Create a repeater section for social networks
 	Maria_Kirki::add_section('social_section', array(

@@ -155,15 +155,13 @@ function maria_kirki_customize_register () {
 				'field'     => 'services_title',
 			),
 			'fields' => array(
-				// field: services_icon
-				'services_icon'	=> array(
-					'type'              => 'text',
-					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
-					'description'       => esc_attr__( 'services icon class', 'maria' ),
-					'default'           => 'youtube',
-					'sanitize_callback' => 'sanitize_text_field'
-				),
-				'services_title'	=> array(
+				// field: image
+				'service_image' => array(
+						'type'        => 'image',
+						//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+						'description' => esc_attr__( 'Image of the slide', 'maria' ),
+				)
+				'service_title'	=> array(
 					'type'              => 'text',
 					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
 					'description'       => esc_attr__( 'Upper text', 'maria' ),
@@ -171,7 +169,7 @@ function maria_kirki_customize_register () {
 					'sanitize_callback' => 'sanitize_text_field'
 				),
 				// field: services_description
-				'services_description' => array(
+				'service_description' => array(
 					'type'              => 'textarea',
 					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
 					'description'       => esc_attr__( 'Lower text', 'maria' ),
@@ -179,7 +177,7 @@ function maria_kirki_customize_register () {
 					'sanitize_callback'	=> 'sanitize_text_field'
 				),
 				// field: page
-				'services_page'	=> array(
+				'service_page'	=> array(
 						'type'        => 'dropdown-pages',
 						//'label'       => esc_attr__( 'Display text for section', 'maria' ),
 						'description' => esc_attr__( 'Page of the services', 'maria' ),

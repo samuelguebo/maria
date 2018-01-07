@@ -144,15 +144,15 @@ function maria_kirki_customize_register () {
 	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'repeater',
 			'settings'      => 'services_repeater',
-			'label'         => __( 'Create a services', 'maria' ),
-			'description'   => __( 'Set up the slide, define title, description, page, etc', 'maria' ),
+			'label'         => __( 'Create a service', 'maria' ),
+			'description'   => __( 'Set up the service, define title, description, page, etc', 'maria' ),
 			'section'       => 'services_section',
 			'default'       => array(),
 			'priority'      => 10,
 			'row_label'     => array(
 				'type'      => 'field',
 				'value'     => 'row',
-				'field'     => 'services_title',
+				'field'     => 'service_title',
 			),
 			'fields' => array(
 				// field: image
@@ -165,22 +165,22 @@ function maria_kirki_customize_register () {
 					'type'              => 'text',
 					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
 					'description'       => esc_attr__( 'Upper text', 'maria' ),
-					'default'           => 'Institut Africain des medias',
+					'default'           => 'Business strategy',
 					'sanitize_callback' => 'sanitize_text_field'
 				),
 				// field: services_description
 				'service_description' => array(
 					'type'              => 'textarea',
 					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
-					'description'       => esc_attr__( 'Lower text', 'maria' ),
-					'default'           => 'Enquêter, informer, former',
+					'description'       => esc_attr__( 'Description', 'maria' ),
+					'default'           => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 					'sanitize_callback'	=> 'sanitize_text_field'
 				),
 				// field: page
 				'service_page'	=> array(
 						'type'        => 'dropdown-pages',
 						//'label'       => esc_attr__( 'Display text for section', 'maria' ),
-						'description' => esc_attr__( 'Page of the services', 'maria' ),
+						'description' => esc_attr__( 'Page of the service', 'maria' ),
 						'default'     => 0,
 						'sanitize_callback' => 'absint'
 				)

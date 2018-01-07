@@ -28,7 +28,7 @@ function maria_kirki_customize_register () {
 	// Repeater section for slider settings
 	Maria_Kirki::add_section('slider_section', array(
 		'title' => __('Sliders', 'maria'),
-		'priority' => 10,
+		'priority' => 30,
 	));
 
 	Maria_Kirki::add_field( 'maria', array(
@@ -112,7 +112,7 @@ function maria_kirki_customize_register () {
     
 	Maria_Kirki::add_section('services_section', array(
 		'title' => __('Services', 'maria'),
-		'priority' => 10,
+		'priority' => 30,
 	));
 
 	// Field for services sections: title 
@@ -160,7 +160,7 @@ function maria_kirki_customize_register () {
 						'type'        => 'image',
 						//'label'       => esc_attr__( 'Display text for section', 'maria' ),
 						'description' => esc_attr__( 'Image of the slide', 'maria' ),
-				)
+				),
 				'service_title'	=> array(
 					'type'              => 'text',
 					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
@@ -193,7 +193,7 @@ function maria_kirki_customize_register () {
 	// Create a repeater section for social networks
 	Maria_Kirki::add_section('social_section', array(
 		'title' => __('Social medias', 'maria'),
-		'priority' => 10,
+		'priority' => 30,
 	));
 	// Create a repeater for socials
 	Maria_Kirki::add_field( 'maria', array(

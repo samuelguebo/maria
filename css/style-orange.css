@@ -1068,38 +1068,25 @@ section.main-row.white-section {
 section.main-row.white-section .white-section-intro {
   padding: 10px 20px; }
 
-section.white-section .section-solution-title {
-  text-transform: uppercase;
-  color: #FF8000;
-  font-weight: bold; }
+section.white-section .section-title {
+  color: #020d16;
+  font-weight: bold;
+  font-family: "Montserrat", "Georgia", sans-serif; }
 
-section.white-section .section-solution-title .highlight {
+section.white-section .section-title .highlight {
   color: #020d16; }
 
-section.white-section .section-solution-description {
+section.white-section .section-description {
   color: #020d16;
   font-size: 1em; }
 
-section.main-row.white-section .solution {
+section.main-row.white-section .section-item {
   text-align: center; }
 
-section.main-row.white-section .solution .fa {
-  font-size: 1.15em;
-  color: #FFF;
-  padding: 37px 15px;
-  min-width: 115px;
-  min-height: 115px;
-  background: #FF8000;
-  border-radius: 80px; }
-
-section.main-row.white-section .solution:hover > a .fa {
+section.main-row.white-section .section-item:hover > a .fa {
   background: #3C3C3B; }
 
-section.main-row.white-section .solution-title {
-  color: #FF8000;
-  font-weight: bold; }
-
-section.main-row.white-section p.solution-description {
+section.main-row.white-section p.section-description {
   color: #020d16;
   font-size: 0.8em;
   line-height: 1.3;

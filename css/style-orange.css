@@ -1088,9 +1088,9 @@ section.main-row.white-section .section-item:hover > a .fa {
   background: #3C3C3B; }
 
 section.main-row.white-section p.section-description {
-  color: #020d16;
-  font-size: 1em;
-  line-height: 1.3;
+  color: #3C3C3B;
+  font-size: .95em;
+  line-height: 1.5;
   display: inline-block;
   font-weight: 300;
   font-family: 'Arial', 'serif'; }

@@ -14,7 +14,7 @@ $service_section_title = Maria_Kirki::get_option( 'services_section_title');
 $service_section_description = Maria_Kirki::get_option( 'services_section_description');
 $services = Maria_Kirki::get_option( 'services_repeater');
 ?>
-<section class="row main-row clearfix white-section">
+<section class="row main-row clearfix white-section large-7 small-8 large-centered columns">
 			<section class="columns main-column white-section-intro">
 				<h3 class="section-title"><?php echo $service_section_title; ?></h3>
 				<p class="section-description"><?php echo $service_section_description; ?></p>

@@ -15,10 +15,10 @@ $service_section_description = Maria_Kirki::get_option( 'services_section_descri
 $services = Maria_Kirki::get_option( 'services_repeater');
 ?>
 <section class="row main-row clearfix white-section">
-			<section class="columns main-column white-section-intro large-8 small-8 large-centered columns">
+			<section class="columns main-column white-section-intro large-8 small-8 large-centered columns clearfix">
 				<h3 class="section-title"><?php echo $service_section_title; ?></h3>
 				<p class="section-description"><?php echo $service_section_description; ?></p>
-                <div class="bottom-line"></div>
+                <div class="bottom-line large-4 small-4 large-centered columns clearfix"></div>
 			</section><!--section description/-->
 			<?php if(is_array($services)): //make sure array is not empty ?>
 				<section class="columns main-column">

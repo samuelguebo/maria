@@ -1074,6 +1074,9 @@ section.white-section .section-title {
   font-weight: bold;
   font-family: "Montserrat", "Georgia", sans-serif; }
 
+section.white-section .bottom-line {
+  border-bottom: solid 1px #d5d5d4; }
+
 section.white-section .section-title .highlight {
   color: #020d16; }
 

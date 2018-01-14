@@ -1154,7 +1154,9 @@ section.white-section .section-title {
     font-family: $primary-font;
 }
 
-section.white-section .bottom-line {}
+section.white-section .bottom-line {
+    border-bottom: solid 1px lighten($normal-gray-color, 60);
+}
 
 section.white-section .section-title .highlight{
 	color: $dark-color;

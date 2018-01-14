@@ -994,7 +994,7 @@ article .post-item-date {
   background-color: #000;
   color: #FFFFFF; }
 
-.single-row article.post-item .bottom-line, .bottom-line {
+.single-row article.post-item .bottom-line {
   border-bottom: 10px solid #ffb400;
   margin-bottom: 10px; }
 
@@ -1074,6 +1074,9 @@ section.white-section .section-title {
   color: #020d16;
   font-weight: bold;
   font-family: "Montserrat", "Georgia", sans-serif; }
+
+section.white-section .bottom-line {
+  border-bottom: solid 1px #d5d5d4; }
 
 section.white-section .section-title .highlight {
   color: #020d16; }

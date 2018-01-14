@@ -994,7 +994,7 @@ article .post-item-date {
   background-color: #000;
   color: #FFFFFF; }
 
-.single-row article.post-item .bottom-line {
+.single-row article.post-item .bottom-line, .bottom-line {
   border-bottom: 10px solid #ffb400;
   margin-bottom: 10px; }
 

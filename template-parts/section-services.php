@@ -18,6 +18,7 @@ $services = Maria_Kirki::get_option( 'services_repeater');
 			<section class="columns main-column white-section-intro large-8 small-8 large-centered columns">
 				<h3 class="section-title"><?php echo $service_section_title; ?></h3>
 				<p class="section-description"><?php echo $service_section_description; ?></p>
+                <div class="bottom-line"></div>
 			</section><!--section description/-->
 			<?php if(is_array($services)): //make sure array is not empty ?>
 				<section class="columns main-column">

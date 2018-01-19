@@ -1064,7 +1064,8 @@ section.main-row.grey-section p.expertise-description {
 section.main-row.white-section {
   background: #FFF;
   padding: 10px 20px;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 20px; }
 
 section.main-row.white-section .white-section-intro {
   padding: 10px 20px; }

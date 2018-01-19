@@ -1173,12 +1173,11 @@ section.main-row.white-section .section-item:hover  > a .fa{
 }
 
 section.main-row.white-section p.section-description{
-	color: $normal-gray-color;
+	color: lighten($normal-gray-color, 20);;
 	font-size: .95em;
     line-height: 1.5;
 	display: inline-block;
-	font-weight: 300;
-	font-family: 'Arial', 'serif';
+	font-weight: normal;
 }
 /*
 ================================================================================================

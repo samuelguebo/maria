@@ -1091,12 +1091,11 @@ section.main-row.white-section .section-item:hover > a .fa {
   background: #3C3C3B; }
 
 section.main-row.white-section p.section-description {
-  color: #3C3C3B;
+  color: #6f6f6e;
   font-size: .95em;
   line-height: 1.5;
   display: inline-block;
-  font-weight: 300;
-  font-family: 'Arial', 'serif'; }
+  font-weight: normal; }
 
 /*
 ================================================================================================

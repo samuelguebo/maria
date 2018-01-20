@@ -1151,7 +1151,6 @@ section.main-row.white-section .white-section-intro {
 }
 
 section.white-section .section-title, section.white-section .item-title {
-	font-weight:bold;
     font-family: $primary-font;
 }
 
@@ -1161,6 +1160,7 @@ section.white-section .bottom-line {
 
 section.white-section .section-title{
 	color: $dark-color;
+    font-weight: bold;
 }
 section.white-section .item-title{
     color: $primary-color;
@@ -1189,7 +1189,12 @@ section.main-row.white-section p.section-description{
 }
 
 section.main-row.white-section .post-item-caption{
-    margin-bottom: 20px;
+    margin-bottom: -20px;
+}
+.section-item .content {
+    background-color: #fff;
+    position: relative;
+    margin: 10px 10px 0px 10px;
 }
 /*
 ================================================================================================

@@ -1071,14 +1071,14 @@ section.main-row.white-section .white-section-intro {
   margin-bottom: 20px; }
 
 section.white-section .section-title, section.white-section .item-title {
-  font-weight: bold;
   font-family: "Montserrat", "Georgia", sans-serif; }
 
 section.white-section .bottom-line {
   border-bottom: solid 1px #d5d5d4; }
 
 section.white-section .section-title {
-  color: #020d16; }
+  color: #020d16;
+  font-weight: bold; }
 
 section.white-section .item-title {
   color: #FF8000; }
@@ -1103,7 +1103,12 @@ section.main-row.white-section p.section-description {
   font-weight: normal; }
 
 section.main-row.white-section .post-item-caption {
-  margin-bottom: 20px; }
+  margin-bottom: -20px; }
+
+.section-item .content {
+  background-color: #fff;
+  position: relative;
+  margin: 10px 10px 0px 10px; }
 
 /*
 ================================================================================================

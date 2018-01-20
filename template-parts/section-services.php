@@ -16,7 +16,7 @@ $services = Maria_Kirki::get_option( 'services_repeater');
 ?>
 <section class="row main-row clearfix white-section">
 			<section class="columns main-column white-section-intro large-8 small-8 large-centered columns clearfix">
-				<h3 class="section-title"><?php echo $service_section_title; ?></h3>
+				<h2 class="section-title"><?php echo $service_section_title; ?></h2>
 				<p class="section-description"><?php echo $service_section_description; ?></p>
                 <div class="bottom-line large-1 small-1 large-centered columns clearfix"></div>
 			</section><!--section description/-->
@@ -35,12 +35,15 @@ $services = Maria_Kirki::get_option( 'services_repeater');
 
                                         </div>
                                     </div>
-									<h4 class="item-title"><?php echo $service['service_title'] ?></h4>
-									<p class="item-description"><?php echo $service['service_description'] ?>
-									</p>
-                                <a href="<?php the_permalink($service['service_page']);?>" title="<?php echo $service['service_title'];?>">
-                                <i class="fa fa-chevron-right"></i>
-                                </a>
+                                    <div class="content">
+                                        <h4 class="item-title"><?php echo $service['service_title'] ?></h4>
+                                        <p class="item-description"><?php echo $service['service_description'] ?>
+                                        </p>
+
+                                        <a href="<?php the_permalink($service['service_page']);?>" title="<?php echo $service['service_title'];?>">
+                                        <i class="fa fa-chevron-right"></i>
+                                        </a>
+                                    </div>
 							</div>
 					<?php endforeach;?>
 				</section>

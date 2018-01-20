@@ -1201,8 +1201,10 @@ section.main-row.white-section .section-description{
     padding: 10px 5px 0px;
 }
 section.main-row.white-section .post-item-caption{
+    min-height: 170px;
     margin-bottom: -55px;
     overflow: hidden;
+    background: $dark-color;
 }
 .section-item .content {
     background-color: #fff;
@@ -1212,8 +1214,6 @@ section.main-row.white-section .post-item-caption{
 }
 
 section.main-row.white-section .post-item-caption img {		
-		min-height: 170px;
-		display: block;
 
 		-webkit-transform: scale(.5); 
        -moz-transform: rotate(0deg) scale(1);

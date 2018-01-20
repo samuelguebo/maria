@@ -23,7 +23,7 @@ $services = Maria_Kirki::get_option( 'services_repeater');
 			<?php if(is_array($services)): //make sure array is not empty ?>
 				<section class="columns main-column">
 					<?php foreach ($services as $service): // loop through array?>
-							<div class="small-6 medium-4 large-4 columns section-item">
+							<div class="small-12 medium-6 large-4 columns section-item">
 								<?php
                                 $service_image_id = maria_get_attachment_id_from_src( $service['service_image'] );
                                 $service_thumb = maria_get_thumb_by_id ($service_image_id, 'post_thumb');

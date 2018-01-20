@@ -1090,17 +1090,29 @@ section.white-section .section-description {
 section.main-row.white-section .section-item {
   text-align: center; }
 
-section.main-row.white-section .section-item:hover > a .fa {
-  background: #3C3C3B; }
-
 .main-row.white-section .item-description, .main-row.white-section .section-description {
   color: #6f6f6e;
   line-height: 1.5;
   font-size: .95em; }
 
-section.main-row.white-section p.section-description {
+section.main-row.white-section .section-description {
   display: inline-block;
   font-weight: normal; }
+
+.white-section a.item-link {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  border: solid 1px #FF007F;
+  color: #FF007F;
+  display: inline-block; }
+
+.white-section a.item-link:hover {
+  border: solid 1px #330019;
+  color: #330019; }
+
+.white-section a.item-link .fa {
+  padding: 10px 5px 0px; }
 
 section.main-row.white-section .post-item-caption {
   margin-bottom: -55px; }

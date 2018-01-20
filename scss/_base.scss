@@ -1172,9 +1172,7 @@ section.white-section .section-description {
 section.main-row.white-section .section-item{
 	text-align:center;
 }
-section.main-row.white-section .section-item:hover  > a .fa{
-	background: $normal-gray-color;
-}
+
 
 .main-row.white-section .item-description, .main-row.white-section .section-description {
     color: lighten($normal-gray-color, 20);
@@ -1182,12 +1180,26 @@ section.main-row.white-section .section-item:hover  > a .fa{
     font-size: .95em;
 
 }
-section.main-row.white-section p.section-description{
+section.main-row.white-section .section-description{
 	
 	display: inline-block;
 	font-weight: normal;
 }
-
+.white-section a.item-link {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    border: solid 1px $primary-color;
+    color: $primary-color;
+    display: inline-block;
+}
+.white-section a.item-link:hover{
+    border: solid 1px darken($primary-color, 40);;
+    color: darken($primary-color, 40);
+}
+.white-section a.item-link .fa {
+    padding: 10px 5px 0px;
+}
 section.main-row.white-section .post-item-caption{
     margin-bottom: -55px;
 }
@@ -1197,6 +1209,7 @@ section.main-row.white-section .post-item-caption{
     margin: 0px 15px 0px 15px;
     padding: 10px;
 }
+
 /*
 ================================================================================================
 10.0 - Content (Posts and Custom post types)

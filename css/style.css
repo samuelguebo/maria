@@ -1499,7 +1499,9 @@ footer#footer {
 
 footer .copyright {
   clear: both;
-  font-size: 0.8em; }
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Georgia", sans-serif; }
 
 footer#footer .copyright a {
   color: #020d16; }

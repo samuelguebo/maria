@@ -1116,7 +1116,8 @@ section.main-row.white-section .section-description {
   padding: 10px 5px 0px; }
 
 section.main-row.white-section .post-item-caption {
-  margin-bottom: -55px; }
+  margin-bottom: -55px;
+  overflow: hidden; }
 
 .section-item .content {
   background-color: #fff;
@@ -1136,7 +1137,7 @@ section.main-row.white-section .post-item-caption img {
   /* Safari */
   transition: transform .5s; }
 
-section.main-row.white-section .post-item-caption img:hover {
+section.main-row.white-section .section-item:hover > .post-item-caption img {
   -webkit-transform: scale(1.4);
   -moz-transform: rotate(10deg) scale(1.4);
   -ms-transform: rotate(10deg) scale(1.4);

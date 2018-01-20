@@ -1127,6 +1127,8 @@ section.main-row.white-section .post-item-caption {
   padding: 10px; }
 
 section.main-row.white-section .post-item-caption img {
+  min-width: 100%;
+  height: auto;
   -webkit-transform: scale(0.5);
   -moz-transform: rotate(0deg) scale(1);
   -ms-transform: rotate(0deg) scale(1);

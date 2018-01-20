@@ -1099,6 +1099,9 @@ section.main-row.white-section p.section-description {
   display: inline-block;
   font-weight: normal; }
 
+section.main-row.white-section .post-item-caption {
+  margin-bottom: 20px; }
+
 /*
 ================================================================================================
 10.0 - Content (Posts and Custom post types)

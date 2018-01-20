@@ -35,7 +35,7 @@ $services = Maria_Kirki::get_option( 'services_repeater');
 
                                         </div>
                                     </div>
-									<h5 class="item-title"><?php echo $service['service_title'] ?></h5>
+									<h4 class="item-title"><?php echo $service['service_title'] ?></h4>
 									<p class="item-description"><?php echo $service['service_description'] ?>
 									</p>
                                 <a href="<?php the_permalink($service['service_page']);?>" title="<?php echo $service['service_title'];?>">

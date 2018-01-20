@@ -1151,7 +1151,6 @@ section.main-row.white-section .white-section-intro {
 }
 
 section.white-section .section-title, section.white-section .item-title {
-	color: $dark-color;
 	font-weight:bold;
     font-family: $primary-font;
 }
@@ -1160,8 +1159,11 @@ section.white-section .bottom-line {
     border-bottom: solid 1px lighten($normal-gray-color, 60);
 }
 
-section.white-section .section-title .highlight{
+section.white-section .section-title{
 	color: $dark-color;
+}
+section.white-section .item-title{
+    color: $primary-color;
 }
 section.white-section .section-description {
 	color: $dark-color;
@@ -1174,10 +1176,14 @@ section.main-row.white-section .section-item:hover  > a .fa{
 	background: $normal-gray-color;
 }
 
-section.main-row.white-section p.section-description{
-	color: lighten($normal-gray-color, 20);;
-	font-size: .95em;
+.main-row.white-section .item-description, .main-row.white-section .section-description {
+    color: lighten($normal-gray-color, 20);
     line-height: 1.5;
+    font-size: .95em;
+
+}
+section.main-row.white-section p.section-description{
+	
 	display: inline-block;
 	font-weight: normal;
 }

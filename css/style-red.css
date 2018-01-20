@@ -1071,15 +1071,17 @@ section.main-row.white-section .white-section-intro {
   margin-bottom: 20px; }
 
 section.white-section .section-title, section.white-section .item-title {
-  color: #020d16;
   font-weight: bold;
   font-family: "Montserrat", "Georgia", sans-serif; }
 
 section.white-section .bottom-line {
   border-bottom: solid 1px #d5d5d4; }
 
-section.white-section .section-title .highlight {
+section.white-section .section-title {
   color: #020d16; }
+
+section.white-section .item-title {
+  color: #ff2323; }
 
 section.white-section .section-description {
   color: #020d16;
@@ -1091,10 +1093,12 @@ section.main-row.white-section .section-item {
 section.main-row.white-section .section-item:hover > a .fa {
   background: #3C3C3B; }
 
-section.main-row.white-section p.section-description {
+.main-row.white-section .item-description, .main-row.white-section .section-description {
   color: #6f6f6e;
-  font-size: .95em;
   line-height: 1.5;
+  font-size: .95em; }
+
+section.main-row.white-section p.section-description {
   display: inline-block;
   font-weight: normal; }
 

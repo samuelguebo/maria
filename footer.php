@@ -18,8 +18,11 @@ after and containing the bottom widget area
 				</div><!-- .footer-bar -->
 				<div class="main-row row">
 						<div class="medium-6 large-10 columns">
-							<p class="copyright"><?php _e('Copyright ','maria')?> <?php echo get_the_date('Y'); ?> <?php echo bloginfo('name'); ?>
+							<p class="copyright"><?php _e('&copy; ','maria')?> <?php echo get_the_date('Y'); ?> <?php echo bloginfo('name'); ?>
+                            | <?php _e('Developed by ','maria')?><a href="<?php echo esc_url( __( 'https://samuelguebo.co', 'maria' ) ); ?>">Samuel Guebo</a> | <a href="https://github.com/samuelguebo/maria"><?php _e('Source code','maria')?> <i class="fa fa-github"></i> </a>
 							</p><!-- copyright-->
+                            
+                            
 						</div>
 						<div class="medium-6 large-2 columns socials">
 							<?php get_template_part('menu-social'); ?>

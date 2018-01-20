@@ -1546,12 +1546,11 @@ footer#footer .footer-bar {
   background-size: 80%; }
 
 footer#footer .footer-bar .widget-title {
-  font-family: "Roboto";
+  font-family: "Montserrat", "Georgia", sans-serif;
   text-transform: uppercase;
   /* border-bottom: solid 1px rgba(#FFF,0.3); */
   padding-bottom: 20px;
-  display: block;
-  margin-bottom: 15px; }
+  display: block; }
 
 footer#footer .back-to-top-wrapper {
   position: relative; }

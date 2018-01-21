@@ -17,13 +17,13 @@ after and containing the bottom widget area
 						<?php dynamic_sidebar( 'footer-1' );?>
 				</div><!-- .footer-bar -->
 				<div class="main-row row">
-						<div class="medium-6 large-10 columns">
+						<div class="small-12 medium-6 large-10 columns">
 							<p class="copyright"><?php _e('&copy; ','maria')?> <?php echo get_the_date('Y'); ?> <?php echo bloginfo('name'); ?>
                             / <?php _e('Developed by ','maria')?><a href="<?php echo esc_url( __( 'http://samuelguebo.co', 'maria' ) ); ?>">Samuel Guebo</a> (<a href="https://github.com/samuelguebo/maria"><i class="fa fa-github"></i> <?php _e('source code','maria')?> </a>)
 							</p><!-- copyright-->
                             
 						</div>
-						<div class="medium-6 large-2 columns socials">
+						<div class="small-12 medium-6 large-2 columns socials">
 							<?php get_template_part('menu-social'); ?>
 						</div>
 

@@ -16,10 +16,14 @@ jQuery(document).ready(function ($) {
     sr.reveal('.category-row .post-item');
     sr.reveal('footer .widget', {
         duration: 1500
-    }, 300);
+    }, 150);
     sr.reveal('aside .widget', {
         duration: 2000
     }, 150);
+
+    sr.reveal('.white-section .section-item', {
+        duration: 1000
+    }, 100);
     
     sr.reveal('form input', {
         duration: 2000

@@ -239,7 +239,7 @@ function maria_kirki_customize_register () {
 			'type'          => 'repeater',
 			'settings'      => 'team_repeater',
 			'label'         => __( 'Add a member to the team', 'maria' ),
-			'section'       => 'social_section',
+			'section'       => 'team_section',
 			'default'       => array(),
 			'priority'      => 10,
 			'row_label'     => array(
@@ -248,8 +248,24 @@ function maria_kirki_customize_register () {
 				'field'     => 'member_title',
 			),
 			'fields' => array(
-				// field: social_title
+				// field: image
+				'member_image' => array(
+						'type'        => 'image',
+						//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+						'description' => esc_attr__( 'Image of the member', 'maria' ),
+				),
+				
+				// field: member_title
 				'member_title'	=> array(
+					'type'              => 'text',
+					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+					'description'       => esc_attr__( 'Title', 'maria' ),
+					'default'           => 'John Doe',
+					'sanitize_callback' => 'sanitize_text_field'
+				),
+
+				// field: member_position
+				'member_position'	=> array(
 					'type'              => 'text',
 					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
 					'description'       => esc_attr__( 'Title', 'maria' ),
@@ -260,8 +276,8 @@ function maria_kirki_customize_register () {
 				// field: social_url
 				'social_url'	=> array(
 						'type'        => 'text',
-						'description' => esc_attr__( 'Url of the social profile or page', 'maria' ),
-						'default'     => '#',
+						'description' => esc_attr__( 'Url of the social profiles separated by commas', 'maria' ),
+						'default'     => 'https://twitter.com/samuelguebo, github.com/samuelguebo',
 						'sanitize_callback' => 'sanitize_text_field'
 				)
 			)

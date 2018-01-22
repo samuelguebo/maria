@@ -26,6 +26,9 @@ if ( class_exists( 'Kirki' ) ):
 	// services section
 	get_template_part('template-parts/section-services');
 
+    // team section
+    get_template_part('template-parts/section-team');
+
 else:
 ?>
 <div class="post-list clearfix">

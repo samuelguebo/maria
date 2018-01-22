@@ -228,6 +228,45 @@ function maria_kirki_customize_register () {
 			)
 		)
 	);
+
+	// Create a repeater section for team
+	Maria_Kirki::add_section('team_section', array(
+		'title' => __('Team', 'maria'),
+		'priority' => 30,
+	));
+	// Create a repeater for socials
+	Maria_Kirki::add_field( 'maria', array(
+			'type'          => 'repeater',
+			'settings'      => 'team_repeater',
+			'label'         => __( 'Add a member to the team', 'maria' ),
+			'section'       => 'social_section',
+			'default'       => array(),
+			'priority'      => 10,
+			'row_label'     => array(
+				'type'      => 'field',
+				'value'     => 'row',
+				'field'     => 'member_title',
+			),
+			'fields' => array(
+				// field: social_title
+				'member_title'	=> array(
+					'type'              => 'text',
+					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+					'description'       => esc_attr__( 'Title', 'maria' ),
+					'default'           => 'John Doe',
+					'sanitize_callback' => 'sanitize_text_field'
+				),
+				
+				// field: social_url
+				'social_url'	=> array(
+						'type'        => 'text',
+						'description' => esc_attr__( 'Url of the social profile or page', 'maria' ),
+						'default'     => '#',
+						'sanitize_callback' => 'sanitize_text_field'
+				)
+			)
+		)
+	);
 }
 function maria_customize_register( $wp_customize ) {
 	

@@ -229,12 +229,48 @@ function maria_kirki_customize_register () {
 		)
 	);
 
+	/**
+     * Section for Team
+     * Taking advantage of Kirki's repeater 
+     * feature, and static fields: section title
+     * and description
+     */
+    
 	// Create a repeater section for team
 	Maria_Kirki::add_section('team_section', array(
 		'title' => __('Team', 'maria'),
 		'priority' => 30,
 	));
-	// Create a repeater for socials
+
+
+
+	// Field for services sections: title 
+	Maria_Kirki::add_field( 'maria', array(
+			'type'          => 'text',
+			'settings'      => 'services_section_title',
+			'label'         => __( 'Head text for services section', 'maria' ),
+			//'description'   => __( 'Add Head text for services section', 'maria' ),
+			'default'       => __( 'Our services', 'maria' ),
+			'section'       => 'services_section',
+			'priority'      => 10,
+			'sanitize_callback' => 'sanitize_text_field'
+			)
+	);
+	// Field for services sections: description
+	Maria_Kirki::add_field( 'maria', array(
+			'type'          => 'textarea',
+			'settings'      => 'services_section_description',
+			'label'         => __( 'Head description for services section', 'maria' ),
+			//'description'   => __( 'Add Head description for services section', 'maria' ),
+			'default'         => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'maria' ),
+			'section'       => 'services_section',
+			'priority'      => 10,
+			'sanitize_callback' => 'sanitize_text_field'
+			)
+	);
+
+
+	// Create a repeater for team member
 	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'repeater',
 			'settings'      => 'team_repeater',

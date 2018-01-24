@@ -262,7 +262,7 @@ function maria_kirki_customize_register () {
 			'label'         => __( 'Head description for team section', 'maria' ),
 			//'description'   => __( 'Add Head description for team section', 'maria' ),
 			'default'         => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'maria' ),
-			'section'       => 'services_section',
+			'section'       => 'team_section',
 			'priority'      => 10,
 			'sanitize_callback' => 'sanitize_text_field'
 			)
@@ -303,14 +303,14 @@ function maria_kirki_customize_register () {
 				'member_position'	=> array(
 					'type'              => 'text',
 					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
-					'description'       => esc_attr__( 'Title', 'maria' ),
-					'default'           => 'John Doe',
+					'description'       => esc_attr__( 'Position', 'maria' ),
+					'default'           => 'Software architect',
 					'sanitize_callback' => 'sanitize_text_field'
 				),
 				
 				// field: social_url
 				'social_url'	=> array(
-						'type'        => 'text',
+						'type'        => 'textarea',
 						'description' => esc_attr__( 'Url of the social profiles separated by commas', 'maria' ),
 						'default'     => 'https://twitter.com/samuelguebo, github.com/samuelguebo',
 						'sanitize_callback' => 'sanitize_text_field'

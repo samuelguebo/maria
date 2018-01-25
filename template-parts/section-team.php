@@ -36,11 +36,11 @@ $members = Maria_Kirki::get_option( 'team_repeater');
 										</div>
 									</div>
 									<div class="content">
-										<h4 class="item-title"><?php echo $service['service_title'] ?></h4>
-										<p class="item-description"><?php echo $service['service_description'] ?>
+										<h4 class="item-title"><?php echo $member['member_title'] ?></h4>
+										<p class="item-description"><?php echo $member['member_position'] ?>
 										</p>
 
-										<a href="<?php the_permalink($service['service_page']);?>" title="<?php echo $service['service_title'];?>" class="item-link">
+										<a href="<?php the_permalink($member['social_url']);?>" title="<?php echo $service['member_title'];?>" class="item-link">
 										<i class="fa fa-chevron-right"></i>
 										</a>
 									</div>

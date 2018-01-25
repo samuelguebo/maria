@@ -40,7 +40,7 @@ Table of Content
 ================================================================================================
 */
 a {
-  color: #990000;
+  color: red;
   line-height: inherit;
   text-decoration: none; }
 
@@ -56,7 +56,7 @@ a:hover, a:focus {
   line-height: 1;
   margin-bottom: 0.625rem;
   font-family: "Montserrat", "Georgia", sans-serif;
-  color: #990000;
+  color: red;
   text-transform: uppercase; }
 
 @font-face {
@@ -126,7 +126,7 @@ header div.slogan a:hover {
   color: #020d16; }
 
 .single-cover .overlay {
-  background: rgba(153, 0, 0, 0.85);
+  background: rgba(255, 0, 0, 0.85);
   height: 100%;
   width: 100%;
   top: 0;
@@ -158,19 +158,19 @@ header .banner-top .widget-title {
 
 header .search-form input {
   border: none;
-  border-bottom: solid 1px #990000;
+  border-bottom: solid 1px red;
   box-shadow: none;
   margin: 0; }
 
 header .search-form .button, header .search-form button {
   background-color: transparent;
-  color: #990000;
+  color: red;
   padding: 5px;
   font-size: 1.15rem;
   margin: 0; }
 
 header .search-form button:hover, header .search-form button:focus, header .search-form .button:hover, header .search-form .button:focus {
-  color: #660000;
+  color: #cc0000;
   background-color: transparent; }
 
 header .search-form .small-2 {
@@ -205,7 +205,7 @@ header .search-form .small-10 {
   font-weight: 300; }
 
 .top-bar-section ul li:hover:not(.has-form) > a {
-  background-color: #990000; }
+  background-color: red; }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
   line-height: 2.8125rem;
@@ -213,7 +213,7 @@ header .search-form .small-10 {
 
 .top-bar-section .has-dropdown > a::after {
   font-family: 'FontAwesome';
-  color: #990000;
+  color: red;
   content: '\f078';
   line-height: 1px;
   font-size: 0.7em; }
@@ -258,7 +258,7 @@ header .search-form .small-10 {
   border-bottom: none; }
 
 .top-bar .toggle-topbar.menu-icon a {
-  color: #990000;
+  color: red;
   padding: 0;
   position: relative;
   font-family: "Montserrat", "Georgia", sans-serif; }
@@ -268,7 +268,7 @@ header .search-form .small-10 {
   box-shadow: none;
   font-family: 'FontAwesome';
   content: '\f0c9';
-  color: #990000;
+  color: red;
   font-size: 1.8em; }
 
 .top-bar-section ul li {
@@ -324,14 +324,14 @@ footer .socials ul li a:hover {
   border: solid 1px #020d16; }
 
 header .socials ul li a {
-  color: #990000;
+  color: red;
   font-size: 15px;
   width: 36px;
   height: 36px;
   -moz-border-radius: 18px;
   -webkit-border-radius: 18px;
   border-radius: 18px;
-  border: solid 1px #990000;
+  border: solid 1px red;
   display: block; }
 
 header .socials ul li a:hover {
@@ -421,22 +421,22 @@ header .socials {
 .nav-wrapper nav.top-bar li.current-menu-item a,
 .nav-wrapper nav.top-bar li.current-menu-ancestor a,
 .nav-wrapper nav.top-bar li.current-menu-parent a {
-  color: #990000;
+  color: red;
   font-weight: bold; }
 
 .nav-wrapper nav.top-bar li.current-menu-item a:hover,
 .nav-wrapper nav.top-bar li.current-menu-ancestor a:hover,
 .nav-wrapper nav.top-bar li.current-menu-parent a:hover {
-  color: #660000; }
+  color: #cc0000; }
 
 .top-bar-section .current-menu-item.has-dropdown > a::after, .top-bar-section .current-menu-ancestor.has-dropdown > a::after, .top-bar-section .current-menu-parent.has-dropdown > a::after {
-  color: #660000;
+  color: #cc0000;
   content: '\f078';
   line-height: 1px;
   font-size: 0.7em; }
 
 .top-bar-section .current-menu-item.has-dropdown > a:hover::after, .top-bar-section .current-menu-ancestor.has-dropdown > a:hover::after, .top-bar-section .current-menu-parent.has-dropdown > a:hover::after {
-  color: #660000; }
+  color: #cc0000; }
 
 /*
 ================================================================================================
@@ -688,14 +688,14 @@ meta.foundation-mq-topbar {
   content: '\f053';
   font-size: 0.8em;
   border: none;
-  color: #990000;
+  color: red;
   padding-right: 10px; }
 
 .top-bar-section .dropdown li.title.back a {
-  color: #990000; }
+  color: red; }
 
 .top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.parent-link a {
-  color: #990000;
+  color: red;
   display: block; }
 
 /*
@@ -726,7 +726,7 @@ meta.foundation-mq-topbar {
 
 .slider-wrapper a.button {
   background: #FFF;
-  color: #660000;
+  color: #cc0000;
   margin-top: 20px;
   border-radius: 5px;
   /* font-size:0.95em; */
@@ -757,22 +757,22 @@ meta.foundation-mq-topbar {
 
 .slider-wrapper a.two.button:hover {
   border: none;
-  background: black;
+  background: #330000;
   color: #FFF; }
 
 .slider-wrapper .post-item-description {
   font-weight: 300; }
 
 .slider-wrapper .post-item {
-  background: #990000;
+  background: red;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(-90deg, #660000, #990000);
+  background: -webkit-linear-gradient(-90deg, #cc0000, red);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, #660000, #990000);
+  background: -o-linear-gradient(-90deg, #cc0000, red);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, #660000, #990000);
+  background: -moz-linear-gradient(-90deg, #cc0000, red);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-90deg, #660000, #990000);
+  background: linear-gradient(-90deg, #cc0000, red);
   /* Standard syntax */
   position: relative; }
 
@@ -809,7 +809,7 @@ meta.foundation-mq-topbar {
   color: #FFF; }
 
 .slider-wrapper .slider-caption .panel .post-item-title a:hover {
-  color: #990000; }
+  color: red; }
 
 button.slick-next.slick-arrow {
   border-top-left-radius: 60px;
@@ -827,7 +827,7 @@ button.slick-prev.slick-arrow {
 
 .slick-prev, .slick-next {
   border: 1px solid #FFF;
-  background: #4d0000;
+  background: #b30000;
   border-bottom: none;
   border-top: none;
   width: 40px;
@@ -898,7 +898,7 @@ button.slick-prev.slick-arrow {
 
 article .post-item-image .colorful-line {
   height: 2px;
-  background: #990000;
+  background: red;
   width: 80px;
   position: absolute;
   top: 30px;
@@ -924,7 +924,7 @@ article .post-item-image .colorful-line {
 
 .single-row article.post-item .post-content ol li:before {
   content: counter(li) ".";
-  color: #990000;
+  color: red;
   display: inline-block;
   width: 1em;
   font-weight: bold;
@@ -936,7 +936,7 @@ article .post-item-image .colorful-line {
 .single-row article.post-item .post-content ul li:before {
   font-family: "FontAwesome";
   content: '\f054';
-  color: #990000;
+  color: red;
   padding-right: 1em;
   font-size: 0.7em;
   height: 10px;
@@ -946,7 +946,7 @@ article .post-item-image .colorful-line {
 
 .single-row article.post-item blockquote {
   background: #efefef;
-  border-left: 5px solid #990000;
+  border-left: 5px solid red;
   padding: 5px 10px 5px 20px;
   margin-bottom: 10px; }
 
@@ -994,7 +994,7 @@ article .post-item-date {
   color: #FFFFFF; }
 
 .single-row article.post-item .bottom-line {
-  border-bottom: 10px solid #990000;
+  border-bottom: 10px solid red;
   margin-bottom: 10px; }
 
 .single-row article.post-item .post-item-title {
@@ -1018,7 +1018,7 @@ section.main-row.grey-section .grey-section-intro {
 
 section.grey-section .section-expertise-title {
   text-transform: uppercase;
-  color: #660000;
+  color: #cc0000;
   font-weight: bold; }
 
 section.grey-section .section-expertise-title .highlight {
@@ -1033,7 +1033,7 @@ section.main-row.grey-section .expertise {
 
 section.main-row.grey-section .expertise .fa {
   font-size: 1.15em;
-  color: #990000;
+  color: red;
   padding: 37px 15px;
   min-width: 115px;
   min-height: 115px;
@@ -1041,11 +1041,11 @@ section.main-row.grey-section .expertise .fa {
   border-radius: 80px; }
 
 section.main-row.grey-section .expertise:hover > a .fa {
-  background: #990000;
+  background: red;
   color: #FFF; }
 
 section.main-row.grey-section .expertise-title {
-  color: #660000;
+  color: #cc0000;
   font-weight: bold; }
 
 section.main-row.grey-section p.expertise-description {
@@ -1081,7 +1081,7 @@ section.white-section .section-title {
   font-weight: bold; }
 
 section.white-section .item-title {
-  color: #990000; }
+  color: red; }
 
 section.white-section .section-description {
   color: #020d16;
@@ -1103,13 +1103,13 @@ section.main-row.white-section .section-description {
   width: 36px;
   height: 36px;
   border-radius: 18px;
-  border: solid 1px #990000;
-  color: #990000;
+  border: solid 1px red;
+  color: red;
   display: inline-block; }
 
 .white-section a.item-link:hover {
-  border: solid 1px black;
-  color: black; }
+  border: solid 1px #330000;
+  color: #330000; }
 
 .white-section a.item-link .fa {
   padding: 10px 5px 0px; }
@@ -1173,10 +1173,10 @@ article.post-item .post-item-title {
   font-weight: 300; }
 
 article.post-item .post-item-title a {
-  color: #660000; }
+  color: #cc0000; }
 
 article.post-item .post-item-title a:hover {
-  color: #990000; }
+  color: red; }
 
 article .post-item-date span {
   display: block; }
@@ -1224,11 +1224,11 @@ article .panel {
 
 .category-title {
   font-family: "Roboto";
-  color: #990000;
+  color: red;
   text-transform: uppercase;
   padding: 0px;
   font-weight: 500;
-  border-bottom: solid 1px #990000;
+  border-bottom: solid 1px red;
   display: inline-block;
   margin-bottom: -1px; }
 
@@ -1285,7 +1285,7 @@ article.columns + article.columns:last-child {
   margin-bottom: 20px; }
 
 .category-row.category-mix .panel .post-item-title a, .category-row.category-mix .panel .label {
-  color: #990000; }
+  color: red; }
 
 .category-row.category-mix .panel .post-item-title a:hover {
   color: #FFF; }
@@ -1337,7 +1337,7 @@ article.columns + article.columns:last-child {
   line-height: 0.6em; }
 
 .event-widget .day {
-  color: #990000;
+  color: red;
   line-height: 0.8;
   letter-spacing: -4px;
   text-align: center; }
@@ -1349,7 +1349,7 @@ article.columns + article.columns:last-child {
   color: #c9c9c9; }
 
 .event-widget .full-day {
-  color: #990000;
+  color: red;
   font-weight: 300; }
 
 .event-widget p.description {
@@ -1365,7 +1365,7 @@ article.columns + article.columns:last-child {
   font-size: 1rem; }
 
 .event-widget .description a:hover {
-  color: #660000; }
+  color: #cc0000; }
 
 /*
 ================================================================================================
@@ -1391,7 +1391,7 @@ aside .widget-title {
   text-transform: uppercase;
   display: block;
   margin-bottom: 15px;
-  background: #660000; }
+  background: #cc0000; }
 
 aside .widget_search .widget-title {
   padding: 0px;
@@ -1400,9 +1400,9 @@ aside .widget_search .widget-title {
   background: none; }
 
 aside .widget_search {
-  background: #990000;
+  background: red;
   padding: 5px 10px 0px 15px;
-  border: solid 1px #990000; }
+  border: solid 1px red; }
 
 aside .widget_search button {
   font-size: 1.4em; }
@@ -1467,7 +1467,7 @@ aside .recent-posts-box ul li:last-child {
 .widget ul li a:before {
   font-family: "FontAwesome";
   content: '\f054';
-  color: #990000;
+  color: red;
   padding-right: 10px; }
 
 .widget ul li a {
@@ -1482,7 +1482,7 @@ aside .recent-posts-box ul li a {
   font-size: 0.8em; }
 
 .widget ul li a:hover {
-  color: #990000; }
+  color: red; }
 
 /*
 ================================================================================================
@@ -1490,7 +1490,7 @@ aside .recent-posts-box ul li a {
 ================================================================================================
 */
 footer#footer {
-  background: #990000; }
+  background: red; }
 
 footer#footer {
   /* padding: 35px 20px 25px 20px; */
@@ -1562,7 +1562,7 @@ footer#footer a.back-to-top {
   -webkit-border-radius: 30px;
   border-radius: 30px;
   color: #FFF;
-  background: #990000;
+  background: red;
   position: fixed;
   text-align: center;
   line-height: 60px;
@@ -1571,9 +1571,9 @@ footer#footer a.back-to-top {
   font-size: 2em; }
 
 footer#footer a.back-to-top:hover {
-  color: #990000;
+  color: red;
   background: #fff;
-  border: solid 1px #990000; }
+  border: solid 1px red; }
 
 footer#footer a#back-to-top {
   opacity: 1;
@@ -1585,7 +1585,7 @@ footer#footer a#back-to-top {
 ================================================================================================
 */
 .button, button {
-  background-color: #990000;
+  background-color: red;
   font-family: "Roboto"; }
 
 button.small, .button.small {
@@ -1593,7 +1593,7 @@ button.small, .button.small {
   font-size: 0.8125rem; }
 
 button:hover, button:focus, .button:hover, .button:focus {
-  background-color: #660000; }
+  background-color: #cc0000; }
 
 article .panel .button {
   border-radius: 5px;
@@ -1639,12 +1639,12 @@ article .panel .button {
   font-size: 0.7rem; }
 
 .main-column .call-to-action .button.small {
-  background: #660000;
+  background: #cc0000;
   margin-left: 20px;
   margin-top: 10px; }
 
 .main-column .call-to-action .button.small:hover {
-  background: #990000; }
+  background: red; }
 
 /*
 ================================================================================================
@@ -1660,7 +1660,7 @@ table {
   width: 100%; }
 
 table thead tr th {
-  background-color: #990000;
+  background-color: red;
   color: white;
   text-transform: uppercase;
   font-family: "Montserrat", "Georgia", sans-serif; }
@@ -1684,7 +1684,7 @@ table thead tr th {
   display: inline-block;
   padding: 5px 10px;
   margin: 0 2px 0 0;
-  border: 1px solid #990000;
+  border: 1px solid red;
   line-height: 1;
   text-decoration: none;
   border-radius: 2px;
@@ -1693,18 +1693,18 @@ table thead tr th {
 
 .page-numbers.current,
 a.page-numbers:hover {
-  background: #990000;
+  background: red;
   color: #FFF; }
 
 span.page-numbers.dots {
-  color: #990000; }
+  color: red; }
 
 .pagination-wrapper {
   margin: 15px 0px; }
 
 ul.pagination li.current a,
 ul.pagination li.current button {
-  background: #990000; }
+  background: red; }
 
 ul.pagination li a, ul.pagination li {
   font-size: 1em;
@@ -1760,10 +1760,10 @@ footer .breadcrumbs > *::before {
   line-height: 1.2rem; }
 
 .breadcrumbs a {
-  color: #990000; }
+  color: red; }
 
 .breadcrumbs a:hover {
-  color: #990000; }
+  color: red; }
 
 /*
 ================================================================================================
@@ -1817,7 +1817,7 @@ footer .breadcrumbs > *::before {
     font-size: 0.8em; }
 
   .slider-wrapper .slider-caption .panel .post-item-title a:hover {
-    color: #990000; }
+    color: red; }
 
   .main-nav > li {
     border-left: none; }
@@ -1867,7 +1867,7 @@ footer .breadcrumbs > *::before {
     margin-bottom: -55px !important; }
 
   .top-bar-section ul li:hover:not(.has-form) > a {
-    color: #990000; }
+    color: red; }
 
   .nav-wrapper nav {
     border: none; }
@@ -1948,7 +1948,7 @@ footer .breadcrumbs > *::before {
     padding-right: 0px; }
 
   .top-bar-section ul li > a {
-    color: #990000; }
+    color: red; }
 
   .top-bar .toggle-topbar.menu-icon a span::after {
     font-size: 1.5em; } }
@@ -2286,7 +2286,7 @@ p img.alignright, p img.alignleft {
     margin: 0 0 1em 0;
     float: none; } }
 .slider-wrapper .slider-caption .panel .post-item-title a {
-  color: #990000; }
+  color: red; }
 
 .nav-wrapper nav.top-bar li.current-menu-item a:hover,
 .nav-wrapper nav.top-bar li.current-menu-ancestor a:hover,
@@ -2294,17 +2294,17 @@ p img.alignright, p img.alignleft {
   color: #FFF; }
 
 .slider-wrapper .slider-caption .label.category {
-  background-color: #990000;
+  background-color: red;
   color: #FFF; }
 
 aside .widget-title {
-  background: #990000; }
+  background: red; }
 
 .main-column .call-to-action .button.small {
-  background: #990000; }
+  background: red; }
 
 .main-column .call-to-action .button.small:hover {
-  background: #990000; }
+  background: red; }
 
 .button:hover {
   background: #020d16; }

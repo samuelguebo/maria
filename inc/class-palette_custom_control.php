@@ -69,28 +69,28 @@ class Palette_Custom_Control extends WP_Customize_Control
                 </style>
 
                 <label>
-                      <?php echo 'currently color is: '.get_theme_mod('maria_theme_color'); ?>
+                      <?php $current_color =  esc_attr(get_theme_mod('maria_theme_color')); ?>
                   <h1 class="customize-layout-control">
                       <?php echo esc_html( $this->label ); ?>
                     </h1>
                   <div id="palette">
                       <a class="yellow" href="#">
-                        <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> value="" />
+                        <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> value="yellow" <?php checked($current_color, 'yellow', true);?>/>
                         </a>
                       <a class="green" href="#">
-                        <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="green" />
+                        <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="green" <?php checked($current_color, 'green', true);?>/>
                     </a>
                     <a class="blue" href="#">
-                        <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="blue" />
+                        <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="blue" <?php checked($current_color, 'blue', true);?>/>
                     </a>
                     <a class="pink" href="#">
-                      <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="pink" />
+                      <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="pink" <?php checked($current_color, 'pink', true);?>/>
                     </a>
                     <a class="orange" href="#">
-                        <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="orange" />
+                        <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="orange" <?php checked($current_color, 'orange', true);?>/>
                     </a>
                     <a class="red" href="#">
-                        <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="red" />
+                        <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="red" <?php checked($current_color, 'red', true);?>/>
                     </a>
                   </div>
                 </label>

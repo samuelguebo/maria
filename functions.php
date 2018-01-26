@@ -150,7 +150,7 @@ function maria_scripts() {
 	wp_enqueue_style( 'motion-ui', 'https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.css' );
 	wp_enqueue_style( 'slick-slider', get_template_directory_uri().'/css/slick.css');
     
-    $style = "style";
+    $style = "style-blue";
     if(""!=get_theme_mod('maria_theme_color')){
         $color = get_theme_mod('maria_theme_color');
         $style = 'style-'.$color;

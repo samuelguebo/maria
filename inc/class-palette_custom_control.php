@@ -37,6 +37,7 @@ class Palette_Custom_Control extends WP_Customize_Control
 					}
 					#palette a.selected{
 						border: solid 3px #000;
+						margin: 1px;
 						
 					}
 					#palette a input[type=radio]{
@@ -97,8 +98,8 @@ class Palette_Custom_Control extends WP_Customize_Control
 					// Non conflict mode
 				jQuery(document).ready(function ($) {
 					$('div#palette a').click(function (e) {
-						$(this).siblings().removeAttr('id');
-						$(this).attr('id', 'selected');
+						$(this).siblings().removeClass('selected');
+						$(this).attr('class', 'selected');
 						var checkbox = $(this).children('input[type=radio]');
 						//checkbox.prop('checked', true);
 						checkbox.attr('checked', true);

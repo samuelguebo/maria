@@ -12,113 +12,112 @@ It display a 6-color palette in the theme customization panel
 ================================================================================================
 */
 if ( ! class_exists( 'WP_Customize_Control' ) )
-    return NULL;
+	return NULL;
 
 /**
  * Class to create a custom layout control
  */
 class Palette_Custom_Control extends WP_Customize_Control
 {
-      /**
-       * Render the content on the theme customizer page
-       */
-      public function render_content()
-       {
-            ?>  <style>
-                    #palette{
-                        margin-top:10px;
-                    }
-                    #palette a{
-                        float:left;
-                        margin:4px;
-                        width:75px;
-                        height:75px;
-                        display: block;
-                    }
-                    #palette a.selected{
-                        filter: contrast(90%);
-                            -webkit-filter: contrast(90%);
-                            -moz-filter: contrast(90%);
-                            -o-filter: contrast(90%);
-                            -ms-filter: contrast(200%);
-                        
-                    }
-                    #palette a input[type=radio]{
-                        display: none;
-                    }
-                
-                    #palette .pink {
-                        background: #FF007F;
-                    }
-                    #palette .blue {
-                        background: #0e94c9;
-                    }
-                    #palette .green {
-                        background: #309864;
-                    }
-                    #palette .orange {
-                        background: #e34a00;
-                    }
-                    #palette .yellow {
-                        background: #f68700;
-                    }
-                    #palette .red {
-                        background: #d8052e;
-                    }
-                    
-                </style>
+	  /**
+	   * Render the content on the theme customizer page
+	   */
+	  public function render_content()
+	   {
+			?>  <style>
+					#palette{
+						margin-top:10px;
+					}
+					#palette a{
+						float:left;
+						margin:4px;
+						width:73px;
+						height:73px;
+						display: block;
+					}
+					#palette a.selected{
+						border: solid 3px #000;
+						
+					}
+					#palette a input[type=radio]{
+						display: none;
+					}
+				
+					#palette #pink {
+						background: #FF007F;
+					}
+					#palette #blue {
+						background: #0e94c9;
+					}
+					#palette #green {
+						background: #309864;
+					}
+					#palette #orange {
+						background: #e34a00;
+					}
+					#palette #yellow {
+						background: #f68700;
+					}
+					#palette #red {
+						background: #d8052e;
+					}
+					
+				</style>
 
-                <label>
-                      <?php $current_color =  esc_attr(get_theme_mod('maria_theme_color')); ?>
-                  <h1 class="customize-layout-control">
-                      <?php echo esc_html( $this->label ); ?>
-                    </h1>
-                  <div id="palette">
-                      <a class="yellow" href="#">
-                        <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> value="yellow" <?php checked($current_color, 'yellow', true);?>/>
-                        </a>
-                      <a class="green" href="#">
-                        <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="green" <?php checked($current_color, 'green', true);?>/>
-                    </a>
-                    <a class="blue" href="#">
-                        <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="blue" <?php checked($current_color, 'blue', true);?>/>
-                    </a>
-                    <a class="pink" href="#">
-                      <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="pink" <?php checked($current_color, 'pink', true);?>/>
-                    </a>
-                    <a class="orange" href="#">
-                        <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="orange" <?php checked($current_color, 'orange', true);?>/>
-                    </a>
-                    <a class="red" href="#">
-                        <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="red" <?php checked($current_color, 'red', true);?>/>
-                    </a>
-                  </div>
-                </label>
-                <script>
-                    // Non conflict mode
-                jQuery(document).ready(function ($) {
-                    $('div#palette a').click(function (e) {
-                        $(this).siblings().removeClass('selected');
-                        $(this).addClass('selected');
-                        var checkbox = $(this).children('input[type=radio]');
-                        //checkbox.prop('checked', true);
-                        checkbox.attr('checked', true);
-            
-                        var setting = checkbox.attr( 'data-customize-setting-link' );
-                        // Get the value of the currently-checked radio input.
-                        var color = checkbox.val();
-                        // Set the new value.
-                        wp.customize( setting, function( obj ) {
+				<label>
+					  <?php
+						$current_color =  esc_attr(get_theme_mod('maria_theme_color'));
+						$selected_css = "class = 'selected' ";
+					   ?>
+				  <h1 class="customize-layout-control">
+					  <?php echo esc_html( $this->label ); ?>
+					</h1>
+				  <div id="palette">
+					  <a id="yellow" href="#" <?php if($current_color == 'yellow') echo $selected_css;?>>
+						<input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> value="yellow"/>
+						</a>
+					  <a id="green" href="#" <?php if($current_color == 'green') echo $selected_css;?>>
+						<input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="green"/>
+					</a>
+					<a id="blue" href="#" <?php if($current_color == 'blue') echo $selected_css;?>>
+						<input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="blue" />
+					</a>
+					<a id="pink" href="#" <?php if($current_color == 'pink') echo $selected_css;?>>
+					  <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="pink" />
+					</a>
+					<a id="orange" href="#" <?php if($current_color == 'orange') echo $selected_css;?>>
+						<input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="orange" />
+					</a>
+					<a id="red" href="#" <?php if($current_color == 'red') echo $selected_css;?> <?php if($current_color == 'red') echo $selected_css;?>>
+						<input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="red"/>
+					</a>
+				  </div>
+				</label>
+				<script>
+					// Non conflict mode
+				jQuery(document).ready(function ($) {
+					$('div#palette a').click(function (e) {
+						$(this).siblings().removeAttr('id');
+						$(this).attr('id', 'selected');
+						var checkbox = $(this).children('input[type=radio]');
+						//checkbox.prop('checked', true);
+						checkbox.attr('checked', true);
+			
+						var setting = checkbox.attr( 'data-customize-setting-link' );
+						// Get the value of the currently-checked radio input.
+						var color = checkbox.val();
+						// Set the new value.
+						wp.customize( setting, function( obj ) {
 
-                            obj.set( color );
-                        } );
-                                
-                        e.preventDefault();
+							obj.set( color );
+						} );
+								
+						e.preventDefault();
 
-                    });
-                });
-                </script>
-            <?php
-       }
+					});
+				});
+				</script>
+			<?php
+	   }
 }
 ?>

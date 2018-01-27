@@ -44,8 +44,8 @@ class Palette_Custom_Control extends WP_Customize_Control
 						display: none;
 					}
 				
-					#palette #pink {
-						background: #ec3253;
+					#palette #navy {
+						background: #2e3871;
 					}
 					#palette #blue {
 						background: #0e94c9;
@@ -83,8 +83,8 @@ class Palette_Custom_Control extends WP_Customize_Control
 					<a id="blue" href="#" <?php if($current_color == 'blue') echo $selected_css;?>>
 						<input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="blue" />
 					</a>
-					<a id="pink" href="#" <?php if($current_color == 'pink') echo $selected_css;?>>
-					  <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="pink" />
+					<a id="navy" href="#" <?php if($current_color == 'navy') echo $selected_css;?>>
+					  <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="navy" />
 					</a>
 					<a id="orange" href="#" <?php if($current_color == 'orange') echo $selected_css;?>>
 						<input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="orange" />

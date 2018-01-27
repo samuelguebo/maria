@@ -35,7 +35,7 @@ function maria_sanitize_colors( $input, $setting ) {
 	$input = sanitize_key( $input );
 	
 	// Make sure the chosen colors exists among the available ones.
-    $colors = array('pink','blue', 'green', 'orange', 'red','yellow');
+    $colors = array('navy','blue', 'green', 'orange', 'red','yellow');
     if (in_array($input, $colors)) {
         $color = $input;
     }

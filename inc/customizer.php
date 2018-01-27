@@ -335,7 +335,7 @@ function maria_customize_register( $wp_customize ) {
 	$wp_customize->remove_control('header_textcolor'); // remove existing Headline color setting
 	$wp_customize->add_setting(
 		'maria_theme_color', array(
-			'default' => '',
+			'default' => 'blue',
 			'sanitize_callback'	=> 'maria_sanitize_colors'
 
 		)

@@ -152,7 +152,7 @@ function maria_scripts() {
     
     $style = "style-blue";
     if(""!=get_theme_mod('maria_theme_color')){
-        $color = get_theme_mod('maria_theme_color');
+        $color = esc_attr(get_theme_mod('maria_theme_color'));
         $style = 'style-'.$color;
     } 
 	wp_enqueue_style( 'iam-style', get_template_directory_uri().'/css/'.$style.'.css' );

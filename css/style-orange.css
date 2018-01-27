@@ -170,7 +170,7 @@ header .search-form .button, header .search-form button {
   margin: 0; }
 
 header .search-form button:hover, header .search-form button:focus, header .search-form .button:hover, header .search-form .button:focus {
-  color: #ff9933;
+  color: #f57b00;
   background-color: transparent; }
 
 header .search-form .small-2 {
@@ -427,16 +427,16 @@ header .socials {
 .nav-wrapper nav.top-bar li.current-menu-item a:hover,
 .nav-wrapper nav.top-bar li.current-menu-ancestor a:hover,
 .nav-wrapper nav.top-bar li.current-menu-parent a:hover {
-  color: #ff9933; }
+  color: #f57b00; }
 
 .top-bar-section .current-menu-item.has-dropdown > a::after, .top-bar-section .current-menu-ancestor.has-dropdown > a::after, .top-bar-section .current-menu-parent.has-dropdown > a::after {
-  color: #ff9933;
+  color: #f57b00;
   content: '\f078';
   line-height: 1px;
   font-size: 0.7em; }
 
 .top-bar-section .current-menu-item.has-dropdown > a:hover::after, .top-bar-section .current-menu-ancestor.has-dropdown > a:hover::after, .top-bar-section .current-menu-parent.has-dropdown > a:hover::after {
-  color: #ff9933; }
+  color: #f57b00; }
 
 /*
 ================================================================================================
@@ -726,7 +726,7 @@ meta.foundation-mq-topbar {
 
 .slider-wrapper a.button {
   background: #FFF;
-  color: #ff9933;
+  color: #f57b00;
   margin-top: 20px;
   border-radius: 5px;
   /* font-size:0.95em; */
@@ -766,13 +766,13 @@ meta.foundation-mq-topbar {
 .slider-wrapper .post-item {
   background: #FF8000;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(-90deg, #ff9933, #FF8000);
+  background: -webkit-linear-gradient(-90deg, #f57b00, #FF8000);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, #ff9933, #FF8000);
+  background: -o-linear-gradient(-90deg, #f57b00, #FF8000);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, #ff9933, #FF8000);
+  background: -moz-linear-gradient(-90deg, #f57b00, #FF8000);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-90deg, #ff9933, #FF8000);
+  background: linear-gradient(-90deg, #f57b00, #FF8000);
   /* Standard syntax */
   position: relative; }
 
@@ -1018,7 +1018,7 @@ section.main-row.grey-section .grey-section-intro {
 
 section.grey-section .section-expertise-title {
   text-transform: uppercase;
-  color: #ff9933;
+  color: #f57b00;
   font-weight: bold; }
 
 section.grey-section .section-expertise-title .highlight {
@@ -1045,7 +1045,7 @@ section.main-row.grey-section .expertise:hover > a .fa {
   color: #FFF; }
 
 section.main-row.grey-section .expertise-title {
-  color: #ff9933;
+  color: #f57b00;
   font-weight: bold; }
 
 section.main-row.grey-section p.expertise-description {
@@ -1173,7 +1173,7 @@ article.post-item .post-item-title {
   font-weight: 300; }
 
 article.post-item .post-item-title a {
-  color: #ff9933; }
+  color: #f57b00; }
 
 article.post-item .post-item-title a:hover {
   color: #FF8000; }
@@ -1365,7 +1365,7 @@ article.columns + article.columns:last-child {
   font-size: 1rem; }
 
 .event-widget .description a:hover {
-  color: #ff9933; }
+  color: #f57b00; }
 
 /*
 ================================================================================================
@@ -1391,7 +1391,7 @@ aside .widget-title {
   text-transform: uppercase;
   display: block;
   margin-bottom: 15px;
-  background: #ff9933; }
+  background: #f57b00; }
 
 aside .widget_search .widget-title {
   padding: 0px;
@@ -1593,7 +1593,7 @@ button.small, .button.small {
   font-size: 0.8125rem; }
 
 button:hover, button:focus, .button:hover, .button:focus {
-  background-color: #ff9933; }
+  background-color: #f57b00; }
 
 article .panel .button {
   border-radius: 5px;
@@ -1639,7 +1639,7 @@ article .panel .button {
   font-size: 0.7rem; }
 
 .main-column .call-to-action .button.small {
-  background: #ff9933;
+  background: #f57b00;
   margin-left: 20px;
   margin-top: 10px; }
 

@@ -45,7 +45,7 @@ class Palette_Custom_Control extends WP_Customize_Control
 					}
 				
 					#palette #pink {
-						background: #FF007F;
+						background: #ec3253;
 					}
 					#palette #blue {
 						background: #0e94c9;

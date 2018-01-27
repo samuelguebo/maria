@@ -57,7 +57,7 @@ class Palette_Custom_Control extends WP_Customize_Control
 						background: #e34a00;
 					}
 					#palette #yellow {
-						background: #f68700;
+						background: #ffc200;
 					}
 					#palette #red {
 						background: #d8052e;

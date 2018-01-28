@@ -20,33 +20,31 @@ $blog_post_number = esc_attr(Maria_Kirki::get_option( 'blog_post_number'));
 				<p class="section-description"><?php echo $blog_section_description; ?></p>
 				<div class="bottom-line large-1 small-1 large-centered columns clearfix"></div>
 			</section><!--section description/-->
-			<section class="columns main-column">
-				<div class="post-list clearfix">
-					<?php
-                            if ( have_posts() ) :
-                                /* Start the Loop */
-                                $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; // for pagination purpose
-                                $args = array(
-                                        'post_type' => array('post'),
-                                        'posts_per_page' =>$blog_post_number,
-                                        'paged'=>$paged
-                                        );
-                                $blog_posts = new WP_Query($args);
-                                while ( $blog_posts->have_posts() ) : $blog_posts->the_post();
+</section>
+<section class="post-list clearfix full-blog">
+	<?php
+            if ( have_posts() ) :
+                /* Start the Loop */
+                $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; // for pagination purpose
+                $args = array(
+                        'post_type' => array('post'),
+                        'posts_per_page' =>$blog_post_number,
+                        'paged'=>$paged
+                        );
+                $blog_posts = new WP_Query($args);
+                while ( $blog_posts->have_posts() ) : $blog_posts->the_post();
 
-								if(has_post_thumbnail()){
-									maria_get_template_part('template-parts/content-article.php', 'large-3 medium-6 small-12', 'post-thumb');
-								}else {
-									maria_get_template_part('template-parts/content-article-without-thumb.php', 'large-3 medium-6 small-12', 'post-thumb');
-								}
+				if(has_post_thumbnail()){
+					maria_get_template_part('template-parts/content-article.php', 'large-3 medium-6 small-12', 'post-thumb');
+				}else {
+					maria_get_template_part('template-parts/content-article-without-thumb.php', 'large-3 medium-6 small-12', 'post-thumb');
+				}
 
-							endwhile;
+			endwhile;
 
-						else :
+		else :
 
-							get_template_part( 'template-parts/content', '404' );
+			get_template_part( 'template-parts/content', '404' );
 
-						endif; wp_reset_query();?>
-				</div>
-			</section>
+		endif; wp_reset_query();?>
 </section>

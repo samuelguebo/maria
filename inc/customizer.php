@@ -285,7 +285,7 @@ function maria_kirki_customize_register () {
 		'settings'    => 'blog_post_number',
 		'label'       => esc_attr__( 'How many posts to display on homepage?', 'maria' ),
 		'section'     => 'blog_section',
-		'default'     => 3,
+		'default'     => 8,
 		'choices'     => array(
 			'min'  => 4,
 			'max'  => 12,

@@ -289,7 +289,7 @@ function maria_kirki_customize_register () {
 		'choices'     => array(
 			'min'  => 4,
 			'max'  => 12,
-			'step' => 1,
+			'step' => 4,
 		),
 	) );
 }

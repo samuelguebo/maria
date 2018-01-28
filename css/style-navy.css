@@ -1164,6 +1164,9 @@ section.main-row.white-section .section-item:hover > .post-item-caption img {
   padding: 20px;
   bottom: -100px; }
 
+.full-blog {
+  margin-bottom: 0; }
+
 .full-blog article.columns {
   padding: 0;
   margin: 0; }
@@ -1568,7 +1571,8 @@ footer#footer .footer-bar .widget-title {
   color: #3C3C3B; }
 
 footer#footer .footer-bar {
-  margin-top: 20px;
+  margin-top: 0px;
+  padding-top: 40px;
   background: url(../img/worldmap.png) #eeeeee;
   background-repeat: no-repeat;
   background-position: center 50%;

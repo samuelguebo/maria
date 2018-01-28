@@ -1555,7 +1555,9 @@ footer#footer .footer-bar form {
 footer#footer button.search-submit.button.small {
   padding: 0.50rem 1.2rem;
   height: 2.4rem;
-  overflow: hidden; }
+  overflow: hidden;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px; }
 
 footer#footer button.search-submit i {
   font-size: 1.4em; }

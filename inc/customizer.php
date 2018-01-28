@@ -230,15 +230,15 @@ function maria_kirki_customize_register () {
 	);
 
 	/**
-     * Section for Team
+     * Section for Blog
      * Taking advantage of Kirki's repeater 
      * feature, and static fields: section title
      * and description
      */
     
 	// Create a repeater section for team
-	Maria_Kirki::add_section('team_section', array(
-		'title' => __('Team', 'maria'),
+	Maria_Kirki::add_section('blog_section', array(
+		'title' => __('Blog', 'maria'),
 		'priority' => 30,
 	));
 
@@ -246,11 +246,11 @@ function maria_kirki_customize_register () {
 	// Field for team sections: title 
 	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'text',
-			'settings'      => 'team_section_title',
+			'settings'      => 'blog_section_title',
 			'label'         => __( 'Head text for team section', 'maria' ),
 			//'description'   => __( 'Add Head text for team section', 'maria' ),
 			'default'       => __( 'Our team', 'maria' ),
-			'section'       => 'team_section',
+			'section'       => 'blog_section',
 			'priority'      => 10,
 			'sanitize_callback' => 'sanitize_text_field'
 			)
@@ -258,66 +258,43 @@ function maria_kirki_customize_register () {
 	// Field for team sections: description
 	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'textarea',
-			'settings'      => 'team_section_description',
+			'settings'      => 'blog_section_description',
 			'label'         => __( 'Head description for team section', 'maria' ),
 			//'description'   => __( 'Add Head description for team section', 'maria' ),
 			'default'         => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'maria' ),
-			'section'       => 'team_section',
+			'section'       => 'blog_section',
 			'priority'      => 10,
 			'sanitize_callback' => 'sanitize_text_field'
 			)
 	);
 
 
-	// Create a repeater for team member
-	Maria_Kirki::add_field( 'maria', array(
-			'type'          => 'repeater',
-			'settings'      => 'team_repeater',
-			'label'         => __( 'Add a member to the team', 'maria' ),
-			'section'       => 'team_section',
-			'default'       => array(),
-			'priority'      => 10,
-			'row_label'     => array(
-				'type'      => 'field',
-				'value'     => 'row',
-				'field'     => 'member_title',
-			),
-			'fields' => array(
-				// field: image
-				'member_image' => array(
-						'type'        => 'image',
-						//'label'       => esc_attr__( 'Display text for section', 'maria' ),
-						'description' => esc_attr__( 'Image of the member', 'maria' ),
-				),
-				
-				// field: member_title
-				'member_title'	=> array(
-					'type'              => 'text',
+	// Field: blog page
+	Maria_Kirki::add_field( 'maria', 
+			// field: page
+			'blog_page' => array(
+					'type'        => 'dropdown-pages',
 					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
-					'description'       => esc_attr__( 'Title', 'maria' ),
-					'default'           => 'John Doe',
-					'sanitize_callback' => 'sanitize_text_field'
-				),
-
-				// field: member_position
-				'member_position'	=> array(
-					'type'              => 'text',
-					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
-					'description'       => esc_attr__( 'Position', 'maria' ),
-					'default'           => 'Software architect',
-					'sanitize_callback' => 'sanitize_text_field'
-				),
-				
-				// field: social_url
-				'social_url'	=> array(
-						'type'        => 'textarea',
-						'description' => esc_attr__( 'Url of the social profiles separated by commas', 'maria' ),
-						'default'     => 'https://twitter.com/samuelguebo, github.com/samuelguebo',
-						'sanitize_callback' => 'sanitize_text_field'
-				)
+					'description' => esc_attr__( 'Select blog page', 'maria' ),
+					'default'     => 0,
+					'sanitize_callback' => 'absint'
 			)
 		)
 	);
+	
+
+	Maria_Kirki::add_field( 'theme_config_id', array(
+		'type'        => 'number',
+		'settings'    => 'my_setting',
+		'label'       => esc_attr__( 'This is the label', 'textdomain' ),
+		'section'     => 'section_id',
+		'default'     => 42,
+		'choices'     => array(
+			'min'  => 0,
+			'max'  => 80,
+			'step' => 1,
+		),
+	) );
 }
 function maria_customize_register( $wp_customize ) {
 	

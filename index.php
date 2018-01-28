@@ -26,8 +26,8 @@ if ( class_exists( 'Kirki' ) ):
 	// services section
 	get_template_part('template-parts/section-services');
 
-    // team section
-    get_template_part('template-parts/section-team');
+    // blog section
+    get_template_part('template-parts/section-blog');
 
 else:
 ?>

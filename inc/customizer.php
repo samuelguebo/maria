@@ -283,15 +283,15 @@ function maria_kirki_customize_register () {
 	);
 	
 	// Field: blog post number
-	Maria_Kirki::add_field( 'theme_config_id', array(
+	Maria_Kirki::add_field( 'maria', array(
 		'type'        => 'number',
 		'settings'    => 'blog_post_number',
-		'label'       => esc_attr__( 'How many posts to display on homepage?', 'textdomain' ),
-		'section'     => 'section_id',
-		'default'     => 42,
+		'label'       => esc_attr__( 'How many posts to display on homepage?', 'maria' ),
+		'section'     => 'blog_section',
+		'default'     => 3,
 		'choices'     => array(
-			'min'  => 0,
-			'max'  => 80,
+			'min'  => 4,
+			'max'  => 12,
 			'step' => 1,
 		),
 	) );

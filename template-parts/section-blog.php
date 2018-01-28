@@ -10,9 +10,9 @@ Template part for displaying team member section
 @author         Samuel Guebo (http://samuelguebo.co/)
 ================================================================================================
 */
-$blog_section_title = Maria_Kirki::get_option( 'blog_section_title');
-$blog_section_description = Maria_Kirki::get_option( 'blog_section_description');
-$blog_post_number = Maria_Kirki::get_option( 'blog_post_number');
+$blog_section_title = esc_attr(Maria_Kirki::get_option( 'blog_section_title'));
+$blog_section_description = esc_attr(Maria_Kirki::get_option( 'blog_section_description'));
+$blog_post_number = esc_attr(Maria_Kirki::get_option( 'blog_post_number'));
 ?>
 <section class="row main-row clearfix white-section">
 			<section class="columns main-column white-section-intro large-8 small-12 large-centered columns clearfix">
@@ -23,15 +23,21 @@ $blog_post_number = Maria_Kirki::get_option( 'blog_post_number');
 			<section class="columns main-column">
 				<div class="post-list clearfix">
 					<?php
-						if ( have_posts() ) :
-							/* Start the Loop */
-							$paged = (get_query_var('paged')) ? get_query_var('paged') : 1; // for pagination purpose
-							while ( have_posts() ) : the_post();
+                            if ( have_posts() ) :
+                                /* Start the Loop */
+                                $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; // for pagination purpose
+                                $args = array(
+                                        'post_type' => array('post'),
+                                        'posts_per_page' =>$blog_post_number,
+                                        'paged'=>$paged
+                                        );
+                                $blog_posts = new WP_Query($args);
+                                while ( $blog_posts->have_posts() ) : $blog_posts->the_post();
 
 								if(has_post_thumbnail()){
-									maria_get_template_part('template-parts/content-article.php', 'large-6 medium-6 small-12', 'post-thumb');
+									maria_get_template_part('template-parts/content-article.php', 'large-3 medium-6 small-12', 'post-thumb');
 								}else {
-									maria_get_template_part('template-parts/content-article-without-thumb.php', 'large-6 medium-6 small-12', 'post-thumb');
+									maria_get_template_part('template-parts/content-article-without-thumb.php', 'large-3 medium-6 small-12', 'post-thumb');
 								}
 
 							endwhile;
@@ -40,7 +46,7 @@ $blog_post_number = Maria_Kirki::get_option( 'blog_post_number');
 
 							get_template_part( 'template-parts/content', '404' );
 
-						endif; ?>
+						endif; wp_reset_query();?>
 				</div>
 			</section>
 </section>

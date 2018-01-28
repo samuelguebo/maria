@@ -270,17 +270,14 @@ function maria_kirki_customize_register () {
 
 
 	// Field: blog page
-	Maria_Kirki::add_field( 'maria', 
-			// field: page
-			'blog_page' => array(
-					'type'        => 'dropdown-pages',
-					//'label'       => esc_attr__( 'Display text for section', 'maria' ),
-					'description' => esc_attr__( 'Select blog page', 'maria' ),
-					'default'     => 0,
-					'sanitize_callback' => 'absint'
+	Maria_Kirki::add_field( 'maria', array(
+			'type'        => 'dropdown-pages',
+			//'label'       => esc_attr__( 'Display text for section', 'maria' ),
+			'description' => esc_attr__( 'Select blog page', 'maria' ),
+			'default'     => 0,
+			'sanitize_callback' => 'absint'
 			)
-		)
-	);
+		);
 	
 	// Field: blog post number
 	Maria_Kirki::add_field( 'maria', array(

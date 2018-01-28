@@ -87,7 +87,7 @@ h6 {
 @font-face {
 	font-family: 'Montserrat';
 	src: url("../fonts/Montserrat-Regular.ttf");
-    font-weight: normal;
+	font-weight: normal;
 }
 @font-face {
 	font-family: 'Montserrat';
@@ -759,7 +759,7 @@ meta.foundation-mq-topbar {
 }
 
 .slider-wrapper .panel .post-item-description {
-    font-weight: 200;
+	font-weight: 200;
 }
 
 .slider-wrapper a.button{
@@ -787,23 +787,23 @@ meta.foundation-mq-topbar {
 	}
 }
 .slider-wrapper a.button:hover{
-    background:#FFF;
-    color:$dark-color;
+	background:#FFF;
+	color:$dark-color;
 }
 .slider-wrapper a.button{
-    border-radius: 30px;
-    font-family: $primary-font;
+	border-radius: 30px;
+	font-family: $primary-font;
 }
 .slider-wrapper a.two.button{
-    border: solid 1px $light-color;
-    background: transparent;
-    color: $light-color;
+	border: solid 1px $light-color;
+	background: transparent;
+	color: $light-color;
 }
 
 .slider-wrapper a.two.button:hover{
-    border: none;
-    background: darken($primary-color, 40%);
-    color: $light-color;
+	border: none;
+	background: darken($primary-color, 40%);
+	color: $light-color;
 }
 .slider-wrapper .post-item-description {
 	font-weight:300;
@@ -856,28 +856,28 @@ meta.foundation-mq-topbar {
 }
 
 button.slick-next.slick-arrow {
-    border-top-left-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-right: none;
-    right: 0;
-    padding-left: 5px;
+	border-top-left-radius: 60px;
+	border-bottom-left-radius: 60px;
+	border-right: none;
+	right: 0;
+	padding-left: 5px;
 }
 
 button.slick-prev.slick-arrow {
-    border-top-right-radius: 60px;
-    border-bottom-right-radius: 60px;
-    border-left: none;
-    left: 0;
-    padding-right: 5px;
+	border-top-right-radius: 60px;
+	border-bottom-right-radius: 60px;
+	border-left: none;
+	left: 0;
+	padding-right: 5px;
 }
 .slick-prev, .slick-next {
 	border: 1px solid #FFF;
 	background: darken($primary-color, 15);
-    border-bottom: none;
-    border-top: none;
-    width: 40px;
-    height: 80px;
-    
+	border-bottom: none;
+	border-top: none;
+	width: 40px;
+	height: 80px;
+	
 }
 
 .slick-prev::before, .slick-next::before {
@@ -1141,29 +1141,29 @@ section.main-row.grey-section p.expertise-description{
 section.main-row.white-section {
 	background:$light-color;
 	padding:10px 20px;	
-    text-align: center;
-    
+	text-align: center;
+	
 }
 section.main-row.white-section .white-section-intro {
 	padding:10px 20px;
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 section.white-section .section-title, section.white-section .item-title {
-    font-family: $primary-font;
+	font-family: $primary-font;
 }
 
 
 section.white-section .bottom-line {
-    border-bottom: solid 1px lighten($normal-gray-color, 60);
+	border-bottom: solid 1px lighten($normal-gray-color, 60);
 }
 
 section.white-section .section-title{
 	color: $dark-color;
-    font-weight: bold;
+	font-weight: bold;
 }
 section.white-section .item-title{
-    color: $primary-color;
+	color: $primary-color;
 }
 section.white-section .section-description {
 	color: $dark-color;
@@ -1175,9 +1175,9 @@ section.main-row.white-section .section-item{
 
 
 .main-row.white-section .item-description, .main-row.white-section .section-description {
-    color: lighten($normal-gray-color, 20);
-    line-height: 1.5;
-    font-size: .95em;
+	color: lighten($normal-gray-color, 20);
+	line-height: 1.5;
+	font-size: .95em;
 
 }
 section.main-row.white-section .section-description{
@@ -1186,65 +1186,65 @@ section.main-row.white-section .section-description{
 	font-weight: normal;
 }
 .white-section a.item-link {
-    width: 36px;
-    height: 36px;
-    border-radius: 18px;
-    border: solid 1px $primary-color;
-    color: $primary-color;
-    display: inline-block;
+	width: 36px;
+	height: 36px;
+	border-radius: 18px;
+	border: solid 1px $primary-color;
+	color: $primary-color;
+	display: inline-block;
 }
 .white-section a.item-link:hover{
-    border: solid 1px darken($primary-color, 40);;
-    color: darken($primary-color, 40);
+	border: solid 1px darken($primary-color, 40);;
+	color: darken($primary-color, 40);
 }
 .white-section a.item-link .fa {
-    padding: 10px 5px 0px;
+	padding: 10px 5px 0px;
 }
 section.main-row.white-section .post-item-caption{
-    min-height: 170px;
-    margin-bottom: -55px;
-    overflow: hidden;
-    background: $dark-color;
+	min-height: 170px;
+	margin-bottom: -55px;
+	overflow: hidden;
+	background: $dark-color;
 }
 .section-item .content {
-    background-color: #fff;
-    position: relative;
-    margin: 0px 15px 0px 15px;
-    padding: 10px;
+	background-color: #fff;
+	position: relative;
+	margin: 0px 15px 0px 15px;
+	padding: 10px;
 }
 
 section.main-row.white-section .post-item-caption img {		
-    min-width: 100%;
-    height: auto;
+	min-width: 100%;
+	height: auto;
 		-webkit-transform: scale(.5); 
-       -moz-transform: rotate(0deg) scale(1);
-        -ms-transform: rotate(0deg) scale(1);
-         -o-transform: rotate(0deg) scale(1);
-            transform: rotate(0deg) scale(1);
+	   -moz-transform: rotate(0deg) scale(1);
+		-ms-transform: rotate(0deg) scale(1);
+		 -o-transform: rotate(0deg) scale(1);
+			transform: rotate(0deg) scale(1);
 
-        -webkit-transition: -webkit-transform .5s; /* Safari */
-    	transition: transform .5s;
+		-webkit-transition: -webkit-transform .5s; /* Safari */
+		transition: transform .5s;
 
 	}
 section.main-row.white-section .section-item:hover > .post-item-caption img {
 	-webkit-transform: scale(1.4); 
    -moz-transform: rotate(10deg) scale(1.4);
-    -ms-transform: rotate(10deg) scale(1.4);
-     -o-transform: rotate(10deg) scale(1.4);
-        transform: rotate(10deg) scale(1.4);
+	-ms-transform: rotate(10deg) scale(1.4);
+	 -o-transform: rotate(10deg) scale(1.4);
+		transform: rotate(10deg) scale(1.4);
 
-    -webkit-transition: -webkit-transform .5s; /* Safari */
+	-webkit-transition: -webkit-transform .5s; /* Safari */
 	transition: transform .5s;
 
 }
 
 
 .category-row article .post-item-image, .main-row article .post-item-image{
-    min-height:180px;
-    overflow: hidden;
-    margin-bottom:-70px;
-    background: $dark-color;
-    position:relative;
+	min-height:180px;
+	overflow: hidden;
+	margin-bottom:-70px;
+	background: $dark-color;
+	position:relative;
 }
 
 .full-blog article .post-item-caption {
@@ -1662,7 +1662,7 @@ footer#footer {
 footer .copyright {
 	clear: both;
 	font-size: 0.75em;
-    font-family: $primary-font;
+	font-family: $primary-font;
 }
 
 footer#footer .copyright a {

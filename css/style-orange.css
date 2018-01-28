@@ -1162,7 +1162,7 @@ section.main-row.white-section .section-item:hover > .post-item-caption img {
 .full-blog article .post-item-caption .panel {
   position: absolute;
   padding: 20px;
-  bottom: -100px; }
+  bottom: -100%; }
 
 .full-blog {
   margin-bottom: 0; }
@@ -1179,6 +1179,23 @@ section.main-row.white-section .section-item:hover > .post-item-caption img {
 .full-blog article .post-item-image img {
   min-height: 100%;
   width: auto; }
+
+.full-blog article:hover > .post-item-caption {
+  background: rgba(255, 128, 0, 0.5); }
+
+.full-blog article:hover > .post-item-caption .panel {
+  /*
+  	transform-origin:
+  	-webkit-transform: scale(1.4); 
+     -moz-transform: rotate(10deg) scale(1.4);
+  	-ms-transform: rotate(10deg) scale(1.4);
+  	 -o-transform: rotate(10deg) scale(1.4);
+  		transform: rotate(10deg) scale(1.4);
+  
+  	-webkit-transition: -webkit-transform .5s; 
+  	transition: transform .5s;
+  */
+  bottom: 40px; }
 
 /*
 ================================================================================================

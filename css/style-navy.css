@@ -1169,7 +1169,13 @@ section.main-row.white-section .section-item:hover > .post-item-caption img {
   margin: 0; }
 
 .full-blog article .post-item-image {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  height: 180px;
+  overflow: hidden; }
+
+.full-blog article .post-item-image img {
+  min-height: 100%;
+  width: auto; }
 
 /*
 ================================================================================================

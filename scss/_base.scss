@@ -814,7 +814,6 @@ meta.foundation-mq-topbar {
 	background: -o-linear-gradient(-90deg, $secondary-color, $primary-color); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(-90deg, $secondary-color, $primary-color); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(-90deg, $secondary-color, $primary-color); /* Standard syntax */
-
 	position:relative;
 }
 .slider-wrapper .post-item > img{ 
@@ -823,9 +822,9 @@ meta.foundation-mq-topbar {
 	display: block;
 	width: 100%;
 	border: 0;
-	opacity: .15;
 	max-height: 400px;
 	overflow: hidden;    
+	opacity: .15;
 }
 
 .slider-wrapper .slider-caption {
@@ -1154,6 +1153,7 @@ section.white-section .section-title, section.white-section .item-title {
     font-family: $primary-font;
 }
 
+
 section.white-section .bottom-line {
     border-bottom: solid 1px lighten($normal-gray-color, 60);
 }
@@ -1237,6 +1237,25 @@ section.main-row.white-section .post-item-caption img {
     	transition: transform .5s;
 
 	}
+
+
+.category-row article .post-item-image, .main-row article .post-item-image{
+    min-height:180px;
+    overflow: hidden;
+    margin-bottom:-70px;
+    background: $dark-color;
+    position:relative;
+}
+
+.full-blog article .post-item-caption {
+	overflow: hidden;
+	position: relative;
+}
+.full-blog article .post-item-caption .panel {
+	position: absolute;
+	padding:20px;
+	bottom: -100px;
+}
 
 /*
 ================================================================================================

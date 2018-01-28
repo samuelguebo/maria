@@ -21,7 +21,7 @@ $blog_post_number = esc_attr(Maria_Kirki::get_option( 'blog_post_number'));
 				<div class="bottom-line large-1 small-1 large-centered columns clearfix"></div>
 			</section><!--section description/-->
 </section>
-<section class="post-list clearfix full-blog">
+<section class="post-list clearfix full-blog category-row">
 	<?php
             if ( have_posts() ) :
                 /* Start the Loop */
@@ -34,17 +34,14 @@ $blog_post_number = esc_attr(Maria_Kirki::get_option( 'blog_post_number'));
                 $blog_posts = new WP_Query($args);
                 while ( $blog_posts->have_posts() ) : $blog_posts->the_post();
 
-				if(has_post_thumbnail()){
-					maria_get_template_part('template-parts/content-article.php', 'large-3 medium-6 small-12', 'post-thumb');
-				}else {
-					maria_get_template_part('template-parts/content-article-without-thumb.php', 'large-3 medium-6 small-12', 'post-thumb');
-				}
+					maria_get_template_part('template-parts/content-article-home.php', 'large-3 medium-6 small-12', 'post-thumb');
 
-			endwhile;
+				endwhile;
 
-		else :
+				else :
 
-			get_template_part( 'template-parts/content', '404' );
+					get_template_part( 'template-parts/content', '404' );
 
-		endif; wp_reset_query();?>
+		endif; wp_reset_query();
+		?>
 </section>

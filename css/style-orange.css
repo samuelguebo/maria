@@ -782,9 +782,9 @@ meta.foundation-mq-topbar {
   display: block;
   width: 100%;
   border: 0;
-  opacity: .15;
   max-height: 400px;
-  overflow: hidden; }
+  overflow: hidden;
+  opacity: .15; }
 
 .slider-wrapper .slider-caption {
   position: absolute;
@@ -1147,6 +1147,22 @@ section.main-row.white-section .section-item:hover > .post-item-caption img {
   -webkit-transition: -webkit-transform .5s;
   /* Safari */
   transition: transform .5s; }
+
+.category-row article .post-item-image, .main-row article .post-item-image {
+  min-height: 180px;
+  overflow: hidden;
+  margin-bottom: -70px;
+  background: #020d16;
+  position: relative; }
+
+.full-blog article .post-item-caption {
+  overflow: hidden;
+  position: relative; }
+
+.full-blog article .post-item-caption .panel {
+  position: absolute;
+  padding: 20px;
+  bottom: -100px; }
 
 /*
 ================================================================================================

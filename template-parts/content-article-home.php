@@ -17,7 +17,6 @@ Template part for displaying posts on homepage
     <!--post/-->
     <div class="post-item-caption">
         <div class="post-item-image"> 
-            <div class="colorful-line"> </div>
             <?php
                 if ( has_post_thumbnail_or_image ()) { 
                     the_post_thumbnail( $thumbnail_size ); 

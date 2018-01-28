@@ -1180,22 +1180,40 @@ section.main-row.white-section .section-item:hover > .post-item-caption img {
   min-height: 100%;
   width: auto; }
 
-.full-blog article:hover > .post-item-caption {
-  background: rgba(61, 160, 91, 0.5); }
-
 .full-blog article:hover > .post-item-caption .panel {
-  /*
-  	transform-origin:
-  	-webkit-transform: scale(1.4); 
-     -moz-transform: rotate(10deg) scale(1.4);
-  	-ms-transform: rotate(10deg) scale(1.4);
-  	 -o-transform: rotate(10deg) scale(1.4);
-  		transform: rotate(10deg) scale(1.4);
-  
-  	-webkit-transition: -webkit-transform .5s; 
-  	transition: transform .5s;
-  */
-  bottom: 40px; }
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+  background: rgba(61, 160, 91, 0.8); }
+
+.full-blog .panel img {
+  transform-origin: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  -o-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+  -webkit-transition: -webkit-transform .5s;
+  transition: transform .5s; }
+
+.full-blog article:hover > .post-item-caption img {
+  transform-origin: scale(1.4);
+  -webkit-transform: scale(1.4);
+  -moz-transform: rotate(10deg) scale(1.4);
+  -ms-transform: rotate(10deg) scale(1.4);
+  -o-transform: rotate(10deg) scale(1.4);
+  transform: rotate(10deg) scale(1.4);
+  -webkit-transition: -webkit-transform .5s;
+  transition: transform .5s; }
+
+.full-blog article:hover > .post-item-caption .post-item-title {
+  margin-top: 20px; }
+
+.full-blog .post-item-caption .post-item-title a {
+  color: #FFF; }
+
+.full-blog .post-item-caption .post-item-title a:hover {
+  color: #FFF; }
 
 /*
 ================================================================================================

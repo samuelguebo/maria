@@ -1,10 +1,10 @@
-$primary-color: #2e3871;
+$primary-color: #2b5f9a;
 $secondary-color: lighten($primary-color, 5);
-$third-color: $secondary-color;
+$third-color: #1db0ea;
 $menu-link-color: #6f6f6e;
 $dark-color: #020d16;
 $light-color: #FFF;
-$link-color: $primary-color;
+$link-color: $third-color;
 
 @import 'base';
 

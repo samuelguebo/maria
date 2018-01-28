@@ -45,7 +45,7 @@ class Palette_Custom_Control extends WP_Customize_Control
 					}
 				
 					#palette #navy {
-						background: #2e3871;
+						background: #2b5f9a;
 					}
 					#palette #blue {
 						background: #0e94c9;
@@ -83,14 +83,14 @@ class Palette_Custom_Control extends WP_Customize_Control
 					<a id="blue" href="#" <?php if($current_color == 'blue') echo $selected_css;?>>
 						<input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="blue" />
 					</a>
-					<a id="navy" href="#" <?php if($current_color == 'navy') echo $selected_css;?>>
-					  <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="navy" />
-					</a>
 					<a id="orange" href="#" <?php if($current_color == 'orange') echo $selected_css;?>>
 						<input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="orange" />
 					</a>
 					<a id="red" href="#" <?php if($current_color == 'red') echo $selected_css;?> <?php if($current_color == 'red') echo $selected_css;?>>
 						<input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="red"/>
+					</a>
+					<a id="navy" href="#" <?php if($current_color == 'navy') echo $selected_css;?>>
+					  <input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="navy" />
 					</a>
 				  </div>
 				</label>

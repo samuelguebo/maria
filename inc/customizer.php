@@ -282,11 +282,11 @@ function maria_kirki_customize_register () {
 		)
 	);
 	
-
+	// Field: blog post number
 	Maria_Kirki::add_field( 'theme_config_id', array(
 		'type'        => 'number',
-		'settings'    => 'my_setting',
-		'label'       => esc_attr__( 'This is the label', 'textdomain' ),
+		'settings'    => 'blog_post_number',
+		'label'       => esc_attr__( 'How many posts to display on homepage?', 'textdomain' ),
 		'section'     => 'section_id',
 		'default'     => 42,
 		'choices'     => array(

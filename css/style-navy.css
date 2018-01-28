@@ -1168,6 +1168,9 @@ section.main-row.white-section .section-item:hover > .post-item-caption img {
   padding: 0;
   margin: 0; }
 
+.full-blog article .post-item-image {
+  margin-bottom: 0; }
+
 /*
 ================================================================================================
 10.0 - Content (Posts and Custom post types)

@@ -48,7 +48,6 @@ Change the header image. It might support a random image list.
 #### Colors
  Maria comes with six flavors: blue, green, red, orange, yellow, and navy. You might switch between these colors using the Customizer.
  
- [![showcase_bastille_theme.jpg](https://s6.postimg.org/faf1yzk69/showcase_bastille_theme.jpg)](https://postimg.org/image/xd84q7g0t/)
 
 ## File structure
 In this theme we are using a default [WordPress template hierarchy](http://codex.wordpress.org/Template_Hierarchy).

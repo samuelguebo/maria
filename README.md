@@ -1,7 +1,7 @@
 # Maria
 Clean and modern WordPress theme for corporate websites.
 
-[![maria-the-wordpress-full.png](https://s6.postimg.org/x5ipv5ju9/maria-the-wordpress-full.png)](https://postimg.org/image/7mqdi50a5/)
+[![maria-theme-wordpress-full.png](https://s6.postimg.org/bn6plmd5t/maria-theme-wordpress-full.png)](https://postimg.org/image/9imckjbj1/)
 
 ## Description
 Maria is a clean, simple, and fully responsive WordPress theme for corporate websites. 

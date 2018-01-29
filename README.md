@@ -5,7 +5,7 @@ Clean and modern WordPress theme for corporate websites.
 
 ## Description
 Maria is a clean, simple, and fully responsive WordPress theme for corporate websites. 
-It adjusts automatically to any screen size including tablets and smartphones as well as Retina displays. Theme is built using [Zurb Foundation](https://github.com/zurb/foundation-sites), a  framework for HTML5 / CSS3 which is SEO friendly. This WordPress theme was built with non-profit organizations in mind but be creative and unleash its full potential in eCommerce, business and other projects. Bastille is available in English, French, and Spanish for now.
+It adjusts automatically to any screen size including tablets and smartphones as well as Retina displays. Theme is built using [Zurb Foundation](https://github.com/zurb/foundation-sites), a  framework for HTML5 / CSS3 which is SEO friendly. This WordPress theme was built with non-profit organizations in mind but be creative and unleash its full potential in eCommerce, business and other projects. Maria is available in English, French, and Spanish for now.
 
 
 
@@ -88,7 +88,7 @@ Unless otherwise specified, all the theme files, scripts and images are licensed
 - Images credit goes to [Unsplash.com](https://unsplash.com/), a stunning photo stock website 
 
 # Change log
-All notable changes to this theme are documented in [CHANGELOG.md](https://github.com/samuelguebo/bastille/blob/master/CHANGELOG.md) file.
+All notable changes to this theme are documented in [CHANGELOG.md](https://github.com/samuelguebo/maria/blob/master/CHANGELOG.md) file.
 
 # Contributors
  * Samuel Gu&eacute;bo ([@samuelguebo](http://twitter.com/samuelguebo))

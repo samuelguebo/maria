@@ -24,7 +24,7 @@ It adjusts automatically to any screen size including tablets and smartphones as
 2. Go to **Appearance > Themes**
 3. Click on **Add New**
 4. Click on **Upload Theme**
-5. Choose the **bastille.zip** file
+5. Choose the **maria.zip** file
 6. Click on **Install Now**
 
 
@@ -46,7 +46,7 @@ This theme has loads of customization options available. To open WordPress Custo
 Change the header image. It might support a random image list.
 
 #### Colors
- Bastille comes with six flavors: blue, green, red, orange, yellow, and pink. You might switch between these colors using the Customizer.
+ Maria comes with six flavors: blue, green, red, orange, yellow, and navy. You might switch between these colors using the Customizer.
  
  [![showcase_bastille_theme.jpg](https://s6.postimg.org/faf1yzk69/showcase_bastille_theme.jpg)](https://postimg.org/image/xd84q7g0t/)
 
@@ -80,12 +80,12 @@ Unless otherwise specified, all the theme files, scripts and images are licensed
 **The exceptions to this license and other credits are below:**
 
 - [Zurb Foundation](https://github.com/zurb/foundation-sites), for layout structure, under MIT License.
-- [FontAwesome](https://github.com/FortAwesome/Font-Awesome), [Fair Display](https://www.fontsquirrel.com/fonts/playfair-display), [Roboto](https://fonts.google.com/specimen/Roboto), and [Lora](https://www.fontsquirrel.com/fonts/lora) fonts,  under the SIL Open Font License.
+- [FontAwesome](https://github.com/FortAwesome/Font-Awesome), [Montserrat](https://github.com/JulietaUla/Montserrat), [Roboto](https://fonts.google.com/specimen/Roboto), and [Lora](https://www.fontsquirrel.com/fonts/lora) fonts,  under the SIL Open Font License.
 - [ScrollReveal](https://github.com/jlmakes/scrollreveal), under MIT License.
 - CSS Content table and Header commenting style was borrowed from [Arlene theme](https://github.com/samuelguebo/arlene)
 - Slider is built using [Slick](https://github.com/kenwheeler/slick/), a prodigious and dead-simple slider
 - Customizer option uses [Kirki](https://github.com/aristath/kirki), a toolkit expanding WordPress Customizer API features
-
+- Images credit goes to [Unsplash.com](https://unsplash.com/), a stunning photo stock website 
 
 # Change log
 All notable changes to this theme are documented in [CHANGELOG.md](https://github.com/samuelguebo/bastille/blob/master/CHANGELOG.md) file.

@@ -1,7 +1,7 @@
-# Bastille
-A modern theme for news websites.
+# Maria
+Clean and modern WordPress theme for corporate websites.
 
-[![bastille_homepage_yellow.png](https://s6.postimg.org/dhc5anyzl/bastille_homepage_yellow.png)](https://postimg.org/image/3wsins9nh/)
+[![maria-the-wordpress-full.png](https://s6.postimg.org/x5ipv5ju9/maria-the-wordpress-full.png)](https://postimg.org/image/7mqdi50a5/)
 
 ## Description
 Bastille is a clean, simple, and fully responsive WordPress theme for webzines. Its name, from French origins, refer to the Storming of the Bastille on 14 July 1789, but more importantly to 14 july, birthday of the author :). 

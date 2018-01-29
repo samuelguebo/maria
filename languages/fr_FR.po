@@ -3,8 +3,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: WPML_EXPORT_iam\n"
-"POT-Creation-Date: 2018-01-29 22:39+0000\n"
-"PO-Revision-Date: 2018-01-29 22:48+0000\n"
+"POT-Creation-Date: 2018-01-29 22:55+0000\n"
+"PO-Revision-Date: 2018-01-29 22:56+0000\n"
 "Last-Translator: samuelguebo <samuelguebo@gmail.com>\n"
 "Language-Team: French (France)\n"
 "Language: fr-FR\n"
@@ -13,196 +13,21 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: footer.php:22
-msgid "source code"
-msgstr "code source"
-
-#: functions.php:94
-msgid "Home sidebar"
-msgstr "Barre latérale d'accueil"
-
-#: functions.php:104
-msgid "Single sidebar"
-msgstr "Barre latérale"
-
-#: functions.php:115
-msgid "Banner top"
-msgstr "Barre du haut"
-
-#: functions.php:117
-msgid "Add the top banner ici."
-msgstr "Ajoutez votre bannière du haut ici"
-
-#: inc/customizer.php:30
-msgid "Sliders"
-msgstr "Sliders"
-
-#: inc/customizer.php:37
-msgid "Create a slide"
-msgstr "Créer un slide"
-
-#: inc/customizer.php:38
-msgid "Set up the slide, define title, description, page, etc"
-msgstr "Configurez le slide, son titre, sa description, son lien, etc."
-
-#: inc/customizer.php:52
-msgid "Small upper text"
-msgstr "Petit texte du haut"
-
-#: inc/customizer.php:53
-msgid "For people who do real business"
-msgstr "Pour les personnes qui font du vrai business"
-
-#: inc/customizer.php:60
-msgid "Big lower text"
-msgstr "Text du bas"
-
-#: inc/customizer.php:61
-msgid "Simple, intuitive, creative"
-msgstr "Simple, intuitif, créatif"
-
-#: inc/customizer.php:68
-msgid "Text for button 1"
-msgstr "Texte du bouton 1"
-
-#: inc/customizer.php:76
-msgid "Page for button 1"
-msgstr "Page du bouton 1"
-
-#: inc/customizer.php:84
-msgid "Text for button 2"
-msgstr "Texte du bouton 2"
-
-#: inc/customizer.php:92
-msgid "Page for button 2"
-msgstr "Page du bouton 2"
-
-#: inc/customizer.php:100 inc/customizer.php:162
-msgid "Image of the slide"
-msgstr "Image du slide"
-
-#: inc/customizer.php:114
-msgid "Services"
-msgstr "Services"
-
-#: inc/customizer.php:122
-msgid "Head text for services section"
-msgstr "Titre de la section services"
-
-#: inc/customizer.php:124
-msgid "Our services"
-msgstr "Nos services"
-
-#: inc/customizer.php:134
-msgid "Head description for services section"
-msgstr "Description de la section services"
-
-#: inc/customizer.php:136 inc/customizer.php:264
-msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-
-#: inc/customizer.php:147
-msgid "Create a service"
-msgstr "Ajouter un service"
-
-#: inc/customizer.php:148
-msgid "Set up the service, define title, description, page, etc"
-msgstr "Configurez un service, son titre, sa description, son lien, etc."
-
-#: inc/customizer.php:167
-msgid "Upper text"
-msgstr "Texte du haut"
-
-#: inc/customizer.php:175
-msgid "Description"
-msgstr "Description"
-
-#: inc/customizer.php:183
-msgid "Page of the service"
-msgstr "Page du service"
-
-#: inc/customizer.php:195
-msgid "Social medias"
-msgstr "Médias sociaux"
-
-#: inc/customizer.php:202
-msgid "Add a social media"
-msgstr ""
-
-#: inc/customizer.php:216
-msgid "Title"
-msgstr ""
-
-#: inc/customizer.php:224
-msgid "Url of the social profile or page"
-msgstr ""
-
-#: inc/customizer.php:241
-msgid "Blog"
-msgstr ""
-
-#: inc/customizer.php:250
-msgid "Head text for team section"
-msgstr ""
-
-#: inc/customizer.php:252
-msgid "Our team"
-msgstr ""
-
-#: inc/customizer.php:262
-msgid "Head description for team section"
-msgstr "Description pour la section equipe"
-
-#: inc/customizer.php:276
-msgid "Select blog page"
-msgstr "Sélectionner la page du blog "
-
-#: inc/customizer.php:286
-msgid "How many posts to display on homepage?"
-msgstr "Combien d'articles à afficher sur la page d'accueil"
-
-#: inc/include-kirki.php:67 inc/include-kirki.php:70
-msgid ""
-"A plugin is required to take advantage of this theme's features in the "
-"customizer."
-msgstr "Une extension est requise afin de configurer pleinement ce thème."
-
-#: inc/include-kirki.php:68
-msgid "Install Now"
-msgstr "Installer maintenant"
-
-#: inc/include-kirki.php:71
-msgid "Activate Now"
-msgstr "Activez maintenant"
-
-#. Name of the theme
-msgid "Maria"
-msgstr "Maria"
-
 #: footer.php:21
-msgctxt "&copy; "
 msgid "&copy; "
 msgstr "&copy; "
 
-#. Author URI of the theme
-#: footer.php:22
-msgid "http://samuelguebo.co"
-msgstr "http://samuelguebo.co"
+#: inc/customizer.php:250
+msgid "Head text for blog section"
+msgstr "Titre de la section blog"
 
-#. Description of the theme
-msgid ""
-"Maria is a clean, simple, and fully responsive corporate WordPress theme."
-msgstr ""
-"Maria is un thème WordPress corporate élégant, simple, et totalement  "
-"responsive."
+#: inc/customizer.php:252
+msgid "Our blog"
+msgstr "Notre actualité"
 
-#. URI of the theme
-msgid "https://github.com/samuelguebo/maria"
-msgstr "https://github.com/samuelguebo/maria"
-
-#. Author of the theme
-msgid "Samuel Guébo"
-msgstr "Samuel Guébo"
+#: inc/customizer.php:262
+msgid "Head description for blog section"
+msgstr "Description de la section actualités"
 
 # wpml-name: a3332b79b0716cb7e3e4ec79a8b01048
 #: archive.php:56 index.php:67
@@ -295,15 +120,40 @@ msgstr ""
 msgid "Developed by "
 msgstr "Développé par "
 
+#. Author URI of the theme
+#: footer.php:22
+msgid "http://samuelguebo.co"
+msgstr "http://samuelguebo.co"
+
+#: footer.php:22
+msgid "source code"
+msgstr "code source"
+
 # wpml-name: 074de7e7c226d5c60f8af14c20725352
 #: functions.php:54
 msgid "Primary"
 msgstr "Principal"
 
+#: functions.php:94
+msgid "Home sidebar"
+msgstr "Barre latérale d'accueil"
+
 # wpml-name: 5234c7d4d29fadd5614763897c8332c5
 #: functions.php:96 functions.php:106 functions.php:127
 msgid "Add widgets here."
 msgstr "Ajouter les widgets ici."
+
+#: functions.php:104
+msgid "Single sidebar"
+msgstr "Barre latérale"
+
+#: functions.php:115
+msgid "Banner top"
+msgstr "Barre du haut"
+
+#: functions.php:117
+msgid "Add the top banner ici."
+msgstr "Ajoutez votre bannière du haut ici"
 
 # wpml-name: ded40f2a77c30efc6062db0cbd857746
 #: functions.php:125
@@ -316,11 +166,127 @@ msgctxt "placeholder"
 msgid "Search &hellip;"
 msgstr "Chercher …"
 
+#: inc/customizer.php:30
+msgid "Sliders"
+msgstr "Sliders"
+
+#: inc/customizer.php:37
+msgid "Create a slide"
+msgstr "Créer un slide"
+
+#: inc/customizer.php:38
+msgid "Set up the slide, define title, description, page, etc"
+msgstr "Configurez le slide, son titre, sa description, son lien, etc."
+
+#: inc/customizer.php:52
+msgid "Small upper text"
+msgstr "Petit texte du haut"
+
+#: inc/customizer.php:53
+msgid "For people who do real business"
+msgstr "Pour les personnes qui font du vrai business"
+
+#: inc/customizer.php:60
+msgid "Big lower text"
+msgstr "Text du bas"
+
+#: inc/customizer.php:61
+msgid "Simple, intuitive, creative"
+msgstr "Simple, intuitif, créatif"
+
+#: inc/customizer.php:68
+msgid "Text for button 1"
+msgstr "Texte du bouton 1"
+
 # wpml-name: 43340e6cc4e88197d57f8d6d5ea50a46
 #: inc/customizer.php:69 inc/customizer.php:85 
 #: template-parts/content-article-without-thumb.php:22
 msgid "Read more"
 msgstr "Lire la suite"
+
+#: inc/customizer.php:76
+msgid "Page for button 1"
+msgstr "Page du bouton 1"
+
+#: inc/customizer.php:84
+msgid "Text for button 2"
+msgstr "Texte du bouton 2"
+
+#: inc/customizer.php:92
+msgid "Page for button 2"
+msgstr "Page du bouton 2"
+
+#: inc/customizer.php:100 inc/customizer.php:162
+msgid "Image of the slide"
+msgstr "Image du slide"
+
+#: inc/customizer.php:114
+msgid "Services"
+msgstr "Services"
+
+#: inc/customizer.php:122
+msgid "Head text for services section"
+msgstr "Titre de la section services"
+
+#: inc/customizer.php:124
+msgid "Our services"
+msgstr "Nos services"
+
+#: inc/customizer.php:134
+msgid "Head description for services section"
+msgstr "Description de la section services"
+
+#: inc/customizer.php:136 inc/customizer.php:264
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+
+#: inc/customizer.php:147
+msgid "Create a service"
+msgstr "Ajouter un service"
+
+#: inc/customizer.php:148
+msgid "Set up the service, define title, description, page, etc"
+msgstr "Configurez un service, son titre, sa description, son lien, etc."
+
+#: inc/customizer.php:167
+msgid "Upper text"
+msgstr "Texte du haut"
+
+#: inc/customizer.php:175
+msgid "Description"
+msgstr "Description"
+
+#: inc/customizer.php:183
+msgid "Page of the service"
+msgstr "Page du service"
+
+#: inc/customizer.php:195
+msgid "Social medias"
+msgstr "Médias sociaux"
+
+#: inc/customizer.php:202
+msgid "Add a social media"
+msgstr "Ajouter un média social"
+
+#: inc/customizer.php:216
+msgid "Title"
+msgstr "Titre"
+
+#: inc/customizer.php:224
+msgid "Url of the social profile or page"
+msgstr "Lien du profil ou de la page"
+
+#: inc/customizer.php:241
+msgid "Blog"
+msgstr "Blog"
+
+#: inc/customizer.php:276
+msgid "Select blog page"
+msgstr "Sélectionner la page du blog "
+
+#: inc/customizer.php:286
+msgid "How many posts to display on homepage?"
+msgstr "Combien d'articles à afficher sur la page d'accueil"
 
 # wpml-name: 45e035baf33a8e403766a606457f8b10
 #: inc/customizer.php:321
@@ -352,6 +318,20 @@ msgstr "Image"
 msgid "Reply"
 msgstr "Répondre"
 
+#: inc/include-kirki.php:67 inc/include-kirki.php:70
+msgid ""
+"A plugin is required to take advantage of this theme's features in the "
+"customizer."
+msgstr "Une extension est requise afin de configurer pleinement ce thème."
+
+#: inc/include-kirki.php:68
+msgid "Install Now"
+msgstr "Installer maintenant"
+
+#: inc/include-kirki.php:71
+msgid "Activate Now"
+msgstr "Activez maintenant"
+
 # wpml-name: 4783397292b42b601dee3397f9ca05f9
 #: template-parts/content-404.php:19
 msgid ""
@@ -380,3 +360,22 @@ msgstr "mots-clés"
 #: template-parts/content-single.php:66
 msgid "About the author"
 msgstr "A propos de l'auteur"
+
+#. Name of the theme
+msgid "Maria"
+msgstr "Maria"
+
+#. Description of the theme
+msgid ""
+"Maria is a clean, simple, and fully responsive corporate WordPress theme."
+msgstr ""
+"Maria is un thème WordPress corporate élégant, simple, et totalement  "
+"responsive."
+
+#. URI of the theme
+msgid "https://github.com/samuelguebo/maria"
+msgstr "https://github.com/samuelguebo/maria"
+
+#. Author of the theme
+msgid "Samuel Guébo"
+msgstr "Samuel Guébo"

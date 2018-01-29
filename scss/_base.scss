@@ -1264,7 +1264,7 @@ section.main-row.white-section .section-item:hover > .post-item-caption img {
 
 .full-blog article .post-item-image {
 	margin-bottom: 0;
-	height: 180px;
+	min-height: 155px;
 	overflow: hidden;
 }
 .full-blog article .post-item-image img{

@@ -4,7 +4,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: WPML_EXPORT_arlene\n"
-"POT-Creation-Date: 2018-01-29 22:36+0000\n"
+"POT-Creation-Date: 2018-01-29 22:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -20,26 +20,32 @@ msgstr ""
 
 #. Author URI of the theme
 #: footer.php:22
+msgctxt "http://samuelguebo.co"
 msgid "http://samuelguebo.co"
 msgstr ""
 
 #: footer.php:22
+msgctxt "code source"
 msgid "source code"
 msgstr ""
 
 #: functions.php:94
+msgctxt "Bare latérale d'accueil"
 msgid "Home sidebar"
 msgstr ""
 
 #: functions.php:104
+msgctxt "Bare latérale des articles"
 msgid "Single sidebar"
 msgstr ""
 
 #: functions.php:115
+msgctxt "Barre du haut"
 msgid "Banner top"
 msgstr ""
 
 #: functions.php:117
+msgctxt "Ajouter un bannière du haut ici"
 msgid "Add the top banner ici."
 msgstr ""
 
@@ -190,15 +196,20 @@ msgid "Maria"
 msgstr ""
 
 #. Description of the theme
+msgctxt ""
+"Maria est un thème WordPress élégant, simple, et totalement responsive "
+"destiné aux sites d'entreprises."
 msgid ""
 "Maria is a clean, simple, and fully responsive corporate WordPress theme."
 msgstr ""
 
 #. URI of the theme
+msgctxt "https://github.com/samuelguebo/maria"
 msgid "https://github.com/samuelguebo/maria"
 msgstr ""
 
 #. Author of the theme
+msgctxt "Samuel Guébo"
 msgid "Samuel Guébo"
 msgstr ""
 

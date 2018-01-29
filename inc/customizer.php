@@ -236,31 +236,31 @@ function maria_kirki_customize_register () {
      * and description
      */
     
-	// Create a repeater section for team
+	// Create a repeater section for blog
 	Maria_Kirki::add_section('blog_section', array(
 		'title' => __('Blog', 'maria'),
 		'priority' => 30,
 	));
 
 
-	// Field for team sections: title 
+	// Field for blog sections: title 
 	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'text',
 			'settings'      => 'blog_section_title',
-			'label'         => __( 'Head text for team section', 'maria' ),
-			//'description'   => __( 'Add Head text for team section', 'maria' ),
-			'default'       => __( 'Our team', 'maria' ),
+			'label'         => __( 'Head text for blog section', 'maria' ),
+			//'description'   => __( 'Add Head text for blog section', 'maria' ),
+			'default'       => __( 'Our blog', 'maria' ),
 			'section'       => 'blog_section',
 			'priority'      => 10,
 			'sanitize_callback' => 'sanitize_text_field'
 			)
 	);
-	// Field for team sections: description
+	// Field for blog sections: description
 	Maria_Kirki::add_field( 'maria', array(
 			'type'          => 'textarea',
 			'settings'      => 'blog_section_description',
-			'label'         => __( 'Head description for team section', 'maria' ),
-			//'description'   => __( 'Add Head description for team section', 'maria' ),
+			'label'         => __( 'Head description for blog section', 'maria' ),
+			//'description'   => __( 'Add Head description for blog section', 'maria' ),
 			'default'         => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'maria' ),
 			'section'       => 'blog_section',
 			'priority'      => 10,

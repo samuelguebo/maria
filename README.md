@@ -4,17 +4,17 @@ Clean and modern WordPress theme for corporate websites.
 [![maria-the-wordpress-full.png](https://s6.postimg.org/x5ipv5ju9/maria-the-wordpress-full.png)](https://postimg.org/image/7mqdi50a5/)
 
 ## Description
-Bastille is a clean, simple, and fully responsive WordPress theme for webzines. Its name, from French origins, refer to the Storming of the Bastille on 14 July 1789, but more importantly to 14 july, birthday of the author :). 
+Maria is a clean, simple, and fully responsive WordPress theme for corporate websites. 
 It adjusts automatically to any screen size including tablets and smartphones as well as Retina displays. Theme is built using [Zurb Foundation](https://github.com/zurb/foundation-sites), a  framework for HTML5 / CSS3 which is SEO friendly. This WordPress theme was built with non-profit organizations in mind but be creative and unleash its full potential in eCommerce, business and other projects. Bastille is available in English, French, and Spanish for now.
 
-Special thanks to [Aglébé Marc-Aurèle, a crafty designer](https://www.behance.net/iznogoud) and friend who gave a helping hand by designing the layout of this WordPress theme.
+
 
 ## Installation
 
 #### Manual
 
 1. Download theme by using "Download zip" button on the right side and unzip it.
-2. Upload the **bastille** folder to the **/wp-content/themes/** directory
+2. Upload the **maria** folder to the **/wp-content/themes/** directory
 3. Activate the Theme through the Apperance - Themes menu in WordPress
 4. See **Appearance -> Customize**  to change theme specific options.
  

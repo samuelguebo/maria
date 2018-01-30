@@ -34,7 +34,7 @@ $blog_post_number = esc_attr(Maria_Kirki::get_option( 'blog_post_number'));
                 $blog_posts = new WP_Query($args);
                 while ( $blog_posts->have_posts() ) : $blog_posts->the_post();
 
-					maria_get_template_part('template-parts/content-article-home.php', 'large-3 medium-6 small-12', 'post-thumb');
+					maria_get_template_part('template-parts/content-article-home.php', 'large-3 medium-3 small-12', 'post-thumb');
 
 				endwhile;
 

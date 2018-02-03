@@ -44,8 +44,8 @@ class Palette_Custom_Control extends WP_Customize_Control
 						display: none;
 					}
 				
-					#palette #navy {
-						background: #2b5f9a;
+					#palette #dark {
+						background: #000;
 					}
 					#palette #blue {
 						background: #0e94c9;

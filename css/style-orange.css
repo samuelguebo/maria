@@ -1445,7 +1445,7 @@ aside .widget {
   -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2); }
 
-aside .widget ul, .widget ol {
+aside .widget ul, .widget ol, .widget > div {
   padding: 15px 10px; }
 
 aside .row.widget {

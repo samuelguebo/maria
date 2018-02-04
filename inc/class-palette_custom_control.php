@@ -77,8 +77,8 @@ class Palette_Custom_Control extends WP_Customize_Control
 					<a id="blue" href="#" <?php if($current_color == 'blue') echo $selected_css;?>>
 						<input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="blue" />
 					</a>
-					<a id="navy" href="#" <?php if($current_color == 'navy') echo $selected_css;?>>
-					<input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="navy" />
+					<a id="dark" href="#" <?php if($current_color == 'dark') echo $selected_css;?>>
+					<input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="dark" />
 					</a>
 					<a id="green" href="#" <?php if($current_color == 'green') echo $selected_css;?>>
 						<input type="radio" name="<?php echo $this->id; ?>" <?php $this->link(); ?> id="<?php echo $this->id; ?>" value="green"/>

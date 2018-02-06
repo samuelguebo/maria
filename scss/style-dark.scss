@@ -1,7 +1,7 @@
-$primary-color: #2b5f9a;
-$secondary-color: lighten($primary-color, 5);
-$third-color: #1db0ea;
-$menu-link-color: #6f6f6e;
+$primary-color: #000;
+$secondary-color: lighten($primary-color, 40);
+$third-color: lighten($primary-color, 60);
+$menu-link-color: $secondary-color;
 $dark-color: #020d16;
 $light-color: #FFF;
 $link-color: $third-color;
@@ -34,4 +34,37 @@ aside .widget-title {
 }
 .button:hover {
     background:$dark-color;
+}
+
+/* Overriding slider style */
+
+.slider-wrapper .post-item {
+	background: $primary-color;/* For browsers that do not support gradients */
+	background: -webkit-linear-gradient( -90deg, $primary-color, lighten($primary-color, 20 ) ); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient( -90deg, $primary-color, $third-color ); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient( -90deg, $primary-color, lighten( $primary-color, 20 ) ); /* For Firefox 3.6 to 15 */
+	background: linear-gradient( -90deg, lighten( $primary-color, 15 ), lighten( $primary-color, 25 ) ); /* Standard syntax */
+	position:relative;
+}
+
+footer .copyright {
+	clear: both;
+	font-size: 0.75em;
+	font-family: $primary-font;
+}
+
+footer#footer .copyright a {
+	color: $secondary-color;
+}
+footer#footer .copyright a:hover {
+	color: $light-color;
+}
+
+footer .socials ul li a:hover {
+	color: $secondary-color;
+	border-color: $secondary-color;
+}
+
+#footer ul li a:hover {
+	color: $primary-color;
 }

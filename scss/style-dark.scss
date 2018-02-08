@@ -65,6 +65,7 @@ footer .socials ul li a:hover {
 	border-color: $secondary-color;
 }
 
-#footer ul li a:hover {
-	color: $primary-color;
+footer .widget ul li a:hover {
+    font-size: 0.9em;
+    color: $primary-color;
 }

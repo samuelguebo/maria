@@ -2408,7 +2408,8 @@ footer .socials ul li a:hover {
   color: #666666;
   border-color: #666666; }
 
-#footer ul li a:hover {
+footer .widget ul li a:hover {
+  font-size: 0.9em;
   color: #000; }
 
 /*# sourceMappingURL=style-dark.css.map */

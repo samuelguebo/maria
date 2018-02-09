@@ -1276,6 +1276,8 @@ article .panel {
   /*
   margin-top:30px;
   */
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 20px; }
 
 .row .category-header {

@@ -1,7 +1,7 @@
 # Maria
 Clean and modern WordPress theme for corporate websites.
 
-[![maria-theme-wordpress-full.png](http://samuelguebo.co/medias/uploads/2018/01/maria-theme-wordpress_showcase-2-1024x871.jpg)
+![maria-theme-wordpress-full](https://samuelguebo.ci/medias/uploads/2018/01/maria-theme-wordpress_showcase-2.jpg)
 
 ## Description
 Maria is a clean, simple, and fully responsive WordPress theme for corporate websites.
@@ -48,7 +48,7 @@ Change the header image. It might support a random image list.
 #### Colors
  Maria comes with six flavors: blue, green, red, orange, yellow, and navy. You might switch between these colors using the Customizer.
 
-[![maria-theme-wordpress_showcase.png](http://samuelguebo.co/medias/uploads/2018/01/maria-theme-wordpress_settings-1024x609.png)
+![maria-theme-wordpress_showcase](http://samuelguebo.ci/medias/uploads/2018/01/maria-theme-wordpress_settings.png)
 
 ## File structure
 In this theme we are using a default [WordPress template hierarchy](http://codex.wordpress.org/Template_Hierarchy).

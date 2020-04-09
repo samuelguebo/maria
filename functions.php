@@ -140,7 +140,7 @@ add_action( 'widgets_init', 'maria_widgets_init' );
 function maria_scripts() {
     
     // Google fonts
-    wp_enqueue_style( 'iam-google-fonts', 'http://fonts.googleapis.com/css?family=Roboto:500|', false ); 
+    wp_enqueue_style( 'iam-google-fonts', 'http://fonts.googleapis.com/css?family=Roboto:500|Montserrat:ital,wght@0,300;0,400;0,500;1,700', false ); 
 
 
     // CSS
@@ -161,7 +161,7 @@ function maria_scripts() {
     wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'modernizer', get_template_directory_uri().'/js/modernizr.min.js', true);
 	wp_enqueue_script( 'foundation-js', get_template_directory_uri().'/js/foundation.min.js', true);
-	wp_enqueue_script( 'scroll-reveal', get_template_directory_uri().'/js/scrollreveal.min.js', true);
+//	wp_enqueue_script( 'scroll-reveal', get_template_directory_uri().'/js/scrollreveal.min.js', true);
 	wp_enqueue_script( 'slick-slider', get_template_directory_uri().'/js/slick.min.js','1.6.0', true);
 	wp_enqueue_script( 'main-scripts', get_template_directory_uri().'/js/scripts.js');
 

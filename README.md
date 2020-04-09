@@ -1,10 +1,10 @@
 # Maria
 Clean and modern WordPress theme for corporate websites.
 
-![maria-theme-wordpress-full](https://samuelguebo.ci/medias/uploads/2018/01/maria-theme-wordpress_showcase-2.jpg)
+[![maria-theme-wordpress-full.png](https://s6.postimg.org/bn6plmd5t/maria-theme-wordpress-full.png)](https://postimg.org/image/9imckjbj1/)
 
 ## Description
-Maria is a clean, simple, and fully responsive WordPress theme for corporate websites.
+Maria is a clean, simple, and fully responsive WordPress theme for corporate websites. 
 It adjusts automatically to any screen size including tablets and smartphones as well as Retina displays. Theme is built using [Zurb Foundation](https://github.com/zurb/foundation-sites), a  framework for HTML5 / CSS3 which is SEO friendly. This WordPress theme was built with non-profit organizations in mind but be creative and unleash its full potential in eCommerce, business and other projects. Maria is available in English, French, and Spanish for now.
 
 
@@ -17,7 +17,7 @@ It adjusts automatically to any screen size including tablets and smartphones as
 2. Upload the **maria** folder to the **/wp-content/themes/** directory
 3. Activate the Theme through the Apperance - Themes menu in WordPress
 4. See **Appearance -> Customize**  to change theme specific options.
-
+ 
 #### WordPress Admin Panel
 
 1. Download theme by using "Download zip" button on the right side
@@ -47,8 +47,8 @@ Change the header image. It might support a random image list.
 
 #### Colors
  Maria comes with six flavors: blue, green, red, orange, yellow, and navy. You might switch between these colors using the Customizer.
-
-![maria-theme-wordpress_showcase](http://samuelguebo.ci/medias/uploads/2018/01/maria-theme-wordpress_settings.png)
+ 
+[![maria-theme-wordpress_showcase.png](https://s6.postimg.org/suh32siyp/maria-theme-wordpress_showcase.png)](https://postimg.org/image/ikeo3jt31/)
 
 ## File structure
 In this theme we are using a default [WordPress template hierarchy](http://codex.wordpress.org/Template_Hierarchy).
@@ -85,7 +85,7 @@ Unless otherwise specified, all the theme files, scripts and images are licensed
 - CSS Content table and Header commenting style was borrowed from [Arlene theme](https://github.com/samuelguebo/arlene)
 - Slider is built using [Slick](https://github.com/kenwheeler/slick/), a prodigious and dead-simple slider
 - Customizer option uses [Kirki](https://github.com/aristath/kirki), a toolkit expanding WordPress Customizer API features
-- Images credit goes to [Unsplash.com](https://unsplash.com/), a stunning photo stock website
+- Images credit goes to [Unsplash.com](https://unsplash.com/), a stunning photo stock website 
 
 # Change log
 All notable changes to this theme are documented in [CHANGELOG.md](https://github.com/samuelguebo/maria/blob/master/CHANGELOG.md) file.

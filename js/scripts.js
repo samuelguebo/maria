@@ -5,7 +5,8 @@ jQuery(document).ready(function ($) {
     $('input[type=submit]').addClass('button small');
     
     
-    /* WOW effect with ScrollReveal */
+    
+    /* WOW effect with ScrollReveal 
     window.sr = ScrollReveal();
     sr.reveal('.top-bar li', {
         duration: 1000
@@ -29,6 +30,7 @@ jQuery(document).ready(function ($) {
         duration: 2000
     }, 50);
     
+    */
     
     /* Back to Top */
     if ($('#back-to-top').length) {

@@ -81,17 +81,14 @@ h6 {
 
 @font-face {
 	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat-Thin.otf");
 	font-weight: 200;
 }
 @font-face {
 	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat-Regular.ttf");
 	font-weight: normal;
 }
 @font-face {
 	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat-Bold.ttf");
 	font-weight: bold;
 }
 
@@ -101,7 +98,7 @@ h6 {
 ================================================================================================
 */
 body {
-	background-image: url("../img/gray-pattern.png");
+	background-image: url("../img/gray-pattern.jpg");
 	background-position: left top;
 	background-repeat: repeat;
 	background-attachment: scroll;
@@ -778,12 +775,14 @@ meta.foundation-mq-topbar {
 		font-size:0.5em;
 		padding: 10px 30px;
 	}
-	.slider-wrapper .post-item {
-		
-	}
+
 	.slider-wrapper .post-item img{ 
 		min-height: 230px;
 		height: 100%;
+	}
+	.slider-wrapper{
+		max-height: 230px !important;
+		overflow: hidden;
 	}
 }
 .slider-wrapper a.button:hover{
@@ -882,6 +881,10 @@ button.slick-prev.slick-arrow {
 
 .slick-prev::before, .slick-next::before {
 	color:#FFF;
+}
+.slider-wrapper{
+	max-height: 400px;
+	overflow: hidden;
 }
 
 /*
